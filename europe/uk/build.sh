@@ -15,7 +15,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 # Pandoc and WeasyPrint emit UTF-8; without a UTF-8 locale the PDF title and
-# other metadata come out as mojibake (e.g. "Nederland ��� Noodreferentie").
+# other metadata come out as mojibake (e.g. "United Kingdom ��� Emergency Reference").
 if ! locale charmap 2>/dev/null | grep -qi 'utf-8'; then
   export LC_ALL=C.UTF-8
   export LANG=C.UTF-8

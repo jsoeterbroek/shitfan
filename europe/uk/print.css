@@ -2,7 +2,7 @@
   size: A4;
   margin: 18mm 16mm 20mm;
   @bottom-left {
-    content: "Op eigen risico · geen aansprakelijkheid · volg officiële instructies";
+    content: "Use at your own risk · no liability · follow official instructions";
     font-size: 6.5pt; color: #777; width: 70%;
   }
   @bottom-right { content: counter(page); font-size: 8pt; color: #666; }
