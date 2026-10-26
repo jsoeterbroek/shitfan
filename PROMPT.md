@@ -46,22 +46,4 @@ The above list is just some things that come to mind and is not by any means exh
 Output should be in Markdown, PDF, zim (for Kiwix), and future physical paper  or book.
 The Markdown file is leading and the single source of truth.
 
-## Steps:
-- 1 Create a general template (in English) with a logical structure of chapters and paragraphs,
-    without filling in any details (use placeholders). I am not sure if the structure should be 
-    based on type of disaster or based on organisations responsible. Use your discretion to choose
-    the best structure (maybe use comparable documents' structure).
-- 2 Create the documents for Europe/Netherlands, using the above template, filling in all possible
-    details specific for The Netherlands and specific risks (such as floods, dike breaks, infrastructure etc. The Netheralnds has specific risks wrg. water management and flooding) 
-    Some initial official sources for the Netherlands:
-    - https://www.denkvooruit.nl/
-    - https://www.dcc-ienw.nl/
-    - https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/veiligheidsregios-en-crisisbeheersing/crisisbeheersing
-    - https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/veiligheidsregios-en-crisisbeheersing/veiligheidsregios
-    - https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid/organisatie/organogram/directoraat-generaal-politie-en-veiligheidsregios-dgpenv/landelijk-operationeel-coordinatiecentrum-locc
-    - Wet veiligheidsregio’s (https://wetten.overheid.nl/jci1.3:c:BWBR0027466&z=2025-07-01&g=2025-07-01)
-    - Rijkswaterstaat Crisis Informatie Centrum (CIC)
-    - Rijkswaterstaat Watermanagementcentrum Nederland (WMCN)
-    - https://nipv.nl/
-
 These  documents will form a initial version and are excpected to be augmented, added, changed in the future. 
