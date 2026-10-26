@@ -10,7 +10,17 @@ status: draft
 
 <!--
 CONVENTIES
-- [BRON: ...] = officiële bron + ophaaldatum bij elk feit.
+- Elke feitelijke uitspraak heeft een voetnoot in superscript — bijv. [3] — die verwijst naar een
+  genummerde bron onder "### Noten" aan het einde van het hoofdstuk (Wikipedia-stijl).
+- De nummering is PER HOOFDSTUK en wordt GEDEDUPLICEERD: dezelfde bron in hetzelfde hoofdstuk krijgt
+  hetzelfde nummer, ook als er meerdere keren naar verwezen wordt.
+- Opmaak in de Markdown (ruwe HTML, omdat dit betrouwbaar naar PDF en ZIM rendert):
+  - in de tekst: <sup id="ref-X-n"><a href="#note-X-n">[n]</a></sup>
+  - in de notenlijst: n. <span id="note-X-n">bron + ophaaldatum</span> [&#8593;](#ref-X-n)
+  - X = hoofdstukletter (A-H, APP, COL); n = volgnummer binnen dat hoofdstuk.
+  - Verwijst een bron naar meerdere plekken, dan krijgt elke plek een eigen id (ref-X-n, ref-X-n-2, ...)
+    en staan alle pijltjes bij elkaar in de notenregel.
+- Bronformaat: URL, eventueel de datum "gewijzigd", ophaaldatum jjjj-mm-dd.
 - [CONTROLEER] = gegeven dat verandert (aantallen, frequenties, locaties); elke release opnieuw checken.
 - Alle scenario's in deel C hebben dezelfde opbouw, zodat je snel kunt vinden wat je zoekt.
 - Korte zinnen. Gebiedende wijs voor acties ("Ga naar binnen", niet "Het wordt geadviseerd om...").
@@ -41,21 +51,21 @@ CONVENTIES
 5. **Blijf binnen tot de situatie veilig is.** Ga pas naar buiten na een officieel "veilig"-signaal.
 
 > De sirene **stopt** niet met "alles is veilig". Het einde van het gevaar hoor je via radio,
-> NL-Alert of hulpdiensten. [BRON: https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/de-sirene, 2026-10-26]
+> NL-Alert of hulpdiensten.<sup id="ref-A-1"><a href="#note-A-1">[1]</a></sup>
 
 ### A.2 Alarmnummers
 
 | Dienst | Nummer | Bijzonderheden |
 |---|---|---|
 | Alarmnummer (politie, brandweer, ambulance) | **112** | Werkt in heel Europa, **zonder beltegoed en zonder (geldige) simkaart**. Alle 112-gesprekken krijgen prioriteit. |
-| 112 voor doven en slechthorenden | **112NL-app**, e-SMS, Tolkcontact | e-SMS: sms "aanmelden" naar 112 en daarna "aanmelden akkoord". Tolkcontact: tekst 24/7, gebarentolk 07.00–22.00. [BRON: https://www.politie.nl/informatie/112-voor-doven-en-slechthorenden.html, 2026-10-26] |
+| 112 voor doven en slechthorenden | **112NL-app**, e-SMS, Tolkcontact | e-SMS: sms "aanmelden" naar 112 en daarna "aanmelden akkoord". Tolkcontact: tekst 24/7, gebarentolk 07.00–22.00.<sup id="ref-A-2"><a href="#note-A-2">[2]</a></sup> |
 | Politie, geen spoed | **0900-8844** | 2 ct/min; vanuit het buitenland +31 34 357 8844. Ook chat via politie.nl. |
 | Brandweer, geen spoed (stormschade, wateroverlast) | **0900-0904** | 24/7. |
 | Storing stroom **en** gas (landelijk storingsnummer) | **0800-9009** | Gratis, 24/7, routeert op postcode naar je netbeheerder. **Niet** 112 bellen voor een gewone storing. |
-| Nationaal publieksinformatienummer bij crises | **0800-1351** | Wordt 24/7 door elk overheidsorgaan via het NCC geactiveerd; doorgaans binnen 1–2 uur in de lucht. [BRON: https://www.nctv.nl/site/binaries/site-content/collections/documents/2025/05/22/factsheet-publieksinformatienummer-0800-1351/Factsheet+publieksinformatienummer+0800-1351.pdf, 2026-10-26] |
+| Nationaal publieksinformatienummer bij crises | **0800-1351** | Wordt 24/7 door elk overheidsorgaan via het NCC geactiveerd; doorgaans binnen 1–2 uur in de lucht.<sup id="ref-A-3"><a href="#note-A-3">[3]</a></sup> |
 | Informatie Rijksoverheid | **1400** | Ma–vr 08.00–20.00. WhatsApp 06 5500 1400. |
 | Gemeente | **14** + netnummer (bijv. 14 010) | Niet 1400: dat is het Rijk. |
-| Zelfmoordpreventie | **113** | Gratis, ook chat; 0800-0113. [BRON: https://www.113.nl/, 2026-10-26] |
+| Zelfmoordpreventie | **113** | Gratis, ook chat; 0800-0113.<sup id="ref-A-4"><a href="#note-A-4">[4]</a></sup> |
 | De Luisterlijn | **088 0767 000** | 24/7 vertrouwelijk luisteren. |
 | MIND Hulplijn | **0900-1450** | Ma–vr 09.00–21.00; gratis adviesgesprek. |
 | Kustwacht (maritiem, geen spoed) | **0900-0111** | Redding op zee: **112**. |
@@ -64,17 +74,17 @@ CONVENTIES
 | Fraudehelpdesk | **088-7867372** | Cyberfraude en phishing. |
 | DigiHulplijn | **0800-1508** | Hulp bij digitale zaken. |
 | Rijkswaterstaat (wegen en water) | **0800-8002** | Informatie, geen spoed. |
-| Vergiftigingen | eigen huisarts / huisartsenpost; **112** bij acuut gevaar | Het NVIC (**088 755 8000**) is 24/7 bereikbaar **voor zorgprofessionals**, niet als publieksnummer. [BRON: https://nvic.umcutrecht.nl/nl/contact, 2026-10-26] |
+| Vergiftigingen | eigen huisarts / huisartsenpost; **112** bij acuut gevaar | Het NVIC (**088 755 8000**) is 24/7 bereikbaar **voor zorgprofessionals**, niet als publieksnummer.<sup id="ref-A-5"><a href="#note-A-5">[5]</a></sup> |
 | Waterschap (calamiteiten) | eigen 24/7-nummer per waterschap | Er is **geen** landelijk publiek water- of overstromingsnummer. |
 
 **Als 112 stoort:** je krijgt een NL-Alert met een alternatief nummer of instructie. Storingen staan op
-politie.nl. [BRON: https://www.nederlandveilig.nl/noodnummers, 2026-10-26]
+politie.nl.<sup id="ref-A-6"><a href="#note-A-6">[6]</a></sup>
 
 ### A.3 Waarschuwingen en alarmering
 
 | Signaal | Hoe het klinkt / ziet | Betekenis | Wat je doet |
 |---|---|---|---|
-| **Sirene — test** | Eerste **maandag van de maand, exact 12.00 uur**, één continue toon van **1 minuut 26 seconden** [BRON: https://www.rijksoverheid.nl/vraag-en-antwoord/veiligheidsregios-en-crisisbeheersing/wanneer-wordt-de-sirene-getest, 2026-10-26] | Proef. Nooit op feestdagen of 4 mei. | Niets. |
+| **Sirene — test** | Eerste **maandag van de maand, exact 12.00 uur**, één continue toon van **1 minuut 26 seconden**<sup id="ref-A-7"><a href="#note-A-7">[7]</a></sup> | Proef. Nooit op feestdagen of 4 mei. | Niets. |
 | **Sirene — alarm** | Elk ander moment, of herhaald | Acuut gevaar in jouw omgeving | Naar binnen, ramen/deuren/roosters dicht, ventilatie uit, radio aan. |
 | **NL-Alert** | Luid alarm + tril + tekst op je telefoon | Overheidswaarschuwing voor jouw gebied | Lees direct, kom in actie, help anderen. |
 | **NL-Alert test** | Eerste **maandag van juni en december, ca. 12.00 uur**, samen met de sirenetest | Proef | Niets. |
@@ -85,23 +95,19 @@ politie.nl. [BRON: https://www.nederlandveilig.nl/noodnummers, 2026-10-26]
 **NL-Alert werkt via *cell broadcast*:** geen aanmelding, gratis en anoniem, en het werkt ook als het
 mobiele netwerk overbelast is. Het werkt **zonder simkaart** en **zonder beltegoed**. Je krijgt het
 niet als je toestel uitstaat, in vliegtuigmodus staat, geen Nederlandse dekking heeft of aan een
-Duitse of Belgische mast hangt; een gemist bericht wordt **niet** later bezorgd.
-[BRON: https://www.nl-alert.nl/zo-werkt-nl-alert/vragen-en-antwoorden, 2026-10-26]
+Duitse of Belgische mast hangt; een gemist bericht wordt **niet** later bezorgd.<sup id="ref-A-8"><a href="#note-A-8">[8]</a></sup>
 
 - **Bereik:** 92% van de inwoners van 12 jaar en ouder ontving het testbericht van 1 december 2025;
-  8% werd via geen enkel kanaal bereikt. [BRON: Ipsos I&O bereikmeting dec. 2025 via open.overheid.nl, 2026-10-26]
+  8% werd via geen enkel kanaal bereikt.<sup id="ref-A-9"><a href="#note-A-9">[9]</a></sup>
 - **Taal:** de zendende veiligheidsregio bepaalt de taal van een echt bericht; er is geen vaste
-  landelijke meertalige regel. Het testbericht is Nederlands met één Engelse regel.
-  [BRON: https://www.nl-alert.nl/testbericht, 2026-10-26]
+  landelijke meertalige regel. Het testbericht is Nederlands met één Engelse regel.<sup id="ref-A-10"><a href="#note-A-10">[10]</a></sup>
 - **App versus cell broadcast:** de NL-Alert-app bereikt ca. 6% van de inwoners en **faalt bij
-  netwerkoverbelasting**. Vertrouw op cell broadcast, niet op de app.
-  [BRON: https://www.nl-alert.nl/nl-alert-app/vragen-en-antwoorden, 2026-10-26]
+  netwerkoverbelasting**. Vertrouw op cell broadcast, niet op de app.<sup id="ref-A-11"><a href="#note-A-11">[11]</a></sup>
 - **Sirenes:** **4.278** sirenes, handmatig geactiveerd, gericht op mensen buiten; **ca. 75%
-  bevolkingsdekking**, dus **niet landelijk dekkend**. Contracten lopen tot **1 januari 2028**.
-  [BRON: https://www.brandweer.nl/onderwerpen/sirenes/, 2026-10-26]
+  bevolkingsdekking**, dus **niet landelijk dekkend**. Contracten lopen tot **1 januari 2028**.<sup id="ref-A-12"><a href="#note-A-12">[12]</a></sup>
 - **Toekomst:** op 9 juni 2026 besloot het kabinet tot een **nieuw civiel-militair waarschuwingsnetwerk
   inclusief een nieuw sirenenetwerk**, gekoppeld aan een detectiesysteem van Defensie. NL-Alert blijft
-  het primaire middel. [BRON: https://www.rijksoverheid.nl/actueel/nieuws/2026/06/09/kabinet-komt-met-nieuw-sirenenetwerk, 2026-10-26]
+  het primaire middel.<sup id="ref-A-13"><a href="#note-A-13">[13]</a></sup>
 
 ### A.4 Rampenzenders: radio en televisie
 
@@ -122,9 +128,8 @@ eigen FM-frequenties. Stel die nu in en schrijf ze op de radio.
 | Radio Rijnmond | Rotterdam | 93.4 |
 | Omroep Zeeland | Goes / Vlissingen | 87.9 / 98.4 |
 | Omroep Brabant | West / Midden / Noordoost / Zuidoost | 91.0 / 91.9 / 95.8 / 87.6 |
-| L1 Radio (Limburg) | Roermond / Emmaberg | 100.3 / 95.3 |
+| L1 Radio (Limburg) | Roermond / Emmaberg | 100.3 / 95.3 <sup id="ref-A-14"><a href="#note-A-14">[14]</a></sup> |
 
-[BRON: https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/radio, gewijzigd 2025-12-03, 2026-10-26]
 
 **DAB+** (regionale omroep wordt automatisch gevonden):
 
@@ -139,17 +144,15 @@ eigen FM-frequenties. Stel die nu in en schrijf ze op de radio.
 | | | | Radio M Utrecht | 12B |
 
 **Landelijk:** NPO Radio 1 is de landelijke nieuwszender. **NOS Teletekst pagina 713** =
-weerwaarschuwingen, **pagina 720** = hoogwaterberichtgeving. [BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen; https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/hoogwater, 2026-10-26]
+weerwaarschuwingen, **pagina 720** = hoogwaterberichtgeving.<sup id="ref-A-15"><a href="#note-A-15">[15]</a></sup>
 
 **Rampenzender:** de **13 regionale publieke omroepen** zijn de aangewezen calamiteitenzenders op
-radio en televisie; de overheid heeft met alle dertien afspraken. [BRON: https://www.rijksoverheid.nl/themas/overheid-en-democratie/media-en-publieke-omroep/regionale-publieke-omroepen, 2026-10-26]
+radio en televisie; de overheid heeft met alle dertien afspraken.<sup id="ref-A-16"><a href="#note-A-16">[16]</a></sup>
 
-**crisis.nl bestaat niet meer** en verwijst door naar **nederlandveilig.nl**.
-[BRON: https://www.nederlandveilig.nl/, 2026-10-26]
+**crisis.nl bestaat niet meer** en verwijst door naar **nederlandveilig.nl**.<sup id="ref-A-17"><a href="#note-A-17">[17]</a></sup>
 
 **Let op:** bij langdurige uitval van telecommunicatie werken televisie en NL-Alert
-**waarschijnlijk niet**. Reken op een **radio op batterijen, zonne-energie of dynamo met FM én DAB**.
-[BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, 2026-10-26]
+**waarschijnlijk niet**. Reken op een **radio op batterijen, zonne-energie of dynamo met FM én DAB**.<sup id="ref-A-18"><a href="#note-A-18">[18]</a></sup>
 
 ### A.5 Alarmkaart huishouden (met de hand invullen)
 
@@ -166,6 +169,44 @@ radio en televisie; de overheid heeft met alle dertien afspraken. [BRON: https:/
 | Huisarts, huisartsenpost, apotheek, dierenarts | |
 | Polisnummers verzekeringen | |
 | Jodiumtabletten: waar liggen ze? (alleen binnen 100 km van een kerncentrale) | |
+
+### Noten
+
+1. <span id="note-A-1">https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/de-sirene, 2026-10-26</span> [&#8593;](#ref-A-1)
+
+2. <span id="note-A-2">https://www.politie.nl/informatie/112-voor-doven-en-slechthorenden.html, 2026-10-26</span> [&#8593;](#ref-A-2)
+
+3. <span id="note-A-3">https://www.nctv.nl/site/binaries/site-content/collections/documents/2025/05/22/factsheet-publieksinformatienummer-0800-1351/Factsheet+publieksinformatienummer+0800-1351.pdf, 2026-10-26</span> [&#8593;](#ref-A-3)
+
+4. <span id="note-A-4">https://www.113.nl/, 2026-10-26</span> [&#8593;](#ref-A-4)
+
+5. <span id="note-A-5">https://nvic.umcutrecht.nl/nl/contact, 2026-10-26</span> [&#8593;](#ref-A-5)
+
+6. <span id="note-A-6">https://www.nederlandveilig.nl/noodnummers, 2026-10-26</span> [&#8593;](#ref-A-6)
+
+7. <span id="note-A-7">https://www.rijksoverheid.nl/vraag-en-antwoord/veiligheidsregios-en-crisisbeheersing/wanneer-wordt-de-sirene-getest, 2026-10-26</span> [&#8593;](#ref-A-7)
+
+8. <span id="note-A-8">https://www.nl-alert.nl/zo-werkt-nl-alert/vragen-en-antwoorden, 2026-10-26</span> [&#8593;](#ref-A-8)
+
+9. <span id="note-A-9">Ipsos I&O bereikmeting dec. 2025 via open.overheid.nl, 2026-10-26</span> [&#8593;](#ref-A-9)
+
+10. <span id="note-A-10">https://www.nl-alert.nl/testbericht, 2026-10-26</span> [&#8593;](#ref-A-10)
+
+11. <span id="note-A-11">https://www.nl-alert.nl/nl-alert-app/vragen-en-antwoorden, 2026-10-26</span> [&#8593;](#ref-A-11)
+
+12. <span id="note-A-12">https://www.brandweer.nl/onderwerpen/sirenes/, 2026-10-26</span> [&#8593;](#ref-A-12)
+
+13. <span id="note-A-13">https://www.rijksoverheid.nl/actueel/nieuws/2026/06/09/kabinet-komt-met-nieuw-sirenenetwerk, 2026-10-26</span> [&#8593;](#ref-A-13)
+
+14. <span id="note-A-14">https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/radio, gewijzigd 2025-12-03, 2026-10-26</span> [&#8593;](#ref-A-14)
+
+15. <span id="note-A-15">https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen; https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/hoogwater, 2026-10-26</span> [&#8593;](#ref-A-15)
+
+16. <span id="note-A-16">https://www.rijksoverheid.nl/themas/overheid-en-democratie/media-en-publieke-omroep/regionale-publieke-omroepen, 2026-10-26</span> [&#8593;](#ref-A-16)
+
+17. <span id="note-A-17">https://www.nederlandveilig.nl/, 2026-10-26</span> [&#8593;](#ref-A-17)
+
+18. <span id="note-A-18">https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, 2026-10-26</span> [&#8593;](#ref-A-18)
 
 ---
 
@@ -185,8 +226,7 @@ radio en televisie; de overheid heeft met alle dertien afspraken. [BRON: https:/
 | Gemeente | **Burgemeester** | Bevoegd gezag bij brand, ramp of crisis binnen de gemeente. |
 
 - De **minister van Justitie en Veiligheid** is coördinerend minister voor crisisbeheersing.
-- Elk ministerie heeft een **Departementaal Crisiscoördinatiecentrum (DCC)**.
-- [BRON: https://www.nctv.nl/onderwerpen/n/nationale-crisisstructuur, gewijzigd 2026-08-21, 2026-10-26; Nationaal Handboek Crisisbeheersing, dec. 2022 — https://www.nctv.nl/documenten/2022/12/06/nationaal-handboek-crisisbeheersing, 2026-10-26]
+- Elk ministerie heeft een **Departementaal Crisiscoördinatiecentrum (DCC)**.<sup id="ref-B-1"><a href="#note-B-1">[1]</a></sup>
 
 **Er bestaat geen enkel "Nationaal Crisisplan".** Het kader is het **Nationaal Handboek Crisisbeheersing
 (december 2022)**, aangevuld met een familie **Landelijke Crisisplannen (LCP)** per dreiging:
@@ -201,9 +241,8 @@ radio en televisie; de overheid heeft met alle dertien afspraken. [BRON: https:/
 | Digitaal | 2022 |
 | Elektriciteit | 2022 (wordt omgezet naar LCP-format) |
 | Straling | 2021 |
-| Luchtvaart | 2020 |
+| Luchtvaart | 2020 <sup id="ref-B-2"><a href="#note-B-2">[2]</a></sup> |
 
-[BRON: https://www.nctv.nl/onderwerpen/l/landelijke-crisisplannen, 2026-10-26]
 
 **Rijksbrede Risicoanalyse Nationale Veiligheid 2026** (gepubliceerd 16 oktober 2026; 35
 afzonderlijke scenario's, 8 dreigingsthema's, 4 combinatiescenario's):
@@ -216,8 +255,7 @@ afzonderlijke scenario's, 8 dreigingsthema's, 4 combinatiescenario's):
 - Een **kerncentrale-ongeval** en een zeeoverstroming zijn **onwaarschijnlijk**, maar zouden
   catastrofaal uitpakken.
 - Voor het eerst is een **artikel 5-scenario (Rusland tegen de NAVO)** opgenomen; het dreigingsbeeld
-  is ongunstiger dan in 2022.
-- [BRON: https://www.rivm.nl/documenten/rijksbrede-risicoanalyse-nationale-veiligheid-2026 en de PDF daarvan, 2026-10-26]
+  is ongunstiger dan in 2022.<sup id="ref-B-3"><a href="#note-B-3">[3]</a></sup>
 
 ### B.2 Nationaal: wie leidt welk type crisis
 
@@ -235,9 +273,8 @@ afzonderlijke scenario's, 8 dreigingsthema's, 4 combinatiescenario's):
 | Natuurbrand | Veiligheidsregio's + brandweer | **LCP Natuurbranden (2025)** |
 | Terrorisme en extreem geweld | JenV / NCTV / politie | **LCP Extreem Geweld en Terrorisme (2023)** |
 | Luchtvaart | IenW | Nationaal crisisplan luchtvaartongevallen (2020) |
-| Transport / infrastructuur | IenW | DCC-IenW; crisisplannen spoor, scheepvaart, wegen |
+| Transport / infrastructuur | IenW | DCC-IenW; crisisplannen spoor, scheepvaart, wegen <sup id="ref-B-4"><a href="#note-B-4">[4]</a></sup> |
 
-[BRON: https://www.nctv.nl/onderwerpen/l/landelijke-crisisplannen; https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, gewijzigd 2026-10-15, 2026-10-26]
 
 ### B.3 Veiligheidsregio's (25)
 
@@ -271,25 +308,19 @@ grootste gemeente). De 25 voorzitters vormen samen het **Veiligheidsberaad**.
 | 22 | Brabant-Zuidoost | Eindhoven |
 | 23 | Limburg-Noord | Venlo |
 | 24 | Zuid-Limburg | Maastricht |
-| 25 | Flevoland | Lelystad |
+| 25 | Flevoland | Lelystad <sup id="ref-B-5"><a href="#note-B-5">[5]</a></sup> <sup id="ref-B-6"><a href="#note-B-6">[6]</a></sup> |
 
-[BRON: https://organisaties.overheid.nl/samenwerkingen/ — standplaatsen van de veiligheidsregio's, 2026-10-26;
-regiolijst: https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/jouw-veiligheidsregio, 2026-10-26]
-
-[BRON: https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/jouw-veiligheidsregio, gewijzigd 2025-12-16, 2026-10-26]
 
 - **Twaalf** veiligheidsregio's liggen aan de landsgrens en stemmen hun crisisplan af met het buurland.
 - **Financiering:** ca. 85% via het Gemeentefonds (gemeenten), ca. 15% Rijksbijdrage.
-- **Toezicht:** Inspectie Justitie en Veiligheid.
-- [BRON: https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing/veiligheidsregios, 2026-10-26]
+- **Toezicht:** Inspectie Justitie en Veiligheid.<sup id="ref-B-7"><a href="#note-B-7">[7]</a></sup>
 
-**Gemeenten en provincies:** **342 gemeenten** op 1 januari 2026 (ongewijzigd ten opzichte van 2025).
-[BRON: https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026, 2026-10-26]
+**Gemeenten en provincies:** **342 gemeenten** op 1 januari 2026 (ongewijzigd ten opzichte van 2025).<sup id="ref-B-8"><a href="#note-B-8">[8]</a></sup>
 
 **12 provincies** met hun hoofdstad: Groningen (Groningen), Fryslân (Leeuwarden), Drenthe (Assen),
 Overijssel (Zwolle), Flevoland (Lelystad), Gelderland (Arnhem), Utrecht (Utrecht), Noord-Holland
 (Haarlem), Zuid-Holland (Den Haag), Zeeland (Middelburg), Noord-Brabant ('s-Hertogenbosch), Limburg
-(Maastricht). [BRON: https://organisaties.overheid.nl/provincies, 2026-10-26]
+(Maastricht).<sup id="ref-B-9"><a href="#note-B-9">[9]</a></sup>
 
 ### B.4 GRIP-opschaling (regionaal)
 
@@ -303,9 +334,8 @@ kunnen op onderdelen eigen keuzes maken.
 | **GRIP 2** | CoPI + **ROT** — Regionaal Operationeel Team (MAC, vaste locatie in de regio) | Operationeel Leider, AC's van brandweer, GHOR, politie, bevolkingszorg, communicatie; Defensie | — (hoogste operationele niveau) | Leider CoPI en/of CaCo na overleg met OL |
 | **GRIP 3** | + **GBT** — Gemeentelijk Beleidsteam (gemeentehuis) | Burgemeester (voorzitter), brandweer, GHOR/DPG, politie, gemeentesecretaris, communicatie | **Burgemeester** | OL of burgemeester |
 | **GRIP 4** | + **RBT** — Regionaal Beleidsteam | **Voorzitter veiligheidsregio** (voorzitter), burgemeesters getroffen gemeenten, hoofdofficier van justitie, dijkgraaf waterschap | **Voorzitter veiligheidsregio** | Voorzitter veiligheidsregio |
-| **GRIP 5** | Interregionaal | Voorzitters van de betrokken veiligheidsregio's; één regio coördineert | **Geen overdracht**: elke voorzitter houdt bevoegdheid over de eigen diensten | Bestuurlijke noodzaak, meerdere regio's |
+| **GRIP 5** | Interregionaal | Voorzitters van de betrokken veiligheidsregio's; één regio coördineert | **Geen overdracht**: elke voorzitter houdt bevoegdheid over de eigen diensten | Bestuurlijke noodzaak, meerdere regio's <sup id="ref-B-10"><a href="#note-B-10">[10]</a></sup> |
 
-[BRON: https://www.brandweer.nl/onderwerpen/grip/ ; GRIP-structuur VNOG, augustus 2025 — https://www.vnog.nl/sites/default/files/2025-08/GRIPboekje-augustus2025.pdf, 2026-10-26]
 
 **GRIP 0** is de dagelijkse routine. Vanaf **GRIP 1** wordt opgeschaald. Wie waarnaar opschaalt:
 
@@ -313,8 +343,7 @@ kunnen op onderdelen eigen keuzes maken.
 - **Operationeel Leider**, in overleg met de burgemeester → GRIP 3;
 - **burgemeester** → GRIP 4 (formeel besluit; in de praktijk op advies van de voorzitter van de
   veiligheidsregio);
-- **voorzitter veiligheidsregio** → GRIP 5.
-[BRON: https://www.vrnhn.nl/ons-werk/crisisbeheersing/grip-niveaus, 2026-10-26]
+- **voorzitter veiligheidsregio** → GRIP 5.<sup id="ref-B-11"><a href="#note-B-11">[11]</a></sup>
 
 **Praktisch:** hoe hoger het GRIP-niveau, hoe meer bestuurlijke besluiten (evacuatie, noodbevel,
 noodverordening) genomen worden door burgemeester of veiligheidsregiovoorzitter, niet door de
@@ -325,56 +354,54 @@ hulpdiensten zelf.
 - **Politie:** nationale politie met **10 regionale eenheden** plus de Eenheid Landelijke Expertise en
   Operaties (LX), de Eenheid Landelijke Opsporing en Interventies (LOI), het Politiedienstencentrum en
   de Landelijke Meldkamer Samenwerking (LMS). Operationele sterkte op 31-12-2025: formatie 50.113 fte,
-  bezetting **48.480 fte**. [BRON: https://www.politie.nl/informatie/organisatiestructuur-politie-nationaal.html, 2026-10-26]
+  bezetting **48.480 fte**.<sup id="ref-B-12"><a href="#note-B-12">[12]</a></sup>
 - **Brandweer:** onderdeel van de veiligheidsregio. **961 kazernes** (837 vrijwillig, 78 beroeps,
   46 gemengd) — telling 2024; ruwweg **80% van het repressieve werk wordt door vrijwilligers gedaan**.
   Taken: brand bestrijden, ongevallen met gevaarlijke stoffen, redding van mens en dier, advisering
-  over brandveiligheid. [BRON: https://nipv.nl/nieuws/aantal-brandweerkazernes-in-2024-gelijk-gebleven/, 2026-10-26]
+  over brandveiligheid.<sup id="ref-B-13"><a href="#note-B-13">[13]</a></sup>
 - **Ambulance en GHOR:** **25 Regionale Ambulancevoorzieningen (RAV's)**, één aangewezen rechtspersoon
   per regio onder de **Wet ambulancezorgvoorzieningen** (in werking 1 januari 2021). In 2025:
-  **1.071 ambulances**, 233 standplaatsen, **1.514.188 inzetten**, 7.854 medewerkers.
-  [BRON: https://www.ambulancezorg.nl/sectorkompas/sectorkompas-2025, 2026-10-26]
+  **1.071 ambulances**, 233 standplaatsen, **1.514.188 inzetten**, 7.854 medewerkers.<sup id="ref-B-14"><a href="#note-B-14">[14]</a></sup>
 - **Meldkamers:** **10** gezamenlijke meldkamers, sinds 1 januari 2020 landelijk beheerd door de
   **LMS**: Amsterdam, Den Haag, Limburg, Midden-Nederland, Noord-Holland, Noord-Nederland,
   Oost-Brabant, Oost-Nederland, Rotterdam, Zeeland-West-Brabant (plus Zeist). De meldkamer stelt het
   NL-Alert op en verzendt het. Een mobiele 112-oproep komt eerst binnen bij de landelijke centrale in
-  Driebergen en wordt daarna doorgezet.
-  [BRON: https://www.meldkamersamenwerking.nl/meldkamers/; https://www.rdi.nl/onderwerpen/consumenten/informatiepunt-112/veelgestelde-vragen, 2026-10-26]
+  Driebergen en wordt daarna doorgezet.<sup id="ref-B-15"><a href="#note-B-15">[15]</a></sup>
 - **C2000:** gesloten **TETRA**-netwerk, alleen voor hulpdiensten; **>119.000 gebruikers**, ca.
   **630 masten**, "nagenoeg 100%" dekking buiten, **binnen alleen op aangewezen locaties**. Eigendom
   van JenV, beheerd door de LMS. Opvolger **VMX** (EU-programma, op commerciële netwerken plus
   satelliet) is nog in voorbereiding; C2000 blijft draaien tot VMX voldoende werkt — **geen
-  overstapdatum**. [BRON: https://www.meldkamersamenwerking.nl/c2000/, 2026-10-26]
+  overstapdatum**.<sup id="ref-B-16"><a href="#note-B-16">[16]</a></sup>
 - **KNRM:** **45 reddingstations**, **75 reddingsboten**, ca. **1.600 vrijwilligers**; redding is
   gratis, de KNRM krijgt geen overheidssubsidie. In 2025: 2.178 inzetten, 3.592 geredde personen.
-  Alarm via de **Kustwacht**. [BRON: https://www.knrm.nl/over-ons/waar-is-de-knrm/reddingstations, 2026-10-26]
+  Alarm via de **Kustwacht**.<sup id="ref-B-17"><a href="#note-B-17">[17]</a></sup>
 - **Rode Kruis:** ca. **11.000 vrijwilligers**, 127 locaties, **798 vrijwilligers in noodhulpteams**
   die lichtgewonden behandelen en ambulance, politie en brandweer ondersteunen; **Ready2Help** heeft
-  ca. **23.000** leden. [BRON: https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/noodhulpteams/, 2026-10-26]
+  ca. **23.000** leden.<sup id="ref-B-18"><a href="#note-B-18">[18]</a></sup>
 - **Dierenambulance:** particuliere non-profitstichtingen met vrijwilligers, **geen wettelijke
   hulpdienst**, streeftijd 45 minuten, vaak via **0900-0245**. Dier in acute nood: **112**. Mishandeling
-  of verwaarlozing: **144**. [BRON: https://www.dierenbescherming.nl/dierenambulances/vragen-dierenambulance, 2026-10-26]
+  of verwaarlozing: **144**.<sup id="ref-B-19"><a href="#note-B-19">[19]</a></sup>
 
 ### B.6 Militaire bijstand en Defensie
 
 - **Drie hoofdtaken van Defensie:** (1) het grondgebied van Nederland en bondgenoten beschermen;
   (2) de internationale rechtsorde en stabiliteit bevorderen; (3) **civiele autoriteiten ondersteunen**
-  bij rampen en crises. [BRON: https://www.defensie.nl/onderwerpen/o/over-defensie/wat-doet-defensie, 2026-10-26]
+  bij rampen en crises.<sup id="ref-B-20"><a href="#note-B-20">[20]</a></sup>
 - **Bijstand** aan civiele autoriteiten loopt via drie routes: **Wet veiligheidsregio's art. 51**
   (voorzitter veiligheidsregio → minister van JenV → Defensie), **Politiewet 2012 arts. 57/58**
   (Marechaussee of andere krijgsmachtonderdelen ter ondersteuning van de politie) en **militaire
   steunverlening in het openbaar belang** (Regeling, BWBR0023217 — verzoek via KCR2/LOCC, **de
   minister van Defensie beslist**). In de praktijk zijn troepen binnen **maximaal 48 uur** inzetbaar;
   ca. **4.000 militairen** zijn snel beschikbaar, altijd onder gezag van burgemeester, officier van
-  justitie of minister. [BRON: https://wetten.overheid.nl/BWBR0023217/2014-07-01/0/afdrukken; https://www.defensie.nl/onderwerpen/t/taken-in-nederland/samenwerken-voor-veiligheid, 2026-10-26]
+  justitie of minister.<sup id="ref-B-21"><a href="#note-B-21">[21]</a></sup>
 - **Nationale Reserve (Natres):** ca. **3.000 reservisten**; kerntaak het bewaken en beveiligen van
   grondgebied en **vitale objecten** (energiecentrales, tunnels, bruggen, havens), plus rampenbestrijding
   en openbare-ordeondersteuning. Toetreden kan met Nederlandse nationaliteit, 18–55 jaar, fitheid en
-  veiligheidsonderzoek. [BRON: https://www.defensie.nl/defensieonderdelen/koninklijke-landmacht/eenheden/knr, 2026-10-26]
+  veiligheidsonderzoek.<sup id="ref-B-22"><a href="#note-B-22">[22]</a></sup>
 - **Personeel:** op 1 september 2026 **86.040** mensen — 46.936 beroepsmilitairen, 29.245 burgers,
   9.859 reservisten. De **Defensienota 2026** ("Samen voorwaarts!", 29 juni 2026) mikt op **3,5% van
   het bbp in 2035**, **102.000 mensen in 2030** en een schaalbare oorlogssterkte van **200.000**;
-  het aantal reservisten moet van 10.225 naar **20.000**. [BRON: https://www.defensie.nl/onderwerpen/o/over-defensie/aantallen-personeel; Defensienota 2026 via ministryofdefence.nl, 2026-10-26]
+  het aantal reservisten moet van 10.225 naar **20.000**.<sup id="ref-B-23"><a href="#note-B-23">[23]</a></sup>
 - **Dienstplicht:** **niet afgeschaft maar opgeschort** sinds **1 mei 1997**. Er worden geen
   dienstplichtigen opgeroepen en er zijn geen kazernes, instructeurs of materieel voor. De wettelijke
   basis is de **Kaderwet dienstplicht** (13 maart 1997). Nederlanders worden geregistreerd als ze op
@@ -383,28 +410,25 @@ hulpdiensten zelf.
   voor training en oefeningen. **Artikel 19:** in uitzonderlijke omstandigheden kan de minister van
   Defensie dienstplichtigen oproepen voor zover de militaire taak dat vereist, **nooit boven 45 jaar**.
   **Artikel 20:** een **koninklijk besluit op voordracht van de premier** stelt artikel 19 in werking.
-  De jaarlijkse **dienstplichtbrief** aan 17-jarigen zegt expliciet dat er **geen oproep** volgt.
-  [BRON: https://wetten.overheid.nl/BWBR0007983/1999-02-17/0; https://www.rijksoverheid.nl/actueel/nieuws/2026/04/15/defensie-verstuurt-jaarlijkse-dienstplichtbrief, 2026-10-26]
+  De jaarlijkse **dienstplichtbrief** aan 17-jarigen zegt expliciet dat er **geen oproep** volgt.<sup id="ref-B-24"><a href="#note-B-24">[24]</a></sup>
 - **NAVO artikel 5:** een gewapende aanval op één lid wordt beschouwd als een aanval op allen; elk lid
   beslist zelf welke maatregelen het nodig acht, inclusief gewapend optreden. Eenmaal ingeroepen, na
-  9/11. [BRON: https://www.nato.int/en/what-we-do/introduction-to-nato/collective-defence-and-article-5, 2026-10-26]
+  9/11.<sup id="ref-B-25"><a href="#note-B-25">[25]</a></sup>
 - **NAVO artikel 3** verplicht lidstaten hun weerbaarheid te onderhouden, uitgewerkt in zeven
-  basisvereisten, waaronder **continuïteit van bestuur en civiele communicatie**.
-  [BRON: idem]
+  basisvereisten, waaronder **continuïteit van bestuur en civiele communicatie**.<sup id="ref-B-25-2"><a href="#note-B-25">[25]</a></sup>
 - **Haagse Top, 25 juni 2025:** bondgenoten mikken op **5% van het bbp in 2035** — minimaal **3,5%**
   voor defensie en NAVO-capaciteiten plus tot **1,5%** voor infrastructuur, civiele paraatheid,
-  weerbaarheid, innovatie en de defensie-industrie. [BRON: https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration, 2026-10-26]
+  weerbaarheid, innovatie en de defensie-industrie.<sup id="ref-B-26"><a href="#note-B-26">[26]</a></sup>
 - **EU:** **artikel 222 VWEU** (solidariteitsclausule) — Unie en lidstaten treden gezamenlijk op bij
   een terroristische aanslag of een natuur- of door de mens veroorzaakte ramp, met alle beschikbare
   instrumenten **inclusief militaire middelen**, altijd **op verzoek van de getroffen lidstaat**.
   Daarnaast het **EU-mechanisme voor civiele bescherming** met de **rescEU**-reserve (bosbranden,
-  uitbraken, CBRN, ontheemding, energie-infrastructuur). [BRON: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E222, 2026-10-26]
+  uitbraken, CBRN, ontheemding, energie-infrastructuur).<sup id="ref-B-27"><a href="#note-B-27">[27]</a></sup>
 - **Nederland als logistiek knooppunt:** havens en vliegvelden maken militaire colonnes en
-  materieeltransport op de snelweg normaal. **Laat militaire colonnes voorgaan.**
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/internationale-spanningen, 2026-10-26]
+  materieeltransport op de snelweg normaal. **Laat militaire colonnes voorgaan.** <sup id="ref-B-28"><a href="#note-B-28">[28]</a></sup>
 - **Schuilen bij aanval of bombardement:** kelder, ondergrondse parkeergarage, midden van een stevig
   gebouw, weg van glas; liggend, hoofd en hart beschermen, mond open tegen drukverschil.
-  **In een voertuig schuilen beschermt niet genoeg.** [BRON: idem]
+  **In een voertuig schuilen beschermt niet genoeg.**<sup id="ref-B-28-2"><a href="#note-B-28">[28]</a></sup>
 
 ### B.7 Crisisniveaus, fasen en noodrecht
 
@@ -426,8 +450,7 @@ art. 53–54**, Noodwet financieel verkeer, **Kaderwet dienstplicht art. 19 lid 
 **Distributiewet**, **Vorderingswet**, **Prijzennoodwet**, **Noodwet voedselvoorziening**, Noodwet
 arbeidsvoorziening, Noodwet geneeskundigen en Omgevingswet art. 19.18–19.19.
 **Bijlage B** voegt toe: Wbbbg art. 10–28, Oorlogswet art. 24–53, Onteigeningswet en **Mediawet 2008
-art. 6.26 lid 2** (beperking van de omroep).
-[BRON: https://wetten.overheid.nl/BWBR0007981/2024-01-01/0/afdrukken, 2026-10-26]
+art. 6.26 lid 2** (beperking van de omroep).<sup id="ref-B-29"><a href="#note-B-29">[29]</a></sup>
 
 **Belangrijk voor jou:**
 - **Wet veiligheidsregio's art. 53** laat de **commissaris van de Koning** bindende aanwijzingen geven
@@ -437,14 +460,13 @@ art. 6.26 lid 2** (beperking van de omroep).
 - Beide artikelen zijn in de Wvr zelf **slapend** en worden pas actief via **Wvr art. 52** (KB op
   voordracht van de premier).
 - **De Gemeentewet en de Provinciewet staan in geen van beide bijlagen.** Artikelen 175 en 176 zijn
-  dus gewone bevoegdheden, geen noodtoestandsbevoegdheden.
-- [BRON: https://wetten.overheid.nl/BWBR0027466/2025-07-01/0/afdrukken, 2026-10-26]
+  dus gewone bevoegdheden, geen noodtoestandsbevoegdheden.<sup id="ref-B-30"><a href="#note-B-30">[30]</a></sup>
 
 **Wetswijziging in behandeling:** kamerstuk **36994** (ingediend 8 juli 2026) schrapt de *beperkte*
 toestand — er blijft één noodtoestand over — en voegt uitroeping en inwerkingtreding samen in één KB;
 de toestand kan worden beperkt tot Europees Nederland of (delen van) Caribisch Nederland; bijlage A
 vervalt. De **Raad van State** waarschuwde op 9 april 2025 dat de bijlagen **deels verouderd en
-onvolledig** zijn. [BRON: https://www.tweedekamer.nl/downloads/document?id=2026D36277; https://www.raadvanstate.nl/actueel/nieuws/april/advies-modernisering-coordinatiewet/, 2026-10-26]
+onvolledig** zijn.<sup id="ref-B-31"><a href="#note-B-31">[31]</a></sup>
 
 **Wat verandert er voor jou bij een uitzonderingstoestand?** In de praktijk: ruimere bevoegdheden voor
 burgemeester, commissaris en ministers; beperking van vergadering, vereniging en pers; vorderingsrecht
@@ -468,8 +490,7 @@ ambulance/politie ter plaatse).
   is, wat je moet doen, waar meer informatie staat.
 - De overheid vraagt **nooit** via een bericht om geld, wachtwoorden of een Tikkie.
 - Vergelijk altijd met een tweede bron: radio, gemeente, politie ter plaatse.
-- Deel geen onbevestigde berichten; dat is precies wat desinformatie laat groeien.
-[BRON: https://www.denkvooruit.nl/veelgestelde-vragen/betrouwbare-informatie, 2026-10-26]
+- Deel geen onbevestigde berichten; dat is precies wat desinformatie laat groeien.<sup id="ref-B-32"><a href="#note-B-32">[32]</a></sup>
 
 **Noodsteunpunten (NSP):** fysieke, herkenbare punten in de buurt waar je **betrouwbare informatie**
 krijgt als stroom, internet en telefonie uitvallen. Gemeenten richten NSP's in; veiligheidsregio's
@@ -477,37 +498,113 @@ hebben regionale **coördinatiepunten**.
 
 - **Besluit:** 9 juli 2025 door de minister van JenV, de VNG en het Veiligheidsberaad.
 - **Proeffase:** **1 januari 2026 – 1 januari 2027**, met ten minste één NSP en één coördinatiepunt per
-  veiligheidsregio; ca. **70 gemeenten** doen mee.
-  [BRON: https://vng.nl/nieuws/landelijke-pilot-noodsteunpunten-van-start, 2026-10-26]
+  veiligheidsregio; ca. **70 gemeenten** doen mee.<sup id="ref-B-33"><a href="#note-B-33">[33]</a></sup>
 - **Minimumfunctie is eenrichtingsinformatie.** Een 112- of meldfunctie is optioneel. Een NSP heeft
   **geen schuilfunctie, geen opvangfunctie, geen voedselvoorraad**, en de noodstroom is **niet** bedoeld
-  om telefoons van inwoners op te laden.
-  [BRON: https://www.weerbaarnl.nl/ (document NSP-kader), 2026-10-26]
+  om telefoons van inwoners op te laden.<sup id="ref-B-34"><a href="#note-B-34">[34]</a></sup>
 - **Geld:** €5 miljoen (2025) + €10 miljoen (2026) voor de pilots, daarna **€35 miljoen per jaar
-  structureel vanaf 2027**. Besluit over een landelijk netwerk **uiterlijk medio 2027**.
-  [BRON: https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z10157&did=2026D22835, 2026-10-26]
+  structureel vanaf 2027**. Besluit over een landelijk netwerk **uiterlijk medio 2027**.<sup id="ref-B-35"><a href="#note-B-35">[35]</a></sup>
 - **Nog geen landelijke uitrol en geen openbare adressenlijst.** Gemeenten maken hun eigen locaties
-  bekend. Een brandweerkazerne is **niet** automatisch een noodsteunpunt.
-  [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/noodsteunpunten, 2026-10-26]
+  bekend. Een brandweerkazerne is **niet** automatisch een noodsteunpunt.<sup id="ref-B-36"><a href="#note-B-36">[36]</a></sup>
 
 **Schuilkelders:** officieel geldt: **"Er zijn geen schuilkelders in Nederland."** Er is **geen
 wettelijke plicht** voor gemeenten om openbare schuilgelegenheid te bieden; de stimulerende rol van het
 Rijk eindigde met het kabinetsbesluit van **1990**, dat **nog steeds geldt**. In 1990 waren er ca. 100
 kleinere en 72 grotere openbare schuilkelders, samen voor minder dan een half miljoen mensen; 62 van
-de 72 grotere zijn bewaard. **De huidige staat van de openbare schuilkelders is niet bekend.**
-[BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid; https://zoek.officielebekendmakingen.nl/ah-tk-20232024-2102.html, 2026-10-26]
+de 72 grotere zijn bewaard. **De huidige staat van de openbare schuilkelders is niet bekend.** <sup id="ref-B-37"><a href="#note-B-37">[37]</a></sup>
 
 - Het kabinet wil dat gemeenten **schuilplekken zoals (bovengrondse en ondergrondse) parkeergarages**
-  aanwijzen; **TNO** werkt aan bouwkundige eisen. [BRON: https://nos.nl/artikel/2568418-kabinet-wil-schuilplekken-zoals-parkeergarages-voor-crisissituatie, 2026-10-26]
+  aanwijzen; **TNO** werkt aan bouwkundige eisen.<sup id="ref-B-38"><a href="#note-B-38">[38]</a></sup>
 - Een **"bestuurlijk Landelijk kader schuilen en evacueren"** wordt met de veiligheidsregio's en de VNG
   opgesteld en wordt **eind 2026** verwacht. Het geeft burgemeesters en regiovoorzitters een
   bevoegdhedenoverzicht, een beoordelingskader en een analyse van maatschappelijke effecten voor de
-  keuze tussen schuilen en evacueren. [BRON: brief aan de Tweede Kamer, 2026Z10157, 2026-10-26]
+  keuze tussen schuilen en evacueren.<sup id="ref-B-39"><a href="#note-B-39">[39]</a></sup>
 - **Er is nog geen nieuwe schuilkelderwet.**
 
 **Bevolkingszorg** is een wettelijke gemeentetaak (Besluit veiligheidsregio's art. 2.1.3): informeren van
-de bevolking, **onderdak en verzorging**, nazorg, slachtofferregistratie en schaderegistratie.
-[BRON: https://nipv.nl/onderzoek/bevolkingszorg, 2026-10-26]
+de bevolking, **onderdak en verzorging**, nazorg, slachtofferregistratie en schaderegistratie.<sup id="ref-B-40"><a href="#note-B-40">[40]</a></sup>
+
+### Noten
+
+1. <span id="note-B-1">https://www.nctv.nl/onderwerpen/n/nationale-crisisstructuur, gewijzigd 2026-08-21, 2026-10-26; Nationaal Handboek Crisisbeheersing, dec. 2022 — https://www.nctv.nl/documenten/2022/12/06/nationaal-handboek-crisisbeheersing, 2026-10-26</span> [&#8593;](#ref-B-1)
+
+2. <span id="note-B-2">https://www.nctv.nl/onderwerpen/l/landelijke-crisisplannen, 2026-10-26</span> [&#8593;](#ref-B-2)
+
+3. <span id="note-B-3">https://www.rivm.nl/documenten/rijksbrede-risicoanalyse-nationale-veiligheid-2026 en de PDF daarvan, 2026-10-26</span> [&#8593;](#ref-B-3)
+
+4. <span id="note-B-4">https://www.nctv.nl/onderwerpen/l/landelijke-crisisplannen; https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, gewijzigd 2026-10-15, 2026-10-26</span> [&#8593;](#ref-B-4)
+
+5. <span id="note-B-5">https://organisaties.overheid.nl/samenwerkingen/ — standplaatsen van de veiligheidsregio's, 2026-10-26; regiolijst: https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/jouw-veiligheidsregio, 2026-10-26</span> [&#8593;](#ref-B-5)
+
+6. <span id="note-B-6">https://www.denkvooruit.nl/bereid-je-voor/zo-krijg-je-een-waarschuwing/jouw-veiligheidsregio, gewijzigd 2025-12-16, 2026-10-26</span> [&#8593;](#ref-B-6)
+
+7. <span id="note-B-7">https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing/veiligheidsregios, 2026-10-26</span> [&#8593;](#ref-B-7)
+
+8. <span id="note-B-8">https://www.cbs.nl/nl-nl/onze-diensten/methoden/classificaties/overig/gemeentelijke-indelingen-per-jaar/indeling-per-jaar/gemeentelijke-indeling-op-1-januari-2026, 2026-10-26</span> [&#8593;](#ref-B-8)
+
+9. <span id="note-B-9">https://organisaties.overheid.nl/provincies, 2026-10-26</span> [&#8593;](#ref-B-9)
+
+10. <span id="note-B-10">https://www.brandweer.nl/onderwerpen/grip/ ; GRIP-structuur VNOG, augustus 2025 — https://www.vnog.nl/sites/default/files/2025-08/GRIPboekje-augustus2025.pdf, 2026-10-26</span> [&#8593;](#ref-B-10)
+
+11. <span id="note-B-11">https://www.vrnhn.nl/ons-werk/crisisbeheersing/grip-niveaus, 2026-10-26</span> [&#8593;](#ref-B-11)
+
+12. <span id="note-B-12">https://www.politie.nl/informatie/organisatiestructuur-politie-nationaal.html, 2026-10-26</span> [&#8593;](#ref-B-12)
+
+13. <span id="note-B-13">https://nipv.nl/nieuws/aantal-brandweerkazernes-in-2024-gelijk-gebleven/, 2026-10-26</span> [&#8593;](#ref-B-13)
+
+14. <span id="note-B-14">https://www.ambulancezorg.nl/sectorkompas/sectorkompas-2025, 2026-10-26</span> [&#8593;](#ref-B-14)
+
+15. <span id="note-B-15">https://www.meldkamersamenwerking.nl/meldkamers/; https://www.rdi.nl/onderwerpen/consumenten/informatiepunt-112/veelgestelde-vragen, 2026-10-26</span> [&#8593;](#ref-B-15)
+
+16. <span id="note-B-16">https://www.meldkamersamenwerking.nl/c2000/, 2026-10-26</span> [&#8593;](#ref-B-16)
+
+17. <span id="note-B-17">https://www.knrm.nl/over-ons/waar-is-de-knrm/reddingstations, 2026-10-26</span> [&#8593;](#ref-B-17)
+
+18. <span id="note-B-18">https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/noodhulpteams/, 2026-10-26</span> [&#8593;](#ref-B-18)
+
+19. <span id="note-B-19">https://www.dierenbescherming.nl/dierenambulances/vragen-dierenambulance, 2026-10-26</span> [&#8593;](#ref-B-19)
+
+20. <span id="note-B-20">https://www.defensie.nl/onderwerpen/o/over-defensie/wat-doet-defensie, 2026-10-26</span> [&#8593;](#ref-B-20)
+
+21. <span id="note-B-21">https://wetten.overheid.nl/BWBR0023217/2014-07-01/0/afdrukken; https://www.defensie.nl/onderwerpen/t/taken-in-nederland/samenwerken-voor-veiligheid, 2026-10-26</span> [&#8593;](#ref-B-21)
+
+22. <span id="note-B-22">https://www.defensie.nl/defensieonderdelen/koninklijke-landmacht/eenheden/knr, 2026-10-26</span> [&#8593;](#ref-B-22)
+
+23. <span id="note-B-23">https://www.defensie.nl/onderwerpen/o/over-defensie/aantallen-personeel; Defensienota 2026 via ministryofdefence.nl, 2026-10-26</span> [&#8593;](#ref-B-23)
+
+24. <span id="note-B-24">https://wetten.overheid.nl/BWBR0007983/1999-02-17/0; https://www.rijksoverheid.nl/actueel/nieuws/2026/04/15/defensie-verstuurt-jaarlijkse-dienstplichtbrief, 2026-10-26</span> [&#8593;](#ref-B-24)
+
+25. <span id="note-B-25">https://www.nato.int/en/what-we-do/introduction-to-nato/collective-defence-and-article-5, 2026-10-26</span> [&#8593;a](#ref-B-25) [&#8593;b](#ref-B-25-2)
+
+26. <span id="note-B-26">https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2025/06/25/the-hague-summit-declaration, 2026-10-26</span> [&#8593;](#ref-B-26)
+
+27. <span id="note-B-27">https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E222, 2026-10-26</span> [&#8593;](#ref-B-27)
+
+28. <span id="note-B-28">https://www.denkvooruit.nl/risicos/risicos-in-nederland/internationale-spanningen, 2026-10-26</span> [&#8593;a](#ref-B-28) [&#8593;b](#ref-B-28-2)
+
+29. <span id="note-B-29">https://wetten.overheid.nl/BWBR0007981/2024-01-01/0/afdrukken, 2026-10-26</span> [&#8593;](#ref-B-29)
+
+30. <span id="note-B-30">https://wetten.overheid.nl/BWBR0027466/2025-07-01/0/afdrukken, 2026-10-26</span> [&#8593;](#ref-B-30)
+
+31. <span id="note-B-31">https://www.tweedekamer.nl/downloads/document?id=2026D36277; https://www.raadvanstate.nl/actueel/nieuws/april/advies-modernisering-coordinatiewet/, 2026-10-26</span> [&#8593;](#ref-B-31)
+
+32. <span id="note-B-32">https://www.denkvooruit.nl/veelgestelde-vragen/betrouwbare-informatie, 2026-10-26</span> [&#8593;](#ref-B-32)
+
+33. <span id="note-B-33">https://vng.nl/nieuws/landelijke-pilot-noodsteunpunten-van-start, 2026-10-26</span> [&#8593;](#ref-B-33)
+
+34. <span id="note-B-34">https://www.weerbaarnl.nl/ (document NSP-kader), 2026-10-26</span> [&#8593;](#ref-B-34)
+
+35. <span id="note-B-35">https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z10157&did=2026D22835, 2026-10-26</span> [&#8593;](#ref-B-35)
+
+36. <span id="note-B-36">https://www.denkvooruit.nl/veelgestelde-vragen/noodsteunpunten, 2026-10-26</span> [&#8593;](#ref-B-36)
+
+37. <span id="note-B-37">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid; https://zoek.officielebekendmakingen.nl/ah-tk-20232024-2102.html, 2026-10-26</span> [&#8593;](#ref-B-37)
+
+38. <span id="note-B-38">https://nos.nl/artikel/2568418-kabinet-wil-schuilplekken-zoals-parkeergarages-voor-crisissituatie, 2026-10-26</span> [&#8593;](#ref-B-38)
+
+39. <span id="note-B-39">brief aan de Tweede Kamer, 2026Z10157, 2026-10-26</span> [&#8593;](#ref-B-39)
+
+40. <span id="note-B-40">https://nipv.nl/onderzoek/bevolkingszorg, 2026-10-26</span> [&#8593;](#ref-B-40)
 
 ---
 
@@ -531,42 +628,36 @@ Vaste opbouw per scenario:
 
 - **Zonder waterkeringen zou 60% van Nederland regelmatig overstromen.** Een derde van het land ligt
   onder de zeespiegel; het beschermde gebied huisvest ca. **11 miljoen mensen** en ca. **70% van het
-  bbp**. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/overstroming, 2026-10-26; Rijksbegroting IenW 2027, 2026-10-26]
+  bbp**.<sup id="ref-C-1"><a href="#note-C-1">[1]</a></sup>
 - **Waterkeringen:** meer dan **3.700 km**, waarvan bijna **1.500 kunstwerken** (dijken, dammen,
   stuwen, gemalen, stormvloedkeringen). De waterschappen beheren ca. **3.600 km primaire keringen**,
-  Rijkswaterstaat ca. 3%; daarnaast ca. **14.000 km regionale keringen**; samen ca. **17.000 km**.
-  [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen; https://unievanwaterschappen.nl/waterveiligheid/dijken-in-nederland/, 2026-10-26]
-- **De Deltawerken:** **13** werken — 5 stormvloedkeringen, 2 sluiscomplexen en 6 dammen.
-  [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken, 2026-10-26]
+  Rijkswaterstaat ca. 3%; daarnaast ca. **14.000 km regionale keringen**; samen ca. **17.000 km**.<sup id="ref-C-2"><a href="#note-C-2">[2]</a></sup>
+- **De Deltawerken:** **13** werken — 5 stormvloedkeringen, 2 sluiscomplexen en 6 dammen.<sup id="ref-C-3"><a href="#note-C-3">[3]</a></sup>
 - **Wettelijke norm sinds 1 januari 2017:** basisbescherming = kans op overlijden door overstroming
   van **maximaal 1 op 100.000 per jaar**, met extra bescherming waar de gevolgen groot zijn. Vastgelegd
-  als **omgevingswaarden** in het Besluit kwaliteit leefomgeving; **uiterlijk 1 januari 2050** gehaald.
-  [BRON: https://iplo.nl/thema/water/waterveiligheid/primaire-waterkeringen/normen/, 2026-10-26]
+  als **omgevingswaarden** in het Besluit kwaliteit leefomgeving; **uiterlijk 1 januari 2050** gehaald.<sup id="ref-C-4"><a href="#note-C-4">[4]</a></sup>
 - **Seizoen:** de kans op hoogwater op de rivieren en langs de kust is het grootst in **winter en
   vroege lente** (regen, smeltwater, stormopstuwing, springtij).
 - **Historie:**
   - **Watersnoodramp 1953:** **1.836 doden**, **72.000 geëvacueerden**, dijken doorgebroken op meer dan
     **150 plaatsen**, **150.000 ha** onder water, 4.300 gebouwen verwoest en 43.000 beschadigd, 47.000
     stuks vee verdronken. Vlissingen **4,55 m +NAP**, Hoek van Holland **3,85 m +NAP**. Schade 1,5
-    miljard gulden (ca. €5,4 miljard).
-    [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/watersnoodramp-1953, 2026-10-26]
+    miljard gulden (ca. €5,4 miljard).<sup id="ref-C-5"><a href="#note-C-5">[5]</a></sup>
   - **1993:** ca. **8%** (18.000 ha) van Limburg overstroomd, Borgharen en Itteren onder water,
     **12.000** mensen geëvacueerd.
   - **1995:** **250.000 mensen** en **1 miljoen dieren** preventief geëvacueerd; Rijn bij Lobith
-    **16,68 m**, Maas **45,09 m +NAP**; de Waaldijk bij Ochten begon te schuiven maar hield.
-    [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/maatregelen-om-overstromingen-te-voorkomen/ruimte-voor-de-rivieren, 2026-10-26]
+    **16,68 m**, Maas **45,09 m +NAP**; de Waaldijk bij Ochten begon te schuiven maar hield.<sup id="ref-C-6"><a href="#note-C-6">[6]</a></sup>
   - **Limburg juli 2021:** **160–180 mm** regen in twee dagen; ca. **50.000** mensen geëvacueerd;
     **geen doden in Nederland**; meer dan **2.500 woningen**, 5.000 inwoners en ca. 600 bedrijven in
     het getroffen gebied. Twee **niet-primaire** keringen bezweken (nooddijk Horn, kering bij
-    Roermond); de primaire keringen hielden. Schade bijgesteld naar **€455 miljoen**.
-    [BRON: https://www.tweedekamer.nl/downloads/document?id=2021D40887; https://open.overheid.nl/documenten/5ab4fc47-7010-4b8e-bfab-cb112ffa375d/file, 2026-10-26]
+    Roermond); de primaire keringen hielden. Schade bijgesteld naar **€455 miljoen**.<sup id="ref-C-7"><a href="#note-C-7">[7]</a></sup>
 - **Twee verschillende gevaren:**
   1. **Overstroming** — waterkering bezwijkt of water komt van zee/rivier; water staat hoog, stroomt
      snel, groot gebied.
   2. **Wateroverlast** — hevige regen, riool overbelast, straten en kelders onder water; geen
      dijkdoorbraak, maar lokaal gevaarlijk (putdeksels, kelders, elektra).
 - **Check jouw adres:** **overstroomik.nl** toont de verwachte waterhoogte bij een overstroming en
-  droge plekken in je buurt. [BRON: https://www.overstroomik.nl/, 2026-10-26]
+  droge plekken in je buurt.<sup id="ref-C-8"><a href="#note-C-8">[8]</a></sup>
 
 #### C.1.2 Officieel plan
 
@@ -577,8 +668,7 @@ Vaste opbouw per scenario:
   - **Provincies** — ruimtelijke inrichting en toezicht.
   - **Gemeenten en veiligheidsregio's** — rampbestrijding, evacuatie, opvang, communicatie.
   - **WMCN** (Watermanagementcentrum Nederland, bij Rijkswaterstaat) — centrale coördinatie en
-    berichtgeving over waterstanden, samen met KNMI, waterschappen, provincies en veiligheidsregio's.
-    [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/watermanagementcentrum-nederland, gewijzigd 2026-05-07, 2026-10-26]
+    berichtgeving over waterstanden, samen met KNMI, waterschappen, provincies en veiligheidsregio's.<sup id="ref-C-9"><a href="#note-C-9">[9]</a></sup>
 - **Waterkeringen worden periodiek aan wettelijke normen getoetst**; zwakke schakels worden versterkt.
   Rijkswaterstaat onderhoudt de kustlijn met zandsuppleties; rivieren kregen meer ruimte
   (uiterwaarden, nevengeulen).
@@ -587,12 +677,11 @@ Vaste opbouw per scenario:
     **3,0 m boven NAP bij Rotterdam** en **2,9 m boven NAP bij Dordrecht**; kan een vloedgolf van
     **5 m boven NAP** aan; twee deuren van **210 m breed, 22 m hoog, 15 m diep**; beschermt ca.
     **2 miljoen inwoners** van Zuid-Holland. Functioneringssluiting elk jaar in **september**,
-    verificatiesluiting elke 7 jaar zonder stormsluiting.
-    [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken/maeslantkering, gewijzigd 2026-05-22, 2026-10-26]
+    verificatiesluiting elke 7 jaar zonder stormsluiting.<sup id="ref-C-10"><a href="#note-C-10">[10]</a></sup>
   - **Oosterscheldekering** (Zeeland) en **Hartelkering** (Europoortkering) sluiten mee.
 - **Nationaal Deltaprogramma:** rijksoverheid, provincies, gemeenten en waterschappen werken onder
   leiding van de **deltacommissaris** aan waterveiligheid, zoetwater en klimaatbestendige
-  inrichting; doel **2050**; jaarlijks ruim **€1 miljard**. [BRON: https://www.deltaprogramma.nl/, gewijzigd 2026-10-09, 2026-10-26]
+  inrichting; doel **2050**; jaarlijks ruim **€1 miljard**.<sup id="ref-C-11"><a href="#note-C-11">[11]</a></sup>
 - **Evacuatie:** burgemeester (gemeente) of voorzitter veiligheidsregio (meerdere gemeenten) besluit
   tot evacuatie, op advies van de veiligheidsregio en waterbeheerders. Bij dreigende dijkdoorbraak
   wordt **preventief** geëvacueerd; bij onverwachte doorbraak is **verticaal evacueren** (naar boven)
@@ -606,8 +695,7 @@ Vaste opbouw per scenario:
 - **Rijkswaterstaat/WMCN** publiceert waterstanden en verwachtingen; bij hoogwater start
   **waterberichtgeving** (elk uur, max. 48 uur vooruit) en is **Teletekst pagina 720** actueel.
   Stormvloedwaarschuwingen gaan ca. **12 uur** voor het hoogste waterpeil naar dijk- en keringbeheerders,
-  bij het **waarschuwingspeil** (ca. 1×/jaar) en het **alarmeringspeil** (ca. 1×/5 jaar).
-  [BRON: https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/hoogwater/stormvloed; https://www.rijkswaterstaat.nl/water/waterbericht, 2026-10-26]
+  bij het **waarschuwingspeil** (ca. 1×/jaar) en het **alarmeringspeil** (ca. 1×/5 jaar).<sup id="ref-C-12"><a href="#note-C-12">[12]</a></sup>
 
 **Indicatieve waarschuwingstijden voor evacuatie** (Landelijk Crisisplan Hoogwater en Overstromingen):
 
@@ -622,23 +710,20 @@ Vaste opbouw per scenario:
 - **Indicatieve afvoeren waarbij het kritiek wordt:** Rijn vanaf ca. **12.000 m³/s**, Maas vanaf ca.
   **2.500–3.000 m³/s**.
 - **Kustscenario:** kans 1 op 1.000 per jaar, honderden doden, tienduizenden getroffenen, €100 miljoen
-  tot €1 miljard schade.
-- [BRON: Landelijk Crisisplan Hoogwater en Overstromingen, 2026, via open.overheid.nl, 2026-10-26]
+  tot €1 miljard schade.<sup id="ref-C-13"><a href="#note-C-13">[13]</a></sup>
 
 **Evacuatie versus schuilen — het cruciale verschil:**
 - Is **preventieve evacuatie** nog mogelijk, dan **klinken de sirenes niet**: die drijven mensen naar
   binnen. Je krijgt een **NL-Alert met dringend advies het genoemde gebied te verlaten**.
 - Is een doorbraak **acuut** en is er geen tijd meer, dan klinken **sirene én NL-Alert** met de
-  instructie naar de **hoogste verdieping** te gaan.
-- [BRON: Regionaal rampenbestrijdingsplan hoogwater (concept) 2026 en Landelijk Crisisplan, 2026-10-26]
+  instructie naar de **hoogste verdieping** te gaan.<sup id="ref-C-14"><a href="#note-C-14">[14]</a></sup>
 
 **Vroege signalen aan een dijk** — een dijk bezwijkt vrijwel nooit zonder voorteken:
 - **kwel** (water dat aan de voet van de dijk omhoogkomt);
 - **zandmeevoerende wellen** (opwellend water dat zand meeneemt — zeer ernstig);
 - scheuren, verzakkingen, verkleuring of natte plekken op het dijklichaam;
 - plotselinge verandering van waterstand of stroming in sloot of kanaal;
-- geluid van stromend water of grondtrillingen.
-[BRON: STOWA 2018-20, 2026-10-26]
+- geluid van stromend water of grondtrillingen.<sup id="ref-C-15"><a href="#note-C-15">[15]</a></sup>
 
 **Bij wateroverlast:** hevige regen, volle riolen, water in de straat, kelders vol, putdeksels
 omhooggedrukt.
@@ -656,8 +741,7 @@ omhooggedrukt.
 - **Weet waar de gashoofdkraan en de groepenkast zitten** om ze af te sluiten.
 - **Zandzakken en schotten:** weet waar ze liggen en hoe je ze plaatst.
 - **Peilstok** meenemen als je door ondergelopen straten moet lopen: zo zie je open putten.
-- Denk aan **dieren**: waar kunnen zij droog en veilig staan?
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/overstroming, 2026-10-26]
+- Denk aan **dieren**: waar kunnen zij droog en veilig staan?<sup id="ref-C-16"><a href="#note-C-16">[16]</a></sup>
 
 #### C.1.5 Tijdens
 
@@ -669,7 +753,7 @@ omhooggedrukt.
 4. Zet je telefoon **zuinig**; houd één toestel aan voor NL-Alert.
 5. Meld je aan bij buren; help wie hulp nodig heeft.
 6. **Ga niet zwemmen of waden** in stromend water: water tot je enkels kan je al omverduwen en een
-   auto verliest grip bij ca. **15 cm**. [BRON: https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/goed-voorbereid/wat-moet-je-doen-bij-een-overstroming/, 2026-10-26]
+   auto verliest grip bij ca. **15 cm**.<sup id="ref-C-17"><a href="#note-C-17">[17]</a></sup>
 7. **Betreed geen ondergelopen ruimtes** waar elektra of gas aanwezig kan zijn.
 
 **Als je evacueert:**
@@ -728,55 +812,47 @@ omhooggedrukt.
 #### C.2.1 Risico in Nederland
 
 - Extreme kou, regen, windstoten, onweer, sneeuw en ijzel komen door klimaatverandering vaker voor.
-  Gevolgen: omvallende bomen, gladde wegen, ongelukken, stroomuitval, uitval van ov.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/extreem-weer, gewijzigd 2026-06-26, 2026-10-26]
+  Gevolgen: omvallende bomen, gladde wegen, ongelukken, stroomuitval, uitval van ov.<sup id="ref-C-18"><a href="#note-C-18">[18]</a></sup>
 - **Hitte:** vaker langdurige periodes; meer hulpvragen, ov-uitval, afgelaste evenementen, groter
-  risico op natuurbranden. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/hitte, 2026-06-26]
-- **Droogte:** in 2026 schaalde het Rijk op naar **"feitelijk watertekort"** met extra maatregelen.
-  [BRON: https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/waterschappen, nieuws 2026-07-16, 2026-10-26]
+  risico op natuurbranden.<sup id="ref-C-19"><a href="#note-C-19">[19]</a></sup>
+- **Droogte:** in 2026 schaalde het Rijk op naar **"feitelijk watertekort"** met extra maatregelen.<sup id="ref-C-20"><a href="#note-C-20">[20]</a></sup>
 
 #### C.2.2 Officieel plan
 
 - **KNMI** geeft waarschuwingen per **provincie** (vanaf **november 2026** voor flexibele gebieden)
-  en voor het IJsselmeergebied, de Waddenzee en de Waddeneilanden.
-  [BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen, 2026-10-26]
+  en voor het IJsselmeergebied, de Waddenzee en de Waddeneilanden.<sup id="ref-C-21"><a href="#note-C-21">[21]</a></sup>
 
 | Code | Betekenis | Voorbeelden van drempels |
 |---|---|---|
 | **Geel** | Kans op gevaarlijk weer dat vaak voorkomt; opletten, vooral onderweg. Kan 48 uur vooraf. | Regen vanaf 50 mm/24 u of aquaplaning; windstoten vanaf 75 km/u (kust winterhalfjaar 90); onweer met windstoten vanaf 60 km/u, 30 mm/u of hagel tot 2 cm; zicht <200 m; gevoelstemperatuur vanaf −15 °C; 1 dag ≥35 °C |
 | **Oranje** | Grote kans op gevaarlijk weer met grote impact: schade, letsel of veel overlast. Kan 48 uur vooraf. | Regen >75 mm/24 u; sneeuw vanaf 5 cm/6 u; windstoten vanaf 100 km/u (kust 120); onweer met windstoten vanaf 75 km/u, 50 mm/u of hagel vanaf 2 cm; zicht <10 m; gevoelstemperatuur vanaf −20 °C; 3 dagen ≥34 °C, 2 dagen ≥36 °C of 1 dag ≥38 °C |
-| **Rood** (weeralarm) | Extreem weer met grote impact op de samenleving, maatschappij-ontwrichtend. Minimaal 48 uur vooraf, of bij kleine kans met grote veiligheidsrisico's. | Impactanalyse; meteorologische richtlijnen gelijk aan oranje |
+| **Rood** (weeralarm) | Extreem weer met grote impact op de samenleving, maatschappij-ontwrichtend. Minimaal 48 uur vooraf, of bij kleine kans met grote veiligheidsrisico's. | Impactanalyse; meteorologische richtlijnen gelijk aan oranje <sup id="ref-C-21-2"><a href="#note-C-21">[21]</a></sup> |
 
-[BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen, 2026-10-26]
 
 - **Nationaal Hitteplan (RIVM)** wordt actief bij aanhoudende of extreme hitte; dan geeft KNMI
   **code geel** voor hitte af. Bij oranje of rood gelden extra gezondheidsadviezen. Het plan kan
-  **per provincie** worden geactiveerd. [BRON: https://www.rivm.nl/hitte/nationaal-hitteplan, 2026-10-26]
+  **per provincie** worden geactiveerd.<sup id="ref-C-22"><a href="#note-C-22">[22]</a></sup>
 - **Hittegolf** (definitie, achteraf): in De Bilt minimaal **5 dagen ≥25 °C**, waarvan **3 dagen
-  >30 °C**. [BRON: idem]
+  >30 °C**.<sup id="ref-C-22-2"><a href="#note-C-22">[22]</a></sup>
 - **Natuurbrandrisico:** brandweer en terreinbeheerders monitoren in het droogteseizoen;
-  Defensie levert blushelikopters bij grote natuurbranden.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/natuurbrand, gewijzigd 2026-08-06, 2026-10-26]
+  Defensie levert blushelikopters bij grote natuurbranden.<sup id="ref-C-23"><a href="#note-C-23">[23]</a></sup>
 - **Stormnamen:** een storm krijgt een naam bij **code oranje of rood voor windstoten** (bij hoge
   uitzondering al bij geel). Het seizoen loopt van september tot september; Nederland zit in de
   westerse groep met het Britse Met Office en Met Éireann. Namen beginnen niet met Q, U, X, Y of Z.
   Seizoen 2026–2027: Austen, Boelo, Chloe, Dano, Evelyn, Finn, Gwendolyn, Heather, Ivy, Jade, Kilian,
-  Laoise, Miriam, Nicola, Olaf, Phelim, Ruban, Shaun, Theo, Vesna, Wende.
-  [BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/naamgeving-van-stormen, 2026-10-26]
+  Laoise, Miriam, Nicola, Olaf, Phelim, Ruban, Shaun, Theo, Vesna, Wende.<sup id="ref-C-24"><a href="#note-C-24">[24]</a></sup>
 - **Stormdefinitie:** windkracht 9 = uurgemiddelde **75–88 km/u**; zware windstoten vanaf **75 km/u**,
-  zeer zware vanaf **100 km/u**.
-  [BRON: https://www.knmi.nl/kennis-en-datacentrum/waarschuwingen/windstoten, 2026-10-26]
+  zeer zware vanaf **100 km/u**.<sup id="ref-C-25"><a href="#note-C-25">[25]</a></sup>
 - **Stand Nationaal Hitteplan:** op 26 oktober 2026 **niet actief**. In 2026 werd het vier keer
   geactiveerd; de laatste keer vanaf 12 augustus, beëindigd op 15/16 augustus. Sinds juni 2026 bestaat
-  de nieuwe **hittekracht-index** (0–10). [BRON: https://www.rivm.nl/hitte/nationaal-hitteplan; https://www.knmi.nl/kennis-en-datacentrum/waarschuwingen/hitte, 2026-10-26]
+  de nieuwe **hittekracht-index** (0–10).<sup id="ref-C-26"><a href="#note-C-26">[26]</a></sup>
 - **Droogte — wettelijke prioriteitsvolgorde (verdringingsreeks)**, vier categorieën:
   1. **veiligheid en onomkeerbare schade** (stabiliteit van dijken, bodemdaling, onomkeerbare
      natuurschade);
   2. **nutsvoorzieningen** (drinkwater, energie);
   3. **kleinschalig hoogwaardig gebruik** (kapitaalintensieve gewassen, proceswater);
   4. **overig** (scheepvaart, landbouw, natuur, recreatie, visserij).
-  Het **IJsselmeer en Markermeer** zijn de grootste zoetwaterbuffer.
-  [BRON: https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/; https://www.rijkswaterstaat.nl/water/waterbeheer/droogte-en-watertekort/verdeling-water-bij-droogte, 2026-10-26]
+  Het **IJsselmeer en Markermeer** zijn de grootste zoetwaterbuffer.<sup id="ref-C-27"><a href="#note-C-27">[27]</a></sup>
 
 #### C.2.3 Waarschuwing
 
@@ -786,15 +862,14 @@ omhooggedrukt.
 
 #### C.2.4 Voor
 
-- Stel een **noodpakket** samen; bij hitte extra water en opgeladen powerbanks.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/hitte, 2026-10-26]
+- Stel een **noodpakket** samen; bij hitte extra water en opgeladen powerbanks.<sup id="ref-C-28"><a href="#note-C-28">[28]</a></sup>
 - **Huis:** zet losse spullen vast of binnen (tuinmeubelen, containers); sluit ramen en deuren aan de
   windzijde; zet de auto uit de wind en weg van bomen; sluit kelders af; breng spullen naar een
-  hogere verdieping. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/extreem-weer, 2026-10-26]
+  hogere verdieping.<sup id="ref-C-29"><a href="#note-C-29">[29]</a></sup>
 - **Auto:** deken, warme jas en fles water.
 - **Hitte:** zonwering, gordijnen en ramen dicht overdag; 's nachts luchten als het buiten koeler is;
   drinken voor je dorst hebt; zware inspanning vermijden; let op ouderen, jonge kinderen, zieken en
-  mensen die alleen wonen. [BRON: RIVM Nationaal Hitteplan, 2026-10-26]
+  mensen die alleen wonen.<sup id="ref-C-30"><a href="#note-C-30">[30]</a></sup>
 - **Dieren:** beschutte plek, 72 uur voer en water.
 
 #### C.2.5 Tijdens
@@ -802,12 +877,10 @@ omhooggedrukt.
 - **Code rood:** ga alleen naar buiten als het echt nodig is; blijf binnen.
 - **Moet je weg:** neem water, eten, deken, extra kleding, telefoon + oplader mee; laat weten waar je
   heen gaat en via welke route.
-- **112 alleen bij levensgevaar.** Stormschade of wateroverlast zonder spoed: **0900-0904**.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/extreem-weer, 2026-10-26]
+- **112 alleen bij levensgevaar.** Stormschade of wateroverlast zonder spoed: **0900-0904**.<sup id="ref-C-29-2"><a href="#note-C-29">[29]</a></sup>
 - **Hitte:** koel blijven, geen zware inspanning, let op oververhitting (hoofdpijn, duizeligheid,
   vermoeidheid), hitte-uitputting (flauwvallen, kramp, snelle hartslag, bleke huid), hitteberoerte
-  (misselijkheid, >39 °C, rode huid, stuiptrekkingen, bewustzijnsverlies → **bel direct 112**).
-  [BRON: https://www.rivm.nl/hitte/nationaal-hitteplan, 2026-10-26]
+  (misselijkheid, >39 °C, rode huid, stuiptrekkingen, bewustzijnsverlies → **bel direct 112**).<sup id="ref-C-22-3"><a href="#note-C-22">[22]</a></sup>
 - **Kou:** één kleine ruimte verwarmen en bewonen; warmte vasthouden; nooit een generator, houtskool
   of barbecue binnenshuis (koolmonoxide).
 - **Storm:** blijf weg van ramen, bomen en gevels; niet de deur uit tijdens de piek.
@@ -822,7 +895,7 @@ omhooggedrukt.
 #### C.2.7 Waarheen
 
 - **Hitte:** koele openbare plekken (bibliotheek, overdekt winkelcentrum, park met schaduw) — check
-  gemeente/GGD wat zij organiseren. [BRON: idem]
+  gemeente/GGD wat zij organiseren.<sup id="ref-C-22-4"><a href="#note-C-22">[22]</a></sup>
 - **Storm/wateroverlast:** blijf thuis; bij evacuatie volg de aangewezen opvang.
 
 #### C.2.8 Checklist
@@ -842,20 +915,18 @@ omhooggedrukt.
 
 - Natuurbranden zijn onvoorspelbaar en moeilijk te bestrijden; vuur verspreidt zich snel via
   boomkruinen en kan onverwacht op de grond opduiken. Risicogebieden: bos, hei en duinen, vooral in
-  droge periodes. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/natuurbrand, gewijzigd 2026-08-06, 2026-10-26]
+  droge periodes.<sup id="ref-C-23-2"><a href="#note-C-23">[23]</a></sup>
 - Grootste risico op de **Veluwe**, in **Noord-Brabant** (naaldbos met weinig open water) en in de
   **duinen** langs de kust. Risicogebieden zijn aaneengesloten bos, heide, veen of duin van **100 ha of
-  meer**. [BRON: https://www.atlasleefomgeving.nl/natuurbrand-0, 2026-10-26; pagina voor het laatst bewerkt in 2022 — gebruik als indicatie]
+  meer**.<sup id="ref-C-31"><a href="#note-C-31">[31]</a></sup>
 - **Risicofase per veiligheidsregio:** fase **1 (normaal)** en fase **2 (extra alert)**, dagelijks rond
-  middernacht vastgesteld op basis van metingen en KNMI-gegevens.
-  [BRON: https://www.brandweer.nl/natuurbrandrisico/, 2026-10-26]
+  middernacht vastgesteld op basis van metingen en KNMI-gegevens.<sup id="ref-C-32"><a href="#note-C-32">[32]</a></sup>
 
 #### C.3.2 Officieel plan
 
 - Terreineigenaren, brandweer en KNMI monitoren in het droogteseizoen; bij grote branden
   ondersteuning door blushelikopters van Defensie.
-- Afspraken tussen alle betrokken organisaties over bestrijding en evacuatie.
-- [BRON: idem]
+- Afspraken tussen alle betrokken organisaties over bestrijding en evacuatie.<sup id="ref-C-32-2"><a href="#note-C-32">[32]</a></sup>
 
 #### C.3.3 Waarschuwing
 
@@ -871,8 +942,7 @@ omhooggedrukt.
 - Gooi afval in de bak; glasscherven kunnen brand veroorzaken.
 - Houd je aan regels voor barbecue, kampvuur en vuurkorf.
 - **Parkeer niet in droog hoog gras** (hete katalysator) en niet op bospaden (blusvoertuigen moeten
-  erdoor).
-- [BRON: idem]
+  erdoor).<sup id="ref-C-32-3"><a href="#note-C-32">[32]</a></sup>
 
 #### C.3.5 Tijdens
 
@@ -911,18 +981,15 @@ omhooggedrukt.
 
 - Nederland heeft **relatief milde** natuurlijke aardbevingen: het land ligt niet aan de rand van een
   tektonische plaat. Voelbaar vooral in **Limburg** (breuklijn).
-- **Geïnduceerde bevingen** door mijnbouw, vooral door de **gaswinning in Groningen**.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/aardbeving, gewijzigd 2025-08-26, 2026-10-26]
+- **Geïnduceerde bevingen** door mijnbouw, vooral door de **gaswinning in Groningen**.<sup id="ref-C-33"><a href="#note-C-33">[33]</a></sup>
 - De gaswinning uit het **Groningenveld** wordt volledig beëindigd; de sluitingswet trad in werking op
-  **19 april 2024** en de productie is op nul gezet.
-  [BRON: https://www.rijksoverheid.nl/actueel/nieuws/2024/04/18/wet-sluiting-groningenveld-gaat-per-19-april-in, 2026-10-26]
+  **19 april 2024** en de productie is op nul gezet.<sup id="ref-C-34"><a href="#note-C-34">[34]</a></sup>
 
 #### C.4.2 Officieel plan
 
 - Overheid biedt hulp bij grote schade of maatschappelijke onrust: gemeenten, veiligheidsregio's en
   hulpdiensten zorgen voor slachtoffers en informatie; gebouwen, wegen en bruggen worden gecontroleerd.
-- Informatie via veiligheidsregio, rijksoverheid.nl, regionale radio en NL-Alert.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/aardbeving, 2026-10-26]
+- Informatie via veiligheidsregio, rijksoverheid.nl, regionale radio en NL-Alert.<sup id="ref-C-35"><a href="#note-C-35">[35]</a></sup>
 
 #### C.4.3 Waarschuwing
 
@@ -934,8 +1001,7 @@ omhooggedrukt.
 
 - Zet **dakpannen** recht en vast; controleer de **schoorsteen**.
 - Zet **kasten** vast en hang zware voorwerpen (klokken, lampen, schilderijen) goed op.
-- Zaklamp bij de hand.
-- [BRON: idem]
+- Zaklamp bij de hand.<sup id="ref-C-35-2"><a href="#note-C-35">[35]</a></sup>
 
 #### C.4.5 Tijdens
 
@@ -976,20 +1042,18 @@ omhooggedrukt.
 
 - Stroomuitval van **72 uur of langer** ontregelt alles: telefooncentrales, mobiel netwerk (binnen
   enkele uren), cv-installaties, waterdruk in flats (pompen), koeling, pinnen, verkeerslichten, ov,
-  liften. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/geen-stroom, gewijzigd 2026-02-05, 2026-10-26]
+  liften.<sup id="ref-C-36"><a href="#note-C-36">[36]</a></sup>
 - **Oorzaken:** cyberaanval, sabotage, overbelasting van het net, extreem weer, aardbeving,
   ruimteweer.
 - **Betrouwbaarheid:** 99,99%; gemiddelde onderbreking ca. **70 minuten per jaar**; in 2025 werd een
-  gemiddelde klant **0,316 keer** getroffen. [BRON: NIPV-rapport stroomuitval, mei 2026, 2026-10-26]
+  gemiddelde klant **0,316 keer** getroffen.<sup id="ref-C-37"><a href="#note-C-37">[37]</a></sup>
 - **Leveringszekerheid staat onder druk na 2030:** TenneT verwacht voor 2033 **12,6 uur** en voor
-  2035 **9,2 uur** onvervulde vraag per jaar, boven de norm van 4 uur.
-  [BRON: https://www.tennet.eu/nl-en/news/electricity-supply-security-under-pressure-after-2030, 2026-10-26]
+  2035 **9,2 uur** onvervulde vraag per jaar, boven de norm van 4 uur.<sup id="ref-C-38"><a href="#note-C-38">[38]</a></sup>
 
 #### C.5.2 Officieel plan
 
 - **Nationaal Crisisplan Elektriciteit:** wie wat doet bij een elektriciteitscrisis (overheid,
-  TenneT, producenten, netbeheerders), inclusief communicatieafspraken.
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26]
+  TenneT, producenten, netbeheerders), inclusief communicatieafspraken.<sup id="ref-C-39"><a href="#note-C-39">[39]</a></sup>
 - **Prioriteitsvolgorde bij tekort:** (a) openbare orde en veiligheid, volksgezondheid;
   (b) kritische industriële processen, nutsbedrijven en basisvoorziening; (c) overige industrie,
   publieke gebouwen, bedrijven, consumenten — **voor zover technisch mogelijk**.
@@ -1003,17 +1067,14 @@ omhooggedrukt.
   instellingen moeten dat zelf regelen. Officieel: "in heel Nederland zijn onvoldoende
   noodstroomvoorzieningen beschikbaar om alle instellingen en huishoudens te voorzien."
   Grote ziekenhuizen hebben meestal back-up, kleine klinieken en zorginstellingen vaak niet;
-  na **24–72 uur** wordt **brandstof** de beperkende factor.
-  [BRON: Nationaal Crisisplan Elektriciteit 2021 + NIPV-rapport mei 2026, 2026-10-26]
+  na **24–72 uur** wordt **brandstof** de beperkende factor.<sup id="ref-C-40"><a href="#note-C-40">[40]</a></sup>
 - **Netbeheerders:** **TenneT** (hoogspanning, landelijk) en **Gasunie/GTS** (gas). Regionaal:
   **Liander** (Friesland, Flevoland, Gelderland, Noord-Holland, Zuid-Holland, Amsterdam),
   **Enexis** (Groningen, Drenthe, Overijssel, Noord-Brabant, Limburg), **Stedin** (Utrecht, Zeeland,
   groot deel Zuid-Holland), **Coteq** (Twente en Hardenberg), **RENDO** (Drenthe/Overijssel,
-  vooral gas), **Westland Infra** (Westland, Midden-Delfland, Botlek).
-  [BRON: https://www.netbeheernederland.nl/onze-leden, 2026-10-26]
+  vooral gas), **Westland Infra** (Westland, Midden-Delfland, Botlek).<sup id="ref-C-41"><a href="#note-C-41">[41]</a></sup>
 - **Compensatie:** huishoudens tot 3×25 A krijgen **€35** na meer dan 4 uur onderbreking, plus
-  **€20 per volgende 4 uur**, automatisch uitgekeerd (bij 15 uur: €75).
-  [BRON: https://www.netbeheernederland.nl/storingen, 2026-10-26]
+  **€20 per volgende 4 uur**, automatisch uitgekeerd (bij 15 uur: €75).<sup id="ref-C-42"><a href="#note-C-42">[42]</a></sup>
 
 #### C.5.3 Waarschuwing
 
@@ -1026,8 +1087,7 @@ omhooggedrukt.
 #### C.5.4 Voor
 
 - **Noodpakket** met drinkwater, houdbaar eten, zaklamp, radio op batterijen, opgeladen powerbank.
-- **Contant geld:** €70 per volwassene en €30 per kind voor de eerste 72 uur.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/elektronisch-betalen, 2026-10-26]
+- **Contant geld:** €70 per volwassene en €30 per kind voor de eerste 72 uur.<sup id="ref-C-43"><a href="#note-C-43">[43]</a></sup>
 - **Eén telefoon** thuis aan laten voor NL-Alert; anderen zuinig gebruiken.
 - **Powerbank** vol; autolader aanwezig.
 - **Radio** op batterijen/zonne-energie/dynamo met FM én DAB, afgestemd op je regionale omroep.
@@ -1087,20 +1147,16 @@ omhooggedrukt.
 #### C.6.1 Risico in Nederland
 
 - De samenleving leunt op digitale systemen: contact, nieuws, navigatie, ov, bankieren, winkelen.
-  Sabotage of uitval van telecom of digitale infrastructuur raakt alles tegelijk.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, gewijzigd 2025-08-14, 2026-10-26]
+  Sabotage of uitval van telecom of digitale infrastructuur raakt alles tegelijk.<sup id="ref-C-44"><a href="#note-C-44">[44]</a></sup>
 - **Drie fysieke mobiele netwerken:** KPN, Odido, VodafoneZiggo. Dekkingseis: **98% van de
-  landoppervlakte per gemeente buiten, ≥10 Mbit/s**, exclusief Natura 2000 en buitenwater.
-  [BRON: https://www.rdi.nl/onderwerpen/telecommunicatie/telecomaanbieders/dekkingseis-en-snelheidsverplichting, 2026-10-26]
+  landoppervlakte per gemeente buiten, ≥10 Mbit/s**, exclusief Natura 2000 en buitenwater.<sup id="ref-C-45"><a href="#note-C-45">[45]</a></sup>
 - **2G/3G wordt uitgefaseerd:** KPN 3G uit (2022), 2G gefaseerd uit vanaf maart 2026, definitief
   **1 december 2027**; Odido 2G uit (2023), 3G vanaf augustus 2026; VodafoneZiggo 3G uit (2020), 2G
-  "minimaal tot december 2026". Gevolg: **eCall** in ca. 1,8 miljoen auto's stopt met werken.
-  [BRON: https://www.kpn.com/netwerk-update; Kamerstuk 24095-593, 2026-10-26]
+  "minimaal tot december 2026". Gevolg: **eCall** in ca. 1,8 miljoen auto's stopt met werken.<sup id="ref-C-46"><a href="#note-C-46">[46]</a></sup>
 - **Kabels:** **99% van het wereldwijde internetverkeer** loopt via zeekabels; landingspunten in
   Nederland o.a. IJmuiden, Domburg, Castricum, Zandvoort, Callantsoog, Eemshaven, Scheveningen.
-  Kabels op de Noordzeebodem worden door Kustwacht en Koninklijke Marine begeleid en beschermd.
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/beschermen-infrastructuur-noordzee, 2026-10-26]
-- **AMS-IX:** **904** aangesloten netwerken, piekverkeer **15,8 Tb/s**. [BRON: https://www.ams-ix.net/ams, 2026-10-26]
+  Kabels op de Noordzeebodem worden door Kustwacht en Koninklijke Marine begeleid en beschermd.<sup id="ref-C-47"><a href="#note-C-47">[47]</a></sup>
+- **AMS-IX:** **904** aangesloten netwerken, piekverkeer **15,8 Tb/s**.<sup id="ref-C-48"><a href="#note-C-48">[48]</a></sup>
 
 #### C.6.2 Officieel plan
 
@@ -1108,16 +1164,14 @@ omhooggedrukt.
   contactpunt en coördineert.
 - **Cyberbeveiligingswet (Cbw, NIS2):** van kracht **15 augustus 2026**, vervangt de Wbni; geldt voor
   **>8.000 organisaties** in **18 sectoren**, met registratieplicht, zorgplicht en **24-uurs
-  meldplicht** bij incidenten. [BRON: https://www.ncsc.nl/cyberbeveiligingswet-nis2, 2026-10-26]
+  meldplicht** bij incidenten.<sup id="ref-C-49"><a href="#note-C-49">[49]</a></sup>
 - **Wet weerbaarheid kritieke entiteiten (Wwke, CER):** ook van kracht **15 augustus 2026**;
-  **15 sectoren**, ca. **500 organisaties**. [BRON: https://www.nctv.nl/onderwerpen/v/vitale-infrastructuur, 2026-10-26]
+  **15 sectoren**, ca. **500 organisaties**.<sup id="ref-C-50"><a href="#note-C-50">[50]</a></sup>
 - **Noodcommunicatievoorziening (NCV):** apart, fysiek gescheiden IP-netwerk voor de overheid en
   hulpdiensten, uitgevoerd door KPN. **Let op:** bij stroomuitval blijven individuele
   aansluitingen **2–3 uur** (soms 8 uur) in de lucht; het platform zelf draait op diesel zolang de
-  brandstof duurt. Gebruikers moeten zelf UPS of generator regelen.
-  [BRON: https://veiligheidsregiogroningen.nl/app/uploads/2025/11/13.3.-Redundantie-NCV-bij-elektriciteitsuitval.pdf, 2026-10-26]
-- **Amateurradio (DARES)** staat in crisisplannen als alternatief communicatiekanaal.
-  [BRON: Nationaal Crisisplan Elektriciteit, 2026-10-26]
+  brandstof duurt. Gebruikers moeten zelf UPS of generator regelen.<sup id="ref-C-51"><a href="#note-C-51">[51]</a></sup>
+- **Amateurradio (DARES)** staat in crisisplannen als alternatief communicatiekanaal.<sup id="ref-C-52"><a href="#note-C-52">[52]</a></sup>
 
 #### C.6.3 Waarschuwing
 
@@ -1135,8 +1189,7 @@ omhooggedrukt.
 - Houd slimme apparaten up-to-date.
 - **Noodradio** die je kunt opladen, opwinden of op batterijen werkt.
 - Spreek met familie en buren een **fysiek verzamelpunt** af, want bellen kan wegvallen.
-- Houd **contant geld** en een **papieren kaart** van je omgeving.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, 2026-10-26]
+- Houd **contant geld** en een **papieren kaart** van je omgeving.<sup id="ref-C-53"><a href="#note-C-53">[53]</a></sup>
 
 #### C.6.5 Tijdens
 
@@ -1178,8 +1231,7 @@ omhooggedrukt.
 #### C.7.1 Risico in Nederland
 
 - Kraanwater is van hoge kwaliteit, maar de levering kan uitvallen door werkzaamheden, een kapotte
-  leiding, vervuild water, cyberaanval, sabotage, nucleair incident, extreem weer of overstroming.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/drinkwater, gewijzigd 2025-08-26, 2026-10-26]
+  leiding, vervuild water, cyberaanval, sabotage, nucleair incident, extreem weer of overstroming.<sup id="ref-C-54"><a href="#note-C-54">[54]</a></sup>
 - **Flats:** bij stroomuitval valt de pomp uit; **vanaf de derde verdieping** komt er minder of geen
   water uit de kraan.
 - **Riool:** bij stroomuitval werken rioolgemalen niet; bij overstroming kan rioolwater zich mengen
@@ -1194,8 +1246,7 @@ omhooggedrukt.
   1 liter voor eten). Dat gebeurt met **mobiele watertanks met tapkranen** op **distributiepunten die
   de gemeente aanwijst**. Je moet zelf flessen, jerrycans of pannen meenemen.
 - **Kookadvies:** voldoet kraanwater niet aan de eisen, dan krijg je een NL-Alert met het advies het
-  water **3 minuten te koken**, te laten afkoelen en dan pas te gebruiken.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/drinkwater, 2026-10-26]
+  water **3 minuten te koken**, te laten afkoelen en dan pas te gebruiken.<sup id="ref-C-55"><a href="#note-C-55">[55]</a></sup>
 
 #### C.7.3 Waarschuwing
 
@@ -1212,8 +1263,7 @@ omhooggedrukt.
 - Kraanwater is geschikt voor de voorraad als je **schone flessen** gebruikt, goed afsluit en het
   **elk half jaar ververst**.
 - Zorg voor een **schone emmer, lege flessen of jerrycan** om nooddrinkwater op te halen.
-- Weet waar je **hoofdkraan** zit.
-- [BRON: idem]
+- Weet waar je **hoofdkraan** zit.<sup id="ref-C-55-2"><a href="#note-C-55">[55]</a></sup>
 
 #### C.7.5 Tijdens
 
@@ -1256,18 +1306,15 @@ omhooggedrukt.
 #### C.8.1 Risico in Nederland
 
 - **Er is op dit moment genoeg voedsel**, in Nederland en in de EU. Schaarste kan ontstaan door
-  hamsteren, oorlog, blokkades van distributiecentra of uitval van logistiek.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/lege-schappen, gewijzigd 2025-08-14, 2026-10-26]
+  hamsteren, oorlog, blokkades van distributiecentra of uitval van logistiek.<sup id="ref-C-56"><a href="#note-C-56">[56]</a></sup>
 - **Gas en olie:** genoeg voorraad, maar een tekort elders in Europa werkt door in prijs en
-  beschikbaarheid. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/brandstof, 2025-08-14]
+  beschikbaarheid.<sup id="ref-C-57"><a href="#note-C-57">[57]</a></sup>
 - **Nederland heeft geen nationale voedselvoorraad.** De overheid rekent op markt en EU en adviseert
   huishoudens **72 uur** zelfvoorzienend te zijn. Onderzoekers adviseerden in 2026 een voorraad voor
   **8 dagen**; dat advies is **niet** overgenomen; de buffer wordt bij supermarkten en
-  distributiecentra gelegd. Een **Landelijk Crisisplan Voedselzekerheid** is gepland voor **2027**.
-  [BRON: https://nos.nl/artikel/2632202-kabinet-wil-nog-geen-voedselvoorraad-voor-acht-dagen-adviseren, 2026-10-26]
+  distributiecentra gelegd. Een **Landelijk Crisisplan Voedselzekerheid** is gepland voor **2027**.<sup id="ref-C-58"><a href="#note-C-58">[58]</a></sup>
 - **Voorraad in de voedselketen:** ca. **1 week** bewerkt voedsel bij producenten, dc's en winkels;
-  geïmporteerde bulk (soja, palmolie) 2–6 weken.
-  [BRON: https://www.clingendael.org/publication/voedselvoorraden-nederland-voorbereid-verspilling, 2026-10-26]
+  geïmporteerde bulk (soja, palmolie) 2–6 weken.<sup id="ref-C-59"><a href="#note-C-59">[59]</a></sup>
 
 #### C.8.2 Officieel plan
 
@@ -1275,19 +1322,18 @@ omhooggedrukt.
   (richtlijn 2009/119/EG). Verplichting 2025–2026: **4.100 kt** olie-equivalent; werkelijke voorraad
   eind 2025: **3.933 kt**; minimum berekend: 2.306 kt. Deel ligt in **België en Duitsland**, in
   zoutcavernes en terminals, binnen 3 vaardagen van Nederland; **20 kt nood-diesel** is direct
-  leverbaar. [BRON: https://cova.nl/onze-opdracht/ en jaarstukken 2025, 2026-10-26]
+  leverbaar.<sup id="ref-C-60"><a href="#note-C-60">[60]</a></sup>
 - **Rantsoenering:** het instrument is het **distributieplan diesel**, bijlage bij het **Landelijk
   Crisisplan Olie** (niet openbaar). Rantsoenering pas in **fase 4** van het LCP-O, via staatsnoodrecht
   (Distributiewet, Vorderingswet, Prijzennoodwet), met koninklijk besluit. Concept-prioriteit:
   (1) hulpdiensten en voedselketen, (2) herstel vitale infrastructuur, (3) al het overige via
-  pomprantsoenering. [BRON: https://www.dcc-ienw.nl/ — LCP-O, 2026-10-26]
+  pomprantsoenering.<sup id="ref-C-61"><a href="#note-C-61">[61]</a></sup>
 - **Gas:** **Landelijk Crisisplan Gas (LCP-G)**, herzien **oktober 2026**, met het **Bescherm- en
   Herstelplan gas (BH-G)** als maatregelenladder. Bij tekort gaat gas naar essentiële instellingen
-  (ziekenhuizen); huishoudens wordt gevraagd op piekmomenten (18.00–20.00) minder te verbruiken.
-  [BRON: https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/actualisatie-crisisplan-en-leveringszekerheid-winter-27-28, 2026-10-26]
+  (ziekenhuizen); huishoudens wordt gevraagd op piekmomenten (18.00–20.00) minder te verbruiken.<sup id="ref-C-62"><a href="#note-C-62">[62]</a></sup>
 - **Medicijnen:** geen staatsvoorraad; **groothandels 2 weken**, **leveranciers 6 weken** voorraad
   volgens de Geneesmiddelenwet; tekorten worden gemeld bij het Meldpunt
-  geneesmiddelentekorten. [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26]
+  geneesmiddelentekorten.<sup id="ref-C-39-2"><a href="#note-C-39">[39]</a></sup>
 
 #### C.8.3 Waarschuwing
 
@@ -1299,14 +1345,14 @@ omhooggedrukt.
 #### C.8.4 Voor
 
 - **72 uur houdbaar voedsel** per persoon: blikgroenten, bonen, noten, gedroogd fruit, rijst, pasta,
-  houdbaar brood, UHT-melk, olie. [BRON: https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, gewijzigd 2026-10-08, 2026-10-26]
+  houdbaar brood, UHT-melk, olie.<sup id="ref-C-63"><a href="#note-C-63">[63]</a></sup>
 - **Water** 3 L p.p.p.d. (zie C.7).
 - **Babyvoeding, speciale dieetvoeding, huisdierenvoer.**
 - **Blikopener**, campingkooktoestel met brandstof (buiten gebruiken), aansteker/lucifers.
 - **Contant geld** (€70/volwassene, €30/kind).
 - **Tank vol** houden; niet hamsteren bij geruchten.
 - **Medicijnen** voor 2 weken; herhaalrecept tijdig.
-- **Niet hamsteren**: dat veroorzaakt juist de schaarste. [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/lege-schappen, 2026-10-26]
+- **Niet hamsteren**: dat veroorzaakt juist de schaarste.<sup id="ref-C-64"><a href="#note-C-64">[64]</a></sup>
 
 #### C.8.5 Tijdens
 
@@ -1348,23 +1394,22 @@ omhooggedrukt.
 #### C.9.1 Risico in Nederland
 
 - Infectieziekten verspreiden zich sneller bij rampen (vervuild drinkwater, slechte hygiëne, drukte
-  in opvang). [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitbraak-van-infectieziekten, gewijzigd 2025-08-14, 2026-10-26]
+  in opvang).<sup id="ref-C-65"><a href="#note-C-65">[65]</a></sup>
 - **Dierziekten (zoönosen)** kunnen op mensen overgaan; raak dode dieren niet aan zonder bescherming.
 - **COVID-19 in Nederland:** als onderliggende doodsoorzaak overleden **20.173** mensen in 2020,
   **19.608** in 2021, **8.267** in 2022, **3.082** in 2023, **1.231** in 2024 en **390** in 2025
-  (voorlopig) — samen **52.751** in 2020–2025. [BRON: CBS, tabel 7052_95, 2026-10-26]
+  (voorlopig) — samen **52.751** in 2020–2025.<sup id="ref-C-66"><a href="#note-C-66">[66]</a></sup>
 - **Pandemische paraatheid:** het kabinet trekt **€177 miljoen structureel** uit voor versterking van
   de publieke en curatieve zorg, inclusief infectieziektebestrijding. Er komt **geen** eindevaluatie van
   het vorige beleidsprogramma. De WHO/ECDC-doorlichting van Nederland was in **januari 2025**; de
-  volgende ronde is in **oktober 2027**. [BRON: brief aan de Eerste Kamer, 2 april 2026; https://www.rivm.nl/infectieziektebestrijding/pandemische-paraatheid, 2026-10-26]
+  volgende ronde is in **oktober 2027**.<sup id="ref-C-67"><a href="#note-C-67">[67]</a></sup>
 
 #### C.9.2 Officieel plan
 
 - **RIVM** (landelijk), **GGD'en** (regionaal), **LCI** (Landelijke Coördinatie Infectieziektebestrijding),
   **OMT** (Outbreak Management Team) adviseert.
 - **Wet publieke gezondheid** geeft de minister bevoegdheden om maatregelen op te leggen.
-- Vaccinaties worden gratis aangeboden aan risicogroepen en kinderen via het Rijksvaccinatieprogramma.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitbraak-van-infectieziekten, 2026-10-26]
+- Vaccinaties worden gratis aangeboden aan risicogroepen en kinderen via het Rijksvaccinatieprogramma.<sup id="ref-C-68"><a href="#note-C-68">[68]</a></sup>
 
 #### C.9.3 Waarschuwing
 
@@ -1391,8 +1436,7 @@ omhooggedrukt.
 - **Ventileer** je huis goed.
 - **Bewaar voedsel** op de juiste temperatuur; maak keuken, toilet en badkamer regelmatig schoon.
 - **Was je handen na diercontact**; raak dode dieren niet aan.
-- **Volg officiële richtlijnen** over bezoek, reizen, evenementen en quarantaine.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitbraak-van-infectieziekten, 2026-10-26]
+- **Volg officiële richtlijnen** over bezoek, reizen, evenementen en quarantaine.<sup id="ref-C-68-2"><a href="#note-C-68">[68]</a></sup>
 
 #### C.9.6 Na
 
@@ -1423,27 +1467,25 @@ omhooggedrukt.
 - Nederland heeft grote chemische clusters: **Rotterdam/Botlek**, **Chemelot (Geleen)**,
   **Amsterdamse haven**, **Delfzijl/Eemshaven**, plus **Seveso-inrichtingen** verspreid over het land.
 - **Sinds de Omgevingswet (1 januari 2024)** heet een "Brzo-bedrijf" wettelijk een
-  **"Seveso-inrichting"**; het gezamenlijke inspectieprogramma heet **SEVESO+**.
-  [BRON: https://seveso.nl/wat-is-seveso-bedrijf; https://seveso-plus.nl/inspectieresultaten/seveso-inrichtingenlijst/, 2026-10-26]
+  **"Seveso-inrichting"**; het gezamenlijke inspectieprogramma heet **SEVESO+**.<sup id="ref-C-69"><a href="#note-C-69">[69]</a></sup>
 - **Aantal (peildatum 1 oktober 2026): 410 inrichtingen** — 265 met een hoge drempel, 145 met een lage
-  drempel. [BRON: https://seveso-plus.nl/publish/pages/154279/overzicht-seveso-inrichtingen-1-oktober-2026.pdf, 2026-10-26]
+  drempel.<sup id="ref-C-70"><a href="#note-C-70">[70]</a></sup>
 - **Verdeling over veiligheidsregio's (zelfde lijst):** Rotterdam-Rijnmond **103**, Midden- en
   West-Brabant **49**, Groningen **37**, Zuid-Limburg **25**, Zeeland **22**, Amsterdam-Amstelland **19**.
   Veelvoorkomende locaties: Botlek **31**, Moerdijk **22**, Europoort **15**, Vondelingenplaat **11**,
-  Geleen en Urmond **10**, Farmsum/Delfzijl **12**. [BRON: idem]
-- **Chemelot:** meer dan **800 ha**, **60+ fabrieken**, **100+ bedrijven**. [BRON: https://www.limburg.nl/publish/pages/6273/rapport_evaluatie_convenant_lec_en_nipv.pdf, 2026-10-26]
+  Geleen en Urmond **10**, Farmsum/Delfzijl **12**.<sup id="ref-C-70-2"><a href="#note-C-70">[70]</a></sup>
+- **Chemelot:** meer dan **800 ha**, **60+ fabrieken**, **100+ bedrijven**.<sup id="ref-C-71"><a href="#note-C-71">[71]</a></sup>
 - **Transport van gevaarlijke stoffen — vervoerswijzeaandelen:** pijpleidingen **52%**, binnenvaart
   **40%**, weg **6%**, spoor **2%**. Ca. **10%** van de goederenlading is gevaarlijk, waarvan 85%
-  brandbaar en 15% giftig. [BRON: https://www.prorail.nl/veiligheid/veilig-goederenvervoer/gevaarlijke-stoffen, bijgewerkt 2025-06-02, 2026-10-26]
+  brandbaar en 15% giftig.<sup id="ref-C-72"><a href="#note-C-72">[72]</a></sup>
 - **Spoor 2025:** **8,4 miljoen** goederentreinkilometers; **Betuweroute 1,4 miljoen** (−36%),
-  Havenspoorlijn 1,2 miljoen (−4%), gemengd net 5,7 miljoen (+15%); totaal **38,1 miljoen ton** (−4%).
-  [BRON: https://www.prorail.nl/siteassets/homepage/over-ons/documenten/pr-jaarrapport-spoorgoederenverkeer-2025.pdf, 2026-10-26]
+  Havenspoorlijn 1,2 miljoen (−4%), gemengd net 5,7 miljoen (+15%); totaal **38,1 miljoen ton** (−4%).<sup id="ref-C-73"><a href="#note-C-73">[73]</a></sup>
 - **Pijpleidingen:** ca. **300.000 km** ondergronds, waarvan ca. **18.000 km** voor gevaarlijke stoffen
   (gas, brandbare vloeistoffen). Regels: Besluit externe veiligheid buisleidingen; routes staan op
-  provinciale risicokaarten. [BRON: https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/goederenvervoer/transport-van-gevaarlijke-stoffen-via-buisleidingen, 2026-10-26]
+  provinciale risicokaarten.<sup id="ref-C-74"><a href="#note-C-74">[74]</a></sup>
 - **Risicokaart:** toont aardbeving, kernongeval, luchtvaart, natuurbrand, gevaarlijke stoffen,
   waterincident, overstroming, verstoring openbare orde, transport gevaarlijke stoffen, tunnels, wegen
-  en grote publieke gebouwen. [BRON: https://www.risicokaart.nl/, 2026-10-26]
+  en grote publieke gebouwen.<sup id="ref-C-75"><a href="#note-C-75">[75]</a></sup>
 
 #### C.10.2 Officieel plan
 
@@ -1484,8 +1526,7 @@ omhooggedrukt.
 7. **Bij aanraking met een wolk:** kleed je direct uit, stop de kleding in een afgesloten zak, douche
    en bel de huisarts.
 8. **Ga pas naar buiten als de overheid, brandweer of rampenzender zegt dat het veilig is.** Het
-   **stoppen van de sirene is geen vrijgave.**
-[BRON: https://www.vrmwb.nl/wat-te-doen-bij-1/ongeval-met-gevaarlijke-stoffen, 2026-10-26]
+   **stoppen van de sirene is geen vrijgave.** <sup id="ref-C-76"><a href="#note-C-76">[76]</a></sup>
 
 #### C.10.6 Na
 
@@ -1516,17 +1557,15 @@ omhooggedrukt.
 
 - **Borssele (KCB)** — enige operationele kerncentrale, Zeeland, eigenaar **EPZ**; **485 MW**,
   ca. **485.000 huishoudens**, **ca. 3%** van de Nederlandse elektriciteit; ca. 30 ANVS-inspecties
-  per jaar. [BRON: https://www.autoriteitnvs.nl/voorlichting/nucleaire-inrichtingen-nucleaire-veiligheid/kerncentrale-borssele-epz, 2026-10-26]
+  per jaar.<sup id="ref-C-77"><a href="#note-C-77">[77]</a></sup>
 - **Vergunning** loopt tot **31 december 2033**; wetswijziging voor verlenging is in 2026 aangenomen;
-  EPZ verwacht de aanvraag medio 2027 in te dienen, ANVS-besluit verwacht 2028.
-  [BRON: https://www.autoriteitnvs.nl/.../bedrijfsduurverlenging-kerncentrale-borssele, 2026-10-26]
+  EPZ verwacht de aanvraag medio 2027 in te dienen, ANVS-besluit verwacht 2028.<sup id="ref-C-78"><a href="#note-C-78">[78]</a></sup>
 - **HFR Petten** (onderzoeksreactor, **45 MWth**): levert **ca. 65% van de Europese** en **30% van de
   wereldwijde** vraag naar medische isotopen; wordt vervangen door **PALLAS**.
 - **HOR Delft**: onderzoeksreactor, **2 MWth**.
 - **Buitenlandse centrales dicht bij Nederland:** Doel (BE, ca. 2,8 km van de grens), Emsland (DE;
   **gesloten in 2024**), Mol (BE), Tihange (BE).
-- **Kans op een ongeval is klein**, maar niet nul; de overheid houdt rekening met stralingsincidenten.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/nucleair, gewijzigd 2025-08-14, 2026-10-26]
+- **Kans op een ongeval is klein**, maar niet nul; de overheid houdt rekening met stralingsincidenten.<sup id="ref-C-79"><a href="#note-C-79">[79]</a></sup>
 
 #### C.11.2 Officieel plan
 
@@ -1546,8 +1585,7 @@ Kernenergie"). Preparatiezones voor **Borssele**:
   jodium 25/100 km; Mol — schuilen 20 km, jodium 20 km; Tihange — jodium (kinderen/zwangeren) 100 km.
 - Zones zijn **preparatiezones**; de werkelijke maatregelen kunnen kleiner of groter zijn, op advies
   van het **CETsn** (Crisis Expert Team straling en nucleair), afhankelijk van de vrijgekomen
-  hoeveelheid, afstand, weer en windrichting.
-- [BRON: LCP-S 2021 via open.overheid.nl; ANVS maatregelenpagina, 2026-10-26]
+  hoeveelheid, afstand, weer en windrichting.<sup id="ref-C-80"><a href="#note-C-80">[80]</a></sup>
 
 **Gemeenten in de Borssele-zones** (Algemeen rampbestrijdingsplan Zeeland, versie 2018 — de zones zelf
 komen uit het LCP-S van 2021; controleer bij je gemeente of de indeling nog actueel is):
@@ -1572,14 +1610,12 @@ komen uit het LCP-S van 2021; controleer bij je gemeente of de indeling nog actu
 
 - Loopt een zone dwars door een gemeente, dan krijgt **de hele gemeente** (postcodegebied) tabletten.
 - Wie **>100 km** van een kerncentrale woont, heeft geen tabletten nodig — behalve als je er op het
-  moment van een ongeval binnen 100 km bent.
-- [BRON: https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten, gewijzigd 2026-09-14, 2026-10-26]
+  moment van een ongeval binnen 100 km bent.<sup id="ref-C-81"><a href="#note-C-81">[81]</a></sup>
 
 **Stand van de jodiumtabletten:**
 - **Ruim 1,5 miljoen huishoudens** in de omgeving van een kernreactor of kerncentrale hebben
   jodiumtabletten in huis. (De ANVS noemt op een eigen pagina "ruim 1,2 miljoen" — de twee
-  overheidsbronnen spreken elkaar tegen.)
-  [BRON: https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten; https://www.autoriteitnvs.nl/voorlichting/voorbereiden-op-crisissituaties/kernongeval/maatregelen-bij-een-kernongeval, 2026-10-26]
+  overheidsbronnen spreken elkaar tegen.)<sup id="ref-C-82"><a href="#note-C-82">[82]</a></sup>
 - **Juli 2021:** verspreiding in de 1e ring (verving de voorraad uit 2010–2015).
 - Huidige tabletten zijn houdbaar tot **eind 2026** of **eind 2027**; het kabinet neemt **in 2026** een
   definitief besluit over een nieuwe landelijke verspreiding, **uiterlijk in 2027**.
@@ -1590,16 +1626,14 @@ komen uit het LCP-S van 2021; controleer bij je gemeente of de indeling nog actu
   Drenthe, IJsselland, Twente, Noord- en Oost-Gelderland, Gelderland-Midden en Flevoland**; lever ze in.
 - **Dosering:** <1 maand ¼ tablet; 1 maand–3 jaar ½; 3–12 jaar 1; ≥12 jaar en volwassenen ≤40 jaar 2;
   zwangeren 2. Elk tablet = **65 mg kaliumjodide**.
-- **Alleen innemen op instructie van de overheid**, via NL-Alert en de rampenzender.
-- [BRON: https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten, 2026-10-26]
+- **Alleen innemen op instructie van de overheid**, via NL-Alert en de rampenzender.<sup id="ref-C-83"><a href="#note-C-83">[83]</a></sup>
 
 **Maatregelen die de overheid kan nemen:** schuilen (ramen en deuren dicht, ventilatie uit; kan tot
 **72 uur** duren), evacueren, jodiumtabletten, en indirecte maatregelen: graasverbod, oogst- en
-slachtverbod, verkoopverbod van besmette producten, inlaatpunten voor drinkwater sluiten.
-[BRON: https://www.autoriteitnvs.nl/voorlichting/voorbereiden-op-crisissituaties/kernongeval/maatregelen-bij-een-kernongeval, 2026-10-26]
+slachtverbod, verkoopverbod van besmette producten, inlaatpunten voor drinkwater sluiten.<sup id="ref-C-84"><a href="#note-C-84">[84]</a></sup>
 
 **Meting:** het **Nationaal Meetnet Radioactiviteit** (RIVM) meet op **>150 locaties** 24/7
-gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nationaal-meetnet-radioactiviteit/locaties, 2026-10-26]
+gammastraling en alfa/bèta-activiteit in lucht.<sup id="ref-C-85"><a href="#note-C-85">[85]</a></sup>
 
 #### C.11.3 Waarschuwing
 
@@ -1616,8 +1650,7 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
   (medicijnenkast, EHBO-doos, meterkast).
 - Weet hoe je **gas, elektriciteit en ventilatie** uitschakelt.
 - **Noodpakket** voor 72 uur (schuilen kan zo lang duren).
-- **Dosering** op papier, per gezinslid.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/nucleair/een-nucleair-ongeval-in-nederland, gewijzigd 2026-08-13, 2026-10-26]
+- **Dosering** op papier, per gezinslid.<sup id="ref-C-86"><a href="#note-C-86">[86]</a></sup>
 
 #### C.11.5 Tijdens
 
@@ -1662,10 +1695,8 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
 - **Officiële Nederlandse positie:** er is **geen** adviescommissie-rapport over EMP. In **2010** en
   **2012** beoordeelden de diensten en Defensie de kans op een kern-EMP als **"erg klein"** respectievelijk
   **"laag"**; bescherming is "zeer moeilijk en kostbaar"; een interdepartementale werkgroep werd
-  **niet nodig** geacht. Er is **geen** nationale EMP-norm, voorraad of publieksadvies.
-  [BRON: Kamerstukken 30821-10 (2010) en Aanhangsel 2011–2012-2104, 2026-10-26]
-- **De Rijksbrede Risicoanalyse Nationale Veiligheid 2026** bevat **geen** EMP-scenario.
-  [BRON: https://www.nctv.nl/site/binaries/site-content/collections/documents/2026/10/16/rijksbrede-risicoanalyse-nationale-veiligheid-2026/..., 2026-10-26]
+  **niet nodig** geacht. Er is **geen** nationale EMP-norm, voorraad of publieksadvies.<sup id="ref-C-87"><a href="#note-C-87">[87]</a></sup>
+- **De Rijksbrede Risicoanalyse Nationale Veiligheid 2026** bevat **geen** EMP-scenario.<sup id="ref-C-88"><a href="#note-C-88">[88]</a></sup>
 - **Ruimteweer is wél officieel belegd:** het **KNMI** verzorgt sinds **januari 2023** een 24/7
   ruimteweeralarm voor de crisiscentra van IenW en KGG (en soms rechtstreeks aan vitale sectoren) en
   neemt deel aan ICAO-luchtvaartwaarschuwingen.
@@ -1676,8 +1707,7 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
 - **Frequentie:** extreme ruimteweer-gebeurtenissen komen **enkele keren per eeuw** voor. De
   geomagnetische storm van **1989** (Québec) liet miljoenen mensen uren zonder stroom; in Nederland
   zijn toen **geen** effecten gemeld. Een storm in **februari 2022** droeg bij aan het verlies van
-  tientallen net gelanceerde LEO-satellieten.
-- [BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/ruimteweer; https://www.nlsa.nl/en/news/the-netherlands-invests-in-space-weather-forecast-to-protect-vital-sectors/, 2026-10-26]
+  tientallen net gelanceerde LEO-satellieten.<sup id="ref-C-89"><a href="#note-C-89">[89]</a></sup>
 
 #### C.12.2 Officieel plan
 
@@ -1685,8 +1715,7 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
   (C.5) met mogelijk ook uitval van telecom (C.6).
 - **KNMI** waarschuwt voor geomagnetische stormen via het 24/7-ruimteweeralarm aan de crisiscentra van
   IenW en KGG, en neemt deel aan de ICAO-luchtvaartwaarschuwingen. Netbeheerders bewaken transformatoren
-  en schakelhandelingen; exacte drempels en maatregelen zijn niet openbaar.
-  [BRON: https://www.knmi.nl/kennis-en-datacentrum/uitleg/ruimteweer; https://www.nlsa.nl/en/news/the-netherlands-invests-in-space-weather-forecast-to-protect-vital-sectors/, 2026-10-26]
+  en schakelhandelingen; exacte drempels en maatregelen zijn niet openbaar.<sup id="ref-C-89-2"><a href="#note-C-89">[89]</a></sup>
 
 #### C.12.3 Waarschuwing
 
@@ -1742,22 +1771,21 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
 
 #### C.13.1 Risico in Nederland
 
-- Een geslaagde aanval kan elektriciteit, telecom, betalen, zorg, water en logistiek tegelijk raken.
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26]
+- Een geslaagde aanval kan elektriciteit, telecom, betalen, zorg, water en logistiek tegelijk raken.<sup id="ref-C-39-3"><a href="#note-C-39">[39]</a></sup>
 - **Aanvallers:** statelijke actoren (sabotage, spionage, beïnvloeding) en criminelen (ransomware,
-  fraude). [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/cybercriminaliteit, gewijzigd 2025-12-04, 2026-10-26]
+  fraude).<sup id="ref-C-90"><a href="#note-C-90">[90]</a></sup>
 - **Digitale afhankelijkheid:** NL heeft **24,77 miljoen** mobiele aansluitingen en **22,1 miljoen**
-  M2M-SIM's. [BRON: ACM Telecommonitor Q2 2026, 2026-10-26]
+  M2M-SIM's.<sup id="ref-C-91"><a href="#note-C-91">[91]</a></sup>
 
 #### C.13.2 Officieel plan
 
 - **NCSC** (sinds 1 januari 2026 **versterkt NCSC**, met DTC en CSIRT-DSP erin) is het landelijke
-  contactpunt en coördineert bij een digitale crisis. [BRON: https://www.ncsc.nl/nieuws/dtc-en-ncsc-vanaf-2026-verder-als-versterkt-ncsc, 2026-10-26]
+  contactpunt en coördineert bij een digitale crisis.<sup id="ref-C-92"><a href="#note-C-92">[92]</a></sup>
 - **Cyberbeveiligingswet (NIS2)** en **Wet weerbaarheid kritieke entiteiten (CER)** zijn beide van
-  kracht **15 augustus 2026**. [BRON: https://www.ncsc.nl/cyberbeveiligingswet-nis2, 2026-10-26]
+  kracht **15 augustus 2026**.<sup id="ref-C-49-2"><a href="#note-C-49">[49]</a></sup>
 - **Landelijk Crisisplan Digitaal** beschrijft wie wat doet.
 - **Cyber Security Raad** adviseert het kabinet; laatste advies "Verbinding onder druk" over
-  telecomweerbaarheid (9 juli 2026). [BRON: https://www.cybersecurityraad.nl/actueel/nieuws/2026/07/09/, 2026-10-26]
+  telecomweerbaarheid (9 juli 2026).<sup id="ref-C-93"><a href="#note-C-93">[93]</a></sup>
 
 #### C.13.3 Waarschuwing
 
@@ -1775,8 +1803,7 @@ gammastraling en alfa/bèta-activiteit in lucht. [BRON: https://www.rivm.nl/nati
 - **Contant geld** en papieren gegevens.
 - **Papieren contactlijst** en **noodplan**.
 - **Niet klikken** op onverwachte links; check de afzender.
-- **Meld** verdachte berichten bij Fraudehelpdesk.
-- [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/cybercriminaliteit, 2026-10-26]
+- **Meld** verdachte berichten bij Fraudehelpdesk.<sup id="ref-C-94"><a href="#note-C-94">[94]</a></sup>
 
 #### C.13.5 Tijdens
 
@@ -1884,30 +1911,27 @@ overeind, adem rustig.
 #### C.15.1 Risico in Nederland
 
 - **Er is oorlog in Europa** door de Russische inval in Oekraïne; Nederland houdt rekening met
-  gevolgen: cyberaanvallen, sabotage, desinformatie, uitval van voorzieningen, militaire dreiging.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/internationale-spanningen, gewijzigd 2026-09-03, 2026-10-26]
+  gevolgen: cyberaanvallen, sabotage, desinformatie, uitval van voorzieningen, militaire dreiging.<sup id="ref-C-95"><a href="#note-C-95">[95]</a></sup>
 - **Nederland is NAVO-lid**; logistiek knooppunt met havens en vliegvelden; militaire colonnes en
   materieeltransport zijn normaal.
 - **Hybride dreiging:** sabotage van kabels en leidingen op de Noordzeebodem, cyberaanvallen,
-  desinformatie, beïnvloeding van verkiezingen, spionage.
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/beschermen-infrastructuur-noordzee, 2026-10-26]
+  desinformatie, beïnvloeding van verkiezingen, spionage.<sup id="ref-C-47-2"><a href="#note-C-47">[47]</a></sup>
 - **Scenario's die de overheid zelf noemt:** het kan gaan om een combinatie van grote cyberaanvallen,
   verspreiding van valse informatie, storingen bij elektronisch betalen en uitval van
-  drinkwatervoorzieningen. [BRON: internationale spanningen-pagina, 2026-10-26]
+  drinkwatervoorzieningen.<sup id="ref-C-96"><a href="#note-C-96">[96]</a></sup>
 
 #### C.15.2 Officieel plan
 
-- **Defensie** verdedigt Nederland en NAVO-grondgebied; extra investeringen en meer reservisten.
-  [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26]
+- **Defensie** verdedigt Nederland en NAVO-grondgebied; extra investeringen en meer reservisten.<sup id="ref-C-97"><a href="#note-C-97">[97]</a></sup>
 - **Bijstand** aan civiele autoriteiten via veiligheidsregio en KCR2/LOCC.
 - **Opkomstplicht** kan worden geheractiveerd bij (dreigende) oorlog; dienstplicht geldt voor **17–45
-  jaar**. [BRON: idem]
+  jaar**.<sup id="ref-C-97-2"><a href="#note-C-97">[97]</a></sup>
 - **Noodrecht:** Oorlogswet voor Nederland, Coördinatiewet uitzonderingstoestanden, noodverordening en
   noodbevel (zie B.7).
 - **Bevolkingszorg** door gemeenten: opvang, registratie, informatie, slachtofferzorg.
 - **Defensienota 2026** ("Samen voorwaarts!", 29 juni 2026): **3,5% van het bbp in 2035**, **102.000
   mensen in 2030**, schaalbaar naar **200.000** in oorlog, reservisten van 10.225 naar **20.000**.
-  Zie B.6. [BRON: Defensienota 2026, Kamerstuk 36 975 nr. 1, 2026-10-26]
+  Zie B.6.<sup id="ref-C-98"><a href="#note-C-98">[98]</a></sup>
 - **Evacuatieplannen** staan in de regionale crisisplannen en het LCP Hoogwater; er is **geen openbare
   landelijke evacuatiekaart**. [CONTROLEER per veiligheidsregio]
 
@@ -1925,7 +1949,7 @@ overeind, adem rustig.
 - **Noodpakket** voor minimaal 72 uur (liever 7 dagen): water, eten, medicijnen, radio, zaklamp,
   batterijen, contant geld, documenten.
 - **Schuilplek** bedenken: kelder, ondergrondse parkeergarage, midden van een stevig gebouw, weg van
-  glas. [BRON: internationale spanningen-pagina, 2026-10-26]
+  glas.<sup id="ref-C-96-2"><a href="#note-C-96">[96]</a></sup>
 - **Papieren kopieën** van identiteitsbewijzen, verzekeringen, medische gegevens, noodplan.
 - **Contant geld** en brandstof.
 - **Afspraken** met familie: verzamelpunt, contactpersoon buiten de regio.
@@ -1990,14 +2014,11 @@ overeind, adem rustig.
 
 - **Schiphol:** het **Crisisbestrijdingsplan Schiphol** van de veiligheidsregio Kennemerland is het
   wettelijke incidentplan voor de luchthaven en Aircraft Fuel Supply, versie 4.2, vastgesteld op
-  11 december 2024, operationeel sinds april 2025.
-  [BRON: https://www.vrk.nl/crisisbestrijdingsplan-schiphol, 2026-10-26]
+  11 december 2024, operationeel sinds april 2025.<sup id="ref-C-99"><a href="#note-C-99">[99]</a></sup>
 - **Haven van Rotterdam:** de **Rijkshavenmeester** is 24/7 verantwoordelijk voor veilige en ordelijke
   scheepvaart; twee verkeerscentrales; jaarlijks ca. **27.384 zeeschepen** en **93.680**
-  binnenvaartschepen (cijfer uit 2021). Haven Coördinatie Centrum: **+31 10 252 1000**.
-  [BRON: https://www.portofrotterdam.com/nl/over-het-havenbedrijf/onze-organisatie/rijkshavenmeester, 2026-10-26]
-- **Rijkswaterstaat** beheert **24 tunnelcomplexen**.
-  [BRON: https://www.rijkswaterstaat.nl/wegen/wegbeheer/tunnels, 2026-10-26]
+  binnenvaartschepen (cijfer uit 2021). Haven Coördinatie Centrum: **+31 10 252 1000**.<sup id="ref-C-100"><a href="#note-C-100">[100]</a></sup>
+- **Rijkswaterstaat** beheert **24 tunnelcomplexen**.<sup id="ref-C-101"><a href="#note-C-101">[101]</a></sup>
 - Bij een ongeval in een tunnel: rook, hitte, instortingsgevaar, beperkte uitgangen.
 
 #### C.16.2 Officieel plan
@@ -2005,8 +2026,7 @@ overeind, adem rustig.
 - **Nationaal crisisplan luchtvaartongevallen** beschrijft wie wat doet.
 - **DCC-IenW** coördineert bij infrastructurele crises; **ProRail** en **Rijkswaterstaat** hebben eigen
   crisisteams.
-- **Veiligheidsregio** leidt de hulpverlening en opvang ter plaatse.
-- [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26]
+- **Veiligheidsregio** leidt de hulpverlening en opvang ter plaatse.<sup id="ref-C-39-4"><a href="#note-C-39">[39]</a></sup>
 
 #### C.16.3 Waarschuwing
 
@@ -2058,18 +2078,15 @@ lift.
   De grootste evacuatie in de moderne Nederlandse geschiedenis was in **1995**: **250.000 mensen** en
   **1 miljoen dieren** werden preventief geëvacueerd uit het rivierengebied; de Waaldijk bij Ochten
   begon te schuiven maar hield. In **1993** werden **12.000** mensen geëvacueerd in Limburg. In **2021**
-  werden ca. **50.000** mensen in Limburg geëvacueerd.
-  [BRON: https://www.rijkswaterstaat.nl/nieuws/archief/2025/01/evacuatie-1995-door-extreem-hoogwater-staat-nog-scherp-op-het-netvlies, 2026-10-26]
+  werden ca. **50.000** mensen in Limburg geëvacueerd.<sup id="ref-C-102"><a href="#note-C-102">[102]</a></sup>
 - **Landelijke evacuatiebevoegdheid:** grootschalige evacuatie valt onder de **Wet verplaatsing
   bevolking**, die via bijlage A van de Coördinatiewet uitzonderingstoestanden in werking kan treden.
   Er bestaat **geen expliciete wettelijke bevoegdheid om evacuatie te bevelen**; in de praktijk is de
-  noodbevoegdheid van de burgemeester (Gemeentewet art. 176) de basis.
-  [BRON: Landelijk Crisisplan Natuurbranden, 2025; Landelijk Crisisplan Hoogwater en Overstromingen, 2026, 2026-10-26]
+  noodbevoegdheid van de burgemeester (Gemeentewet art. 176) de basis.<sup id="ref-C-103"><a href="#note-C-103">[103]</a></sup>
 - **Opvang van vluchtelingen** uit het buitenland: gemeenten krijgen opdrachten voor
   **opvanglocaties**. Het COA had op 19 oktober 2026 **329 locaties** (111 regulier, 209 noodopvang,
   9 uitgebreid), exclusief crisisnoodopvang en gemeentelijke opvang van ontheemden uit Oekraïne. Voor
-  1 januari 2027 zijn **88.000 plaatsen** nodig, bij 96% bezettingsaanname.
-  [BRON: https://www.coa.nl/nl/lijst/capaciteit-en-bezetting, 2026-10-26]
+  1 januari 2027 zijn **88.000 plaatsen** nodig, bij 96% bezettingsaanname.<sup id="ref-C-104"><a href="#note-C-104">[104]</a></sup>
 
 #### C.17.2 Officieel plan
 
@@ -2077,12 +2094,10 @@ lift.
   opvang, registratie en informatie.
 - **Veiligheidsregio** coördineert; **Rode Kruis**, **Defensie** en **GGD** ondersteunen. Het Rode
   Kruis heeft ca. **11.000 vrijwilligers** en **798** vrijwilligers in noodhulpteams die gewonden
-  behandelen en hulpverleners ondersteunen.
-  [BRON: https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/noodhulpteams/, 2026-10-26]
+  behandelen en hulpverleners ondersteunen.<sup id="ref-C-105"><a href="#note-C-105">[105]</a></sup>
 - **Rijksoverheid** kan bij grote aantallen vluchtelingen een landelijke verdeling opleggen.
 - **Bevolkingszorg** is een wettelijke gemeentetaak: informeren, onderdak en verzorging, nazorg,
-  slachtofferregistratie en schaderegistratie (Besluit veiligheidsregio's art. 2.1.3).
-  [BRON: https://nipv.nl/onderzoek/bevolkingszorg, 2026-10-26]
+  slachtofferregistratie en schaderegistratie (Besluit veiligheidsregio's art. 2.1.3).<sup id="ref-C-106"><a href="#note-C-106">[106]</a></sup>
 
 #### C.17.3 Waarschuwing
 
@@ -2144,8 +2159,7 @@ lift.
   de belangrijkste sluitbare keringen (zie C.1.2).
 - **Waarschuwingstijd** verschilt sterk per scenario: aan de kust 5–2 dagen tot 12 uur, langs de Rijn
   7–5 dagen, langs de Maas 5–2 dagen tot 24 uur. Bij een **plotselinge** doorbraak is evacuatie
-  vrijwel onmogelijk en is **verticaal evacueren** de enige optie. Zie C.1.3 voor de volledige tabel.
-  [BRON: Landelijk Crisisplan Hoogwater en Overstromingen, 2026, 2026-10-26]
+  vrijwel onmogelijk en is **verticaal evacueren** de enige optie. Zie C.1.3 voor de volledige tabel.<sup id="ref-C-107"><a href="#note-C-107">[107]</a></sup>
 
 #### C.18.2 Officieel plan
 
@@ -2154,8 +2168,7 @@ lift.
 - **Preventieve evacuatie** bij verwacht hoogwater: burgemeester/voorzitter beslist, op advies van
   waterbeheerders.
 - **Noodpompen** van DCC-IenW kunnen grote hoeveelheden water verplaatsen: een **zwembad in ca. 30
-  minuten**. Ze zijn **EU CECIS-geregistreerd** en 24/7 aanvraagbaar via dcc@rws.nl.
-  [BRON: https://www.dcc-ienw.nl/themas/noodhulp/noodpompen, 2026-10-26]
+  minuten**. Ze zijn **EU CECIS-geregistreerd** en 24/7 aanvraagbaar via dcc@rws.nl.<sup id="ref-C-108"><a href="#note-C-108">[108]</a></sup>
 - **Evacuatiestrategieën** verschillen per regio en staan in het regionale rampenbestrijdingsplan. Vraag
   ze op bij je veiligheidsregio en noteer ze op je papieren kaart. [CONTROLEER per regio]
 
@@ -2205,6 +2218,224 @@ lift.
 - [ ] Fluitje, doek en zaklamp voor markering
 - [ ] Route naar hoger gelegen gebied bekend (als evacuatie nog mogelijk is)
 
+### Noten
+
+1. <span id="note-C-1">https://www.denkvooruit.nl/risicos/risicos-in-nederland/overstroming, 2026-10-26; Rijksbegroting IenW 2027, 2026-10-26</span> [&#8593;](#ref-C-1)
+
+2. <span id="note-C-2">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen; https://unievanwaterschappen.nl/waterveiligheid/dijken-in-nederland/, 2026-10-26</span> [&#8593;](#ref-C-2)
+
+3. <span id="note-C-3">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken, 2026-10-26</span> [&#8593;](#ref-C-3)
+
+4. <span id="note-C-4">https://iplo.nl/thema/water/waterveiligheid/primaire-waterkeringen/normen/, 2026-10-26</span> [&#8593;](#ref-C-4)
+
+5. <span id="note-C-5">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/watersnoodramp-1953, 2026-10-26</span> [&#8593;](#ref-C-5)
+
+6. <span id="note-C-6">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/maatregelen-om-overstromingen-te-voorkomen/ruimte-voor-de-rivieren, 2026-10-26</span> [&#8593;](#ref-C-6)
+
+7. <span id="note-C-7">https://www.tweedekamer.nl/downloads/document?id=2021D40887; https://open.overheid.nl/documenten/5ab4fc47-7010-4b8e-bfab-cb112ffa375d/file, 2026-10-26</span> [&#8593;](#ref-C-7)
+
+8. <span id="note-C-8">https://www.overstroomik.nl/, 2026-10-26</span> [&#8593;](#ref-C-8)
+
+9. <span id="note-C-9">https://www.rijkswaterstaat.nl/water/waterbeheer/watermanagementcentrum-nederland, gewijzigd 2026-05-07, 2026-10-26</span> [&#8593;](#ref-C-9)
+
+10. <span id="note-C-10">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken/maeslantkering, gewijzigd 2026-05-22, 2026-10-26</span> [&#8593;](#ref-C-10)
+
+11. <span id="note-C-11">https://www.deltaprogramma.nl/, gewijzigd 2026-10-09, 2026-10-26</span> [&#8593;](#ref-C-11)
+
+12. <span id="note-C-12">https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/hoogwater/stormvloed; https://www.rijkswaterstaat.nl/water/waterbericht, 2026-10-26</span> [&#8593;](#ref-C-12)
+
+13. <span id="note-C-13">Landelijk Crisisplan Hoogwater en Overstromingen, 2026, via open.overheid.nl, 2026-10-26</span> [&#8593;](#ref-C-13)
+
+14. <span id="note-C-14">Regionaal rampenbestrijdingsplan hoogwater (concept) 2026 en Landelijk Crisisplan, 2026-10-26</span> [&#8593;](#ref-C-14)
+
+15. <span id="note-C-15">STOWA 2018-20, 2026-10-26</span> [&#8593;](#ref-C-15)
+
+16. <span id="note-C-16">https://www.denkvooruit.nl/risicos/risicos-in-nederland/overstroming, 2026-10-26</span> [&#8593;](#ref-C-16)
+
+17. <span id="note-C-17">https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/goed-voorbereid/wat-moet-je-doen-bij-een-overstroming/, 2026-10-26</span> [&#8593;](#ref-C-17)
+
+18. <span id="note-C-18">https://www.denkvooruit.nl/risicos/risicos-in-nederland/extreem-weer, gewijzigd 2026-06-26, 2026-10-26</span> [&#8593;](#ref-C-18)
+
+19. <span id="note-C-19">https://www.denkvooruit.nl/risicos/risicos-in-nederland/hitte, 2026-06-26</span> [&#8593;](#ref-C-19)
+
+20. <span id="note-C-20">https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/waterschappen, nieuws 2026-07-16, 2026-10-26</span> [&#8593;](#ref-C-20)
+
+21. <span id="note-C-21">https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen, 2026-10-26</span> [&#8593;a](#ref-C-21) [&#8593;b](#ref-C-21-2)
+
+22. <span id="note-C-22">https://www.rivm.nl/hitte/nationaal-hitteplan, 2026-10-26</span> [&#8593;a](#ref-C-22) [&#8593;b](#ref-C-22-2) [&#8593;c](#ref-C-22-3) [&#8593;d](#ref-C-22-4)
+
+23. <span id="note-C-23">https://www.denkvooruit.nl/risicos/risicos-in-nederland/natuurbrand, gewijzigd 2026-08-06, 2026-10-26</span> [&#8593;a](#ref-C-23) [&#8593;b](#ref-C-23-2)
+
+24. <span id="note-C-24">https://www.knmi.nl/kennis-en-datacentrum/uitleg/naamgeving-van-stormen, 2026-10-26</span> [&#8593;](#ref-C-24)
+
+25. <span id="note-C-25">https://www.knmi.nl/kennis-en-datacentrum/waarschuwingen/windstoten, 2026-10-26</span> [&#8593;](#ref-C-25)
+
+26. <span id="note-C-26">https://www.rivm.nl/hitte/nationaal-hitteplan; https://www.knmi.nl/kennis-en-datacentrum/waarschuwingen/hitte, 2026-10-26</span> [&#8593;](#ref-C-26)
+
+27. <span id="note-C-27">https://iplo.nl/thema/water/beheer-watersysteem/verdringingsreeks/; https://www.rijkswaterstaat.nl/water/waterbeheer/droogte-en-watertekort/verdeling-water-bij-droogte, 2026-10-26</span> [&#8593;](#ref-C-27)
+
+28. <span id="note-C-28">https://www.denkvooruit.nl/risicos/risicos-in-nederland/hitte, 2026-10-26</span> [&#8593;](#ref-C-28)
+
+29. <span id="note-C-29">https://www.denkvooruit.nl/risicos/risicos-in-nederland/extreem-weer, 2026-10-26</span> [&#8593;a](#ref-C-29) [&#8593;b](#ref-C-29-2)
+
+30. <span id="note-C-30">RIVM Nationaal Hitteplan, 2026-10-26</span> [&#8593;](#ref-C-30)
+
+31. <span id="note-C-31">https://www.atlasleefomgeving.nl/natuurbrand-0, 2026-10-26; pagina voor het laatst bewerkt in 2022 — gebruik als indicatie</span> [&#8593;](#ref-C-31)
+
+32. <span id="note-C-32">https://www.brandweer.nl/natuurbrandrisico/, 2026-10-26</span> [&#8593;a](#ref-C-32) [&#8593;b](#ref-C-32-2) [&#8593;c](#ref-C-32-3)
+
+33. <span id="note-C-33">https://www.denkvooruit.nl/risicos/risicos-in-nederland/aardbeving, gewijzigd 2025-08-26, 2026-10-26</span> [&#8593;](#ref-C-33)
+
+34. <span id="note-C-34">https://www.rijksoverheid.nl/actueel/nieuws/2024/04/18/wet-sluiting-groningenveld-gaat-per-19-april-in, 2026-10-26</span> [&#8593;](#ref-C-34)
+
+35. <span id="note-C-35">https://www.denkvooruit.nl/risicos/risicos-in-nederland/aardbeving, 2026-10-26</span> [&#8593;a](#ref-C-35) [&#8593;b](#ref-C-35-2)
+
+36. <span id="note-C-36">https://www.denkvooruit.nl/risicos/risicos-in-nederland/geen-stroom, gewijzigd 2026-02-05, 2026-10-26</span> [&#8593;](#ref-C-36)
+
+37. <span id="note-C-37">NIPV-rapport stroomuitval, mei 2026, 2026-10-26</span> [&#8593;](#ref-C-37)
+
+38. <span id="note-C-38">https://www.tennet.eu/nl-en/news/electricity-supply-security-under-pressure-after-2030, 2026-10-26</span> [&#8593;](#ref-C-38)
+
+39. <span id="note-C-39">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26</span> [&#8593;a](#ref-C-39) [&#8593;b](#ref-C-39-2) [&#8593;c](#ref-C-39-3) [&#8593;d](#ref-C-39-4)
+
+40. <span id="note-C-40">Nationaal Crisisplan Elektriciteit 2021 + NIPV-rapport mei 2026, 2026-10-26</span> [&#8593;](#ref-C-40)
+
+41. <span id="note-C-41">https://www.netbeheernederland.nl/onze-leden, 2026-10-26</span> [&#8593;](#ref-C-41)
+
+42. <span id="note-C-42">https://www.netbeheernederland.nl/storingen, 2026-10-26</span> [&#8593;](#ref-C-42)
+
+43. <span id="note-C-43">https://www.denkvooruit.nl/risicos/risicos-in-nederland/elektronisch-betalen, 2026-10-26</span> [&#8593;](#ref-C-43)
+
+44. <span id="note-C-44">https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, gewijzigd 2025-08-14, 2026-10-26</span> [&#8593;](#ref-C-44)
+
+45. <span id="note-C-45">https://www.rdi.nl/onderwerpen/telecommunicatie/telecomaanbieders/dekkingseis-en-snelheidsverplichting, 2026-10-26</span> [&#8593;](#ref-C-45)
+
+46. <span id="note-C-46">https://www.kpn.com/netwerk-update; Kamerstuk 24095-593, 2026-10-26</span> [&#8593;](#ref-C-46)
+
+47. <span id="note-C-47">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/beschermen-infrastructuur-noordzee, 2026-10-26</span> [&#8593;a](#ref-C-47) [&#8593;b](#ref-C-47-2)
+
+48. <span id="note-C-48">https://www.ams-ix.net/ams, 2026-10-26</span> [&#8593;](#ref-C-48)
+
+49. <span id="note-C-49">https://www.ncsc.nl/cyberbeveiligingswet-nis2, 2026-10-26</span> [&#8593;a](#ref-C-49) [&#8593;b](#ref-C-49-2)
+
+50. <span id="note-C-50">https://www.nctv.nl/onderwerpen/v/vitale-infrastructuur, 2026-10-26</span> [&#8593;](#ref-C-50)
+
+51. <span id="note-C-51">https://veiligheidsregiogroningen.nl/app/uploads/2025/11/13.3.-Redundantie-NCV-bij-elektriciteitsuitval.pdf, 2026-10-26</span> [&#8593;](#ref-C-51)
+
+52. <span id="note-C-52">Nationaal Crisisplan Elektriciteit, 2026-10-26</span> [&#8593;](#ref-C-52)
+
+53. <span id="note-C-53">https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitval-telecommunicatie, 2026-10-26</span> [&#8593;](#ref-C-53)
+
+54. <span id="note-C-54">https://www.denkvooruit.nl/risicos/risicos-in-nederland/drinkwater, gewijzigd 2025-08-26, 2026-10-26</span> [&#8593;](#ref-C-54)
+
+55. <span id="note-C-55">https://www.denkvooruit.nl/risicos/risicos-in-nederland/drinkwater, 2026-10-26</span> [&#8593;a](#ref-C-55) [&#8593;b](#ref-C-55-2)
+
+56. <span id="note-C-56">https://www.denkvooruit.nl/risicos/risicos-in-nederland/lege-schappen, gewijzigd 2025-08-14, 2026-10-26</span> [&#8593;](#ref-C-56)
+
+57. <span id="note-C-57">https://www.denkvooruit.nl/risicos/risicos-in-nederland/brandstof, 2025-08-14</span> [&#8593;](#ref-C-57)
+
+58. <span id="note-C-58">https://nos.nl/artikel/2632202-kabinet-wil-nog-geen-voedselvoorraad-voor-acht-dagen-adviseren, 2026-10-26</span> [&#8593;](#ref-C-58)
+
+59. <span id="note-C-59">https://www.clingendael.org/publication/voedselvoorraden-nederland-voorbereid-verspilling, 2026-10-26</span> [&#8593;](#ref-C-59)
+
+60. <span id="note-C-60">https://cova.nl/onze-opdracht/ en jaarstukken 2025, 2026-10-26</span> [&#8593;](#ref-C-60)
+
+61. <span id="note-C-61">https://www.dcc-ienw.nl/ — LCP-O, 2026-10-26</span> [&#8593;](#ref-C-61)
+
+62. <span id="note-C-62">https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/actualisatie-crisisplan-en-leveringszekerheid-winter-27-28, 2026-10-26</span> [&#8593;](#ref-C-62)
+
+63. <span id="note-C-63">https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, gewijzigd 2026-10-08, 2026-10-26</span> [&#8593;](#ref-C-63)
+
+64. <span id="note-C-64">https://www.denkvooruit.nl/risicos/risicos-in-nederland/lege-schappen, 2026-10-26</span> [&#8593;](#ref-C-64)
+
+65. <span id="note-C-65">https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitbraak-van-infectieziekten, gewijzigd 2025-08-14, 2026-10-26</span> [&#8593;](#ref-C-65)
+
+66. <span id="note-C-66">CBS, tabel 7052_95, 2026-10-26</span> [&#8593;](#ref-C-66)
+
+67. <span id="note-C-67">brief aan de Eerste Kamer, 2 april 2026; https://www.rivm.nl/infectieziektebestrijding/pandemische-paraatheid, 2026-10-26</span> [&#8593;](#ref-C-67)
+
+68. <span id="note-C-68">https://www.denkvooruit.nl/risicos/risicos-in-nederland/uitbraak-van-infectieziekten, 2026-10-26</span> [&#8593;a](#ref-C-68) [&#8593;b](#ref-C-68-2)
+
+69. <span id="note-C-69">https://seveso.nl/wat-is-seveso-bedrijf; https://seveso-plus.nl/inspectieresultaten/seveso-inrichtingenlijst/, 2026-10-26</span> [&#8593;](#ref-C-69)
+
+70. <span id="note-C-70">https://seveso-plus.nl/publish/pages/154279/overzicht-seveso-inrichtingen-1-oktober-2026.pdf, 2026-10-26</span> [&#8593;a](#ref-C-70) [&#8593;b](#ref-C-70-2)
+
+71. <span id="note-C-71">https://www.limburg.nl/publish/pages/6273/rapport_evaluatie_convenant_lec_en_nipv.pdf, 2026-10-26</span> [&#8593;](#ref-C-71)
+
+72. <span id="note-C-72">https://www.prorail.nl/veiligheid/veilig-goederenvervoer/gevaarlijke-stoffen, bijgewerkt 2025-06-02, 2026-10-26</span> [&#8593;](#ref-C-72)
+
+73. <span id="note-C-73">https://www.prorail.nl/siteassets/homepage/over-ons/documenten/pr-jaarrapport-spoorgoederenverkeer-2025.pdf, 2026-10-26</span> [&#8593;](#ref-C-73)
+
+74. <span id="note-C-74">https://www.rijksoverheid.nl/themas/verkeer-en-vervoer/goederenvervoer/transport-van-gevaarlijke-stoffen-via-buisleidingen, 2026-10-26</span> [&#8593;](#ref-C-74)
+
+75. <span id="note-C-75">https://www.risicokaart.nl/, 2026-10-26</span> [&#8593;](#ref-C-75)
+
+76. <span id="note-C-76">https://www.vrmwb.nl/wat-te-doen-bij-1/ongeval-met-gevaarlijke-stoffen, 2026-10-26</span> [&#8593;](#ref-C-76)
+
+77. <span id="note-C-77">https://www.autoriteitnvs.nl/voorlichting/nucleaire-inrichtingen-nucleaire-veiligheid/kerncentrale-borssele-epz, 2026-10-26</span> [&#8593;](#ref-C-77)
+
+78. <span id="note-C-78">https://www.autoriteitnvs.nl/.../bedrijfsduurverlenging-kerncentrale-borssele, 2026-10-26</span> [&#8593;](#ref-C-78)
+
+79. <span id="note-C-79">https://www.denkvooruit.nl/risicos/risicos-in-nederland/nucleair, gewijzigd 2025-08-14, 2026-10-26</span> [&#8593;](#ref-C-79)
+
+80. <span id="note-C-80">LCP-S 2021 via open.overheid.nl; ANVS maatregelenpagina, 2026-10-26</span> [&#8593;](#ref-C-80)
+
+81. <span id="note-C-81">https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten, gewijzigd 2026-09-14, 2026-10-26</span> [&#8593;](#ref-C-81)
+
+82. <span id="note-C-82">https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten; https://www.autoriteitnvs.nl/voorlichting/voorbereiden-op-crisissituaties/kernongeval/maatregelen-bij-een-kernongeval, 2026-10-26</span> [&#8593;](#ref-C-82)
+
+83. <span id="note-C-83">https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten, 2026-10-26</span> [&#8593;](#ref-C-83)
+
+84. <span id="note-C-84">https://www.autoriteitnvs.nl/voorlichting/voorbereiden-op-crisissituaties/kernongeval/maatregelen-bij-een-kernongeval, 2026-10-26</span> [&#8593;](#ref-C-84)
+
+85. <span id="note-C-85">https://www.rivm.nl/nationaal-meetnet-radioactiviteit/locaties, 2026-10-26</span> [&#8593;](#ref-C-85)
+
+86. <span id="note-C-86">https://www.denkvooruit.nl/risicos/risicos-in-nederland/nucleair/een-nucleair-ongeval-in-nederland, gewijzigd 2026-08-13, 2026-10-26</span> [&#8593;](#ref-C-86)
+
+87. <span id="note-C-87">Kamerstukken 30821-10 (2010) en Aanhangsel 2011–2012-2104, 2026-10-26</span> [&#8593;](#ref-C-87)
+
+88. <span id="note-C-88">https://www.nctv.nl/site/binaries/site-content/collections/documents/2026/10/16/rijksbrede-risicoanalyse-nationale-veiligheid-2026/..., 2026-10-26</span> [&#8593;](#ref-C-88)
+
+89. <span id="note-C-89">https://www.knmi.nl/kennis-en-datacentrum/uitleg/ruimteweer; https://www.nlsa.nl/en/news/the-netherlands-invests-in-space-weather-forecast-to-protect-vital-sectors/, 2026-10-26</span> [&#8593;a](#ref-C-89) [&#8593;b](#ref-C-89-2)
+
+90. <span id="note-C-90">https://www.denkvooruit.nl/risicos/risicos-in-nederland/cybercriminaliteit, gewijzigd 2025-12-04, 2026-10-26</span> [&#8593;](#ref-C-90)
+
+91. <span id="note-C-91">ACM Telecommonitor Q2 2026, 2026-10-26</span> [&#8593;](#ref-C-91)
+
+92. <span id="note-C-92">https://www.ncsc.nl/nieuws/dtc-en-ncsc-vanaf-2026-verder-als-versterkt-ncsc, 2026-10-26</span> [&#8593;](#ref-C-92)
+
+93. <span id="note-C-93">https://www.cybersecurityraad.nl/actueel/nieuws/2026/07/09/, 2026-10-26</span> [&#8593;](#ref-C-93)
+
+94. <span id="note-C-94">https://www.denkvooruit.nl/risicos/risicos-in-nederland/cybercriminaliteit, 2026-10-26</span> [&#8593;](#ref-C-94)
+
+95. <span id="note-C-95">https://www.denkvooruit.nl/risicos/risicos-in-nederland/internationale-spanningen, gewijzigd 2026-09-03, 2026-10-26</span> [&#8593;](#ref-C-95)
+
+96. <span id="note-C-96">internationale spanningen-pagina, 2026-10-26</span> [&#8593;a](#ref-C-96) [&#8593;b](#ref-C-96-2)
+
+97. <span id="note-C-97">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;a](#ref-C-97) [&#8593;b](#ref-C-97-2)
+
+98. <span id="note-C-98">Defensienota 2026, Kamerstuk 36 975 nr. 1, 2026-10-26</span> [&#8593;](#ref-C-98)
+
+99. <span id="note-C-99">https://www.vrk.nl/crisisbestrijdingsplan-schiphol, 2026-10-26</span> [&#8593;](#ref-C-99)
+
+100. <span id="note-C-100">https://www.portofrotterdam.com/nl/over-het-havenbedrijf/onze-organisatie/rijkshavenmeester, 2026-10-26</span> [&#8593;](#ref-C-100)
+
+101. <span id="note-C-101">https://www.rijkswaterstaat.nl/wegen/wegbeheer/tunnels, 2026-10-26</span> [&#8593;](#ref-C-101)
+
+102. <span id="note-C-102">https://www.rijkswaterstaat.nl/nieuws/archief/2025/01/evacuatie-1995-door-extreem-hoogwater-staat-nog-scherp-op-het-netvlies, 2026-10-26</span> [&#8593;](#ref-C-102)
+
+103. <span id="note-C-103">Landelijk Crisisplan Natuurbranden, 2025; Landelijk Crisisplan Hoogwater en Overstromingen, 2026, 2026-10-26</span> [&#8593;](#ref-C-103)
+
+104. <span id="note-C-104">https://www.coa.nl/nl/lijst/capaciteit-en-bezetting, 2026-10-26</span> [&#8593;](#ref-C-104)
+
+105. <span id="note-C-105">https://www.rodekruis.nl/wat-doen-wij/hulp-in-nederland/noodhulpteams/, 2026-10-26</span> [&#8593;](#ref-C-105)
+
+106. <span id="note-C-106">https://nipv.nl/onderzoek/bevolkingszorg, 2026-10-26</span> [&#8593;](#ref-C-106)
+
+107. <span id="note-C-107">Landelijk Crisisplan Hoogwater en Overstromingen, 2026, 2026-10-26</span> [&#8593;](#ref-C-107)
+
+108. <span id="note-C-108">https://www.dcc-ienw.nl/themas/noodhulp/noodpompen, 2026-10-26</span> [&#8593;](#ref-C-108)
+
 ---
 
 ## D. LOCATIES EN INFRASTRUCTUUR
@@ -2213,7 +2444,7 @@ lift.
 
 ### D.1 Schuilkelders en veilige plekken
 
-**Er zijn geen openbare schuilkelders in Nederland.** [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26]
+**Er zijn geen openbare schuilkelders in Nederland.**<sup id="ref-D-1"><a href="#note-D-1">[1]</a></sup>
 
 | Type plek | Geschikt voor | Hoe te gebruiken |
 |---|---|---|
@@ -2230,8 +2461,7 @@ lift.
   radio, NL-Alert en gemeente bekendgemaakt.
 - **Noodsteunpunten:** proefprojecten in 2026, per gemeente verschillend; voor informatie bij
   langdurige uitval van stroom en telecom.
-- **Neem contact op met je gemeente** voor de actuele locaties; noteer ze op je papieren kaart.
-- [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/noodsteunpunten, 2026-10-26]
+- **Neem contact op met je gemeente** voor de actuele locaties; noteer ze op je papieren kaart.<sup id="ref-D-2"><a href="#note-D-2">[2]</a></sup>
 
 ### D.3 Ziekenhuizen met spoedeisende hulp en traumacentra
 
@@ -2250,34 +2480,28 @@ samen "Traumacentrum West" (LUMC + HMC + Haga).
 | Maastricht UMC+ | Maastricht |
 | UMCG | Groningen |
 | Isala | Zwolle |
-| Medisch Spectrum Twente | Enschede |
+| Medisch Spectrum Twente | Enschede <sup id="ref-D-3"><a href="#note-D-3">[3]</a></sup> |
 
-[BRON: https://www.vzinfo.nl/acute-zorg/aanbod/traumazorg, wijzigingsdatum 2026-09-28, 2026-10-26]
 
 - **Vier traumahelikopters:** Nijmegen (Volkel), Groningen (Eelde), Rotterdam, Amsterdam. Utrecht en
-  Enschede zijn "beschikbare dienst" (langzamer; ingezet bij opschaling). [BRON: idem]
+  Enschede zijn "beschikbare dienst" (langzamer; ingezet bij opschaling).<sup id="ref-D-3-2"><a href="#note-D-3">[3]</a></sup>
 - **Niveau-eisen:** minimaal **240** patiënten per jaar met ISS ≥16 op de SEH; **90%** van de ernstig
   gewonden in de regio moet rechtstreeks worden aangeboden. In 2021 werd ca. **69%** primair in een
-  traumacentrum behandeld; drie centra haalden de norm van 240 niet.
-  [BRON: https://www.lnaz.nl/cms/files/ltr_rapport_2017-2021_-_landelijk.pdf, 2026-10-26]
+  traumacentrum behandeld; drie centra haalden de norm van 240 niet.<sup id="ref-D-4"><a href="#note-D-4">[4]</a></sup>
 - **3 brandwondencentra:** **Beverwijk** (Rode Kruis Ziekenhuis), **Rotterdam** (Maasstad Ziekenhuis,
   20 bedden / 17 kamers, EBA-geverifieerd), **Groningen** (Martini Ziekenhuis). Landelijke
-  informatie- en advieslijn brandwonden: **0900 044 0044**.
-  [BRON: https://www.maasstadziekenhuis.nl/afdelingen/brandwondencentrum/meer-over-brandwondencentrum; https://brandwondenzorg.nl/, 2026-10-26]
+  informatie- en advieslijn brandwonden: **0900 044 0044**.<sup id="ref-D-5"><a href="#note-D-5">[5]</a></sup>
 - **Spoedeisende hulp (SEH):** **79 locaties**, waarvan **76** 24/7 open en **3** alleen overdag en
-  's avonds. [BRON: https://www.vzinfo.nl/ziekenhuiszorg/aanbod/instellingen, 2026-10-26]
+  's avonds.<sup id="ref-D-6"><a href="#note-D-6">[6]</a></sup>
 - **Tijdens een black-out:** grote ziekenhuizen hebben meestal noodstroom, kleinere klinieken en
-  zorginstellingen vaak niet; na **24–72 uur** wordt **brandstof** de beperkende factor.
-  [BRON: NIPV-rapport stroomuitval, mei 2026, 2026-10-26]
+  zorginstellingen vaak niet; na **24–72 uur** wordt **brandstof** de beperkende factor.<sup id="ref-D-7"><a href="#note-D-7">[7]</a></sup>
 
 ### D.4 Huisartsenposten, apotheken, dialyse en bijzondere zorg
 
 - **Huisartsenposten (HAP):** **101 posten** in **51 huisartsendienstenstructuren** (december 2025).
-  **61 SEH's delen een ingang met een HAP**; **6 van de 68** onderzochte posten waren 's nachts dicht.
-  [BRON: https://www.vzinfo.nl/onderwerpen/acute-zorg/aanbod/hap, 2026-10-26]
+  **61 SEH's delen een ingang met een HAP**; **6 van de 68** onderzochte posten waren 's nachts dicht.<sup id="ref-D-8"><a href="#note-D-8">[8]</a></sup>
 - **Waar bel je?** Overdag op werkdagen je **eigen huisarts** (08.00–17.00); 's avonds, 's nachts, in
-  het weekend en op feestdagen de **huisartsenpost**; bij levensgevaar **112**.
-  [BRON: https://www.thuisarts.nl/spoed-wie-bel-je, 2026-10-26]
+  het weekend en op feestdagen de **huisartsenpost**; bij levensgevaar **112**.<sup id="ref-D-9"><a href="#note-D-9">[9]</a></sup>
 - **Dienstapotheek:** buiten openingstijden per regio geregeld via een rota; **geen landelijk nummer**.
   Zoek het nummer van je eigen apotheek of vraag het bij de huisartsenpost. Er is geen landelijke
   dienstapotheeklijst; noteer het regionale nummer op je papieren kaart. [CONTROLEER per regio]
@@ -2286,20 +2510,16 @@ samen "Traumacentrum West" (LUMC + HMC + Haga).
   noodplan kennen en vraag naar hun uitwijkafspraken. Er is geen landelijk openbaar dialyse-uitwijkplan.
   [CONTROLEER per centrum]
 - **Medicijnen bij een crisis:** groothandels hebben **2 weken** voorraad, leveranciers **6 weken**
-  (Geneesmiddelenwet); vraag tijdig een herhaalrecept aan (advies: ca. 2 weken vooraf).
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdenens-crisis, 2026-10-26]
+  (Geneesmiddelenwet); vraag tijdig een herhaalrecept aan (advies: ca. 2 weken vooraf).<sup id="ref-D-10"><a href="#note-D-10">[10]</a></sup>
 
 ### D.5 Politie-, brandweer- en ambulancestations
 
 - **Politie:** **10 regionale eenheden** plus landelijke eenheden; zoek je dichtstbijzijnde bureau via
-  politie.nl of bel **0900-8844**. [BRON: https://www.politie.nl/informatie/organisatiestructuur-politie-nationaal.html, 2026-10-26]
-- **Brandweer:** **961 kazernes** in 25 veiligheidsregio's (837 vrijwillig, 78 beroeps, 46 gemengd).
-  [BRON: https://nipv.nl/nieuws/aantal-brandweerkazernes-in-2024-gelijk-gebleven/, 2026-10-26]
-- **Ambulance:** **233 standplaatsen** van de 25 RAV's.
-  [BRON: https://www.ambulancezorg.nl/sectorkompas/sectorkompas-2025, 2026-10-26]
+  politie.nl of bel **0900-8844**.<sup id="ref-D-11"><a href="#note-D-11">[11]</a></sup>
+- **Brandweer:** **961 kazernes** in 25 veiligheidsregio's (837 vrijwillig, 78 beroeps, 46 gemengd).<sup id="ref-D-12"><a href="#note-D-12">[12]</a></sup>
+- **Ambulance:** **233 standplaatsen** van de 25 RAV's.<sup id="ref-D-13"><a href="#note-D-13">[13]</a></sup>
 - **Meldkamers (10):** Amsterdam, Den Haag, Limburg, Midden-Nederland, Noord-Holland,
-  Noord-Nederland, Oost-Brabant, Oost-Nederland, Rotterdam, Zeeland-West-Brabant.
-  [BRON: https://www.meldkamersamenwerking.nl/meldkamers/, 2026-10-26]
+  Noord-Nederland, Oost-Brabant, Oost-Nederland, Rotterdam, Zeeland-West-Brabant.<sup id="ref-D-14"><a href="#note-D-14">[14]</a></sup>
 - **Noteer op je papieren kaart:** het dichtstbijzijnde politiebureau, de brandweerkazerne, het
   ziekenhuis met SEH, de huisartsenpost en de apotheek. Adressen per regio staan op de website van je
   veiligheidsregio en gemeente. Er bestaat **geen landelijke openbare adressenlijst** van
@@ -2317,9 +2537,8 @@ samen "Traumacentrum West" (LUMC + HMC + Haga).
 | Rijkswaterstaat Crisis Informatie Centrum (CIC) | — | Bundelt en verspreidt crisisinformatie; werkt in LCMS met 200+ organisaties; terugvaloptie via het gesloten Diginetwerk |
 | Veiligheidsregio's (25) | per regio | Regionale crisisbeheersing; zie B.3 |
 | Gemeentehuizen (342 gemeenten) | per gemeente | Bevolkingszorg, opvang, informatie, noodsteunpunt |
-| Deltacommissaris | Den Haag | Nationaal Deltaprogramma |
+| Deltacommissaris | Den Haag | Nationaal Deltaprogramma <sup id="ref-D-15"><a href="#note-D-15">[15]</a></sup> |
 
-[BRON: https://www.nctv.nl/onderwerpen/n/nationale-crisisstructuur; https://www.dcc-ienw.nl/themas/noodhulp/noodpompen; https://www.logius.nl/domeinen/infrastructuur/diginetwerk/in-de-praktijk/diginetwerk-onmisbaar-voor-crisisbeheersing, 2026-10-26]
 Bezoekadressen en publieksnummers van deze organen staan op hun eigen websites; het NCC en KCR2 zijn
 **geen publieksloketten**. [CONTROLEER adressen bij publicatie]
 
@@ -2341,31 +2560,26 @@ Bezoekadressen en publieksnummers van deze organen staan op hun eigen websites; 
 | **WMD** | Drenthe | 445 |
 
 - **Samen:** **18,0 miljoen** inwoners bediend, **1.160 miljoen m³** geproduceerd (2024), netwerk
-  **121.565 km**, **8.691.000** aansluitingen.
-  [BRON: https://www.vewin.nl/wp-content/uploads/2025/09/25274-VEW-Kerngegevens-drinkwater-2025-A6-NL-web.pdf, 2026-10-26]
+  **121.565 km**, **8.691.000** aansluitingen.<sup id="ref-D-16"><a href="#note-D-16">[16]</a></sup>
 - **Leveringszekerheid:** binnen **24 uur** na een storing moet een bedrijf **75%** van een
   "maximale dag" kunnen leveren (een maximale dag is 25–60% boven gemiddeld). Elk bedrijf moet
   **10 dagen** zelfvoorzienend zijn: eigen noodaggregaten, brandstof en chemicaliën. Minimumdruk
-  **150 kPa** bij 1.000 L/h op het leverpunt.
-  [BRON: https://www.vewin.nl/wp-content/uploads/2024/08/Continu%20betrouwbaar%20drinkwater%20leveren,%20hoe%20doen%20we%20dat.pdf, 2026-10-26]
+  **150 kPa** bij 1.000 L/h op het leverpunt.<sup id="ref-D-17"><a href="#note-D-17">[17]</a></sup>
 - **Nooddrinkwater:** valt de levering **langer dan 24 uur** uit, dan leveren bedrijven **minimaal 3
   liter per persoon per dag** (2 liter drinken, 1 liter voedselbereiding) via mobiele flexitanks
   (10–15 m³) met kraantjes op gemeentelijke distributiepunten — **1 punt per 2.500 inwoners**. Neem je
   eigen schone fles of jerrycan mee; advies is het water **3 minuten te koken**.
-  "Noodwater" (niet-drinkbaar, alleen sanitaire doeleinden) kan via het gewone net worden geleverd.
-  [BRON: https://nipv.nl/wp-content/uploads/2022/03/202504-NIPV-BNK14-Nooddrinkwater-en-noodwater.pdf, 2026-10-26]
+  "Noodwater" (niet-drinkbaar, alleen sanitaire doeleinden) kan via het gewone net worden geleverd.<sup id="ref-D-18"><a href="#note-D-18">[18]</a></sup>
 - **Waterverbruik:** **117,3 liter per persoon per dag** (2024); gemiddeld huishouden **247,8 liter** —
-  ca. 36% douchen, 24% toilet, 13% wasmachine, 2% drinken.
-  [BRON: https://www.drinkwaterplatform.nl/themas/waterbesparing/cijfers-waterverbruik/, 2026-10-26]
+  ca. 36% douchen, 24% toilet, 13% wasmachine, 2% drinken.<sup id="ref-D-19"><a href="#note-D-19">[19]</a></sup>
 - **Hoogbouw:** water wordt omhooggepompt met een **hydrofoor**. Bij stroomuitval kan **vanaf de derde
   verdieping** de waterdruk wegvallen of het water helemaal stoppen. De gebouweigenaar of -beheerder is
-  daarvoor verantwoordelijk. [BRON: https://www.vrln.nl/risicos-limburg-noord/uitval-gas-water-en-stroom, 2026-10-26]
-- **Storing melden:** waterstoring.nl; bij Waternet 24 uur per dag **088 939 40 95**.
-  [BRON: https://www.waternet.nl/service-en-contact/problemen-met-water/geen-water-uit-de-kraan/, 2026-10-26]
+  daarvoor verantwoordelijk.<sup id="ref-D-20"><a href="#note-D-20">[20]</a></sup>
+- **Storing melden:** waterstoring.nl; bij Waternet 24 uur per dag **088 939 40 95**.<sup id="ref-D-21"><a href="#note-D-21">[21]</a></sup>
 - **Riool na overstroming:** rioolwater kan opwellen en verontreinigd slib achterlaten. Vermijd
   contact, draag rubberlaarzen en waterdichte handschoenen, masker en veiligheidsbril bij sproeien,
   was je handen, houd kinderen weg, eet niets uit overstroomde tuinen, drink niet uit eigen putten,
-  en droog en ventileer de woning. [BRON: https://ggdleefomgeving.nl/overlast/wateroverlast/, 2026-10-26]
+  en droog en ventileer de woning.<sup id="ref-D-22"><a href="#note-D-22">[22]</a></sup>
 
 **21 waterschappen** beheren dijken, kades, gemalen en zuiveringen:
 
@@ -2375,8 +2589,8 @@ Hoogheemraadschap van Delfland · Hoogheemraadschap van Rijnland · Hoogheemraad
 Krimpenerwaard · Hunze en Aa's · Noorderzijlvest · Rijn en IJssel · Rivierenland · Scheldestromen ·
 Vallei en Veluwe · Vechtstromen · Waterschap Limburg · Wetterskip Fryslân · Zuiderzeeland
 
-[BRON: https://organisaties.overheid.nl/Waterschappen/, 2026-10-26] Besturen tellen 18–30 leden;
-verkiezingen elke 4 jaar, volgende op **17 maart 2027**. [BRON: https://www.kiesraad.nl/verkiezingen/waterschappen, 2026-10-26]
+<sup id="ref-D-23"><a href="#note-D-23">[23]</a></sup> Besturen tellen 18–30 leden;
+verkiezingen elke 4 jaar, volgende op **17 maart 2027**.<sup id="ref-D-24"><a href="#note-D-24">[24]</a></sup>
 
 **Stormvloedkeringen en sluitpeilen:**
 
@@ -2389,10 +2603,9 @@ verkiezingen elke 4 jaar, volgende op **17 maart 2027**. [BRON: https://www.kies
 | **Stormvloedkering Ramspol** | Ramsdiep / Zwarte Water | Opblaasbare rubberdam; sluit automatisch bij **NAP +0,50 m** met sterke noordwester en binnenwatertoevoer |
 | **Haringvlietsluizen** | Haringvlietdam | 17 openingen, 34 schuiven; stormvloedkering sinds 2018; staat normaal "op een kier" voor vismigratie |
 
-[BRON: Rijkswaterstaat-pagina's per kering, 2026-10-26] Op **21 december 2023** (storm Pia) sloten
+<sup id="ref-D-25"><a href="#note-D-25">[25]</a></sup> Op **21 december 2023** (storm Pia) sloten
 **alle zes** Rijkswaterstaat-stormvloedkeringen tegelijk — voor het eerst; de Maeslantkering sloot toen
-voor het eerst automatisch op het echte criterium van 3,00 m.
-[BRON: https://www.rijkswaterstaat.nl/nieuws/archief/2023/12/storm-pia, 2026-10-26]
+voor het eerst automatisch op het echte criterium van 3,00 m.<sup id="ref-D-26"><a href="#note-D-26">[26]</a></sup>
 
 ### D.8 Energie: centrales, net, gas
 
@@ -2406,63 +2619,54 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 | Gasopslag Grijpskerk | Seizoensopslag L-gas | Groningen | 23,85 TWh; 620 GWh/dag | |
 | PGI Alkmaar | Pieksopslag L-gas | Noord-Holland | 4,88 TWh; 360 GWh/dag | Nood- en piekvoorraad |
 | Zuidwending | Zoutcavernes | Groningen | 3,57 TWh; 431 GWh/dag | Meerdere cycli per jaar; EnergyStock/Gasunie |
-| Blackstart-centrales | Herstart na black-out | **3 locaties** | — | Niet openbaar |
+| Blackstart-centrales | Herstart na black-out | **3 locaties** | — | Niet openbaar <sup id="ref-D-27"><a href="#note-D-27">[27]</a></sup> |
 
-[BRON: https://www.autoriteitnvs.nl/voorlichting/nucleaire-inrichtingen-nucleaire-veiligheid/kerncentrale-borssele-epz; https://energietransitie.nl/soorten-energie/gaswinning/opslag-aardgas, bijgewerkt 2026-05-27; Nationaal Crisisplan Elektriciteit 2021, 2026-10-26]
 
 - **Gasopslag totaal:** **137 TWh** werkend gas plus ca. **300 TWh** cushiongas; ca. **115 TWh**
   werkend gas is nodig voor gewone leveringszekerheid. De vier seizoensopslagen (Norg, Grijpskerk,
   Alkmaar, Bergermeer) samen ca. **14 miljard m³**; jaarverbruik ca. **30 miljard m³**, waarvan 7–11
-  miljard m³ in een winter wordt onttrokken. [BRON: https://www.gasunie.nl/nieuws/7-vragen-over-gasopslag-in-nederland, 2025-12-18, 2026-10-26]
+  miljard m³ in een winter wordt onttrokken.<sup id="ref-D-28"><a href="#note-D-28">[28]</a></sup>
 - **Vulgraad:** op 1 november 2025 ca. **10 miljard m³**, net onder de wettelijke 80% en onder het
-  GTS-advies van 11 miljard m³ voor een koude winter. EU-doel voor Nederland voor 2027: **103 TWh**.
-  [BRON: idem; https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/actualisatie-crisisplan-en-leveringszekerheid-winter-27-28, 2026-10-26]
+  GTS-advies van 11 miljard m³ voor een koude winter. EU-doel voor Nederland voor 2027: **103 TWh**.<sup id="ref-D-29"><a href="#note-D-29">[29]</a></sup>
 - **Elektriciteitsproductie 2025 (CBS, voorlopig):** **132 miljard kWh** (record). Fossiel **63,0**
   miljard kWh (48%), hernieuwbaar **64,3** miljard kWh (49%), kern en overig **4,5** miljard kWh.
   Gas 47,96 · kolen 11,96 · olie/overig 3,10 · zon 25,52 · wind op land 16,42 · wind op zee 15,61 ·
-  biomassa 6,66 · waterkracht 0,06 miljard kWh.
-  [BRON: https://www.cbs.nl/nl-nl/nieuws/2026/11/elektriciteitsproductie-en-uitvoer-op-recordniveau, 2026-10-26]
+  biomassa 6,66 · waterkracht 0,06 miljard kWh.<sup id="ref-D-30"><a href="#note-D-30">[30]</a></sup>
 - **Netto-export:** invoer **16,3** miljard kWh, uitvoer **30,4** miljard kWh → netto **+14,0** miljard
-  kWh. [BRON: idem]
+  kWh.<sup id="ref-D-30-2"><a href="#note-D-30">[30]</a></sup>
 - **Netbeheerders:** **TenneT** (hoogspanning), **Gasunie/GTS** (gas), en regionaal **Liander**
   (Friesland, Flevoland, Gelderland, Noord-Holland, Zuid-Holland, Amsterdam), **Enexis** (Groningen,
   Drenthe, Overijssel, Noord-Brabant, Limburg), **Stedin** (Utrecht, Zeeland, groot deel Zuid-Holland),
   **Coteq** (Twente en Hardenberg), **RENDO** (Drenthe en Overijssel, vooral gas), **Westland Infra**
-  (Westland, Midden-Delfland, Botlek). [BRON: https://www.netbeheernederland.nl/onze-leden, 2026-10-26]
+  (Westland, Midden-Delfland, Botlek).<sup id="ref-D-31"><a href="#note-D-31">[31]</a></sup>
 
 ### D.9 Telecommunicatie
 
 - **Mobiel:** **KPN, Odido en VodafoneZiggo** exploiteren de enige drie fysieke netwerken; daarnaast
   MVNO's. Dekkingseis: **98% van de landoppervlakte per gemeente buiten**, ≥10 Mbit/s, exclusief
-  Natura 2000 en buitenwater. [BRON: https://www.rdi.nl/onderwerpen/telecommunicatie/telecomaanbieders/dekkingseis-en-snelheidsverplichting, 2026-10-26]
+  Natura 2000 en buitenwater.<sup id="ref-D-32"><a href="#note-D-32">[32]</a></sup>
 - **Markt (Q2 2026):** 24,77 miljoen mobiele aansluitingen, 22,1 miljoen M2M-simkaarten; mobiel
-  marktaandeel KPN 25–30%, Odido 25–30%, VodafoneZiggo 20–25%, MVNO's 15–20%.
-  [BRON: https://www.acm.nl/nl/publicaties/acm-telecommonitor-tweede-kwartaal-2026, 2026-10-26]
+  marktaandeel KPN 25–30%, Odido 25–30%, VodafoneZiggo 20–25%, MVNO's 15–20%.<sup id="ref-D-33"><a href="#note-D-33">[33]</a></sup>
 - **2G/3G-uitfasering:** KPN 3G uit (maart 2022), 2G gefaseerd uit vanaf maart 2026, definitief
   **1 december 2027**; Odido 2G uit (1 juni 2023), 3G vanaf augustus 2026; VodafoneZiggo 3G uit
   (februari 2020), 2G "minimaal tot december 2026". Gevolg: **eCall** in ca. **1,8 miljoen** auto's
-  stopt met werken. [BRON: https://www.kpn.com/netwerk-update; Kamerstuk 24095-593, 2026-10-26]
+  stopt met werken.<sup id="ref-D-34"><a href="#note-D-34">[34]</a></sup>
 - **Noodnetwerk hulpdiensten:** **C2000** (TETRA), **>119.000 gebruikers**, ca. **630 masten**,
-  nagenoeg 100% dekking buiten, binnen alleen op aangewezen locaties. Opvolger **VMX** in voorbereiding.
-  [BRON: https://www.meldkamersamenwerking.nl/c2000/, 2026-10-26]
+  nagenoeg 100% dekking buiten, binnen alleen op aangewezen locaties. Opvolger **VMX** in voorbereiding.<sup id="ref-D-35"><a href="#note-D-35">[35]</a></sup>
 - **Overheidsnetwerk:** **NCV**, een apart en fysiek gescheiden IP-netwerk uitgevoerd door KPN;
   bij stroomuitval blijven individuele aansluitingen **2–3 uur** (soms 8 uur) in de lucht, het platform
-  draait op diesel zolang de brandstof duurt.
-  [BRON: https://veiligheidsregiogroningen.nl/app/uploads/2025/11/13.3.-Redundantie-NCV-bij-elektriciteitsuitval.pdf, 2026-10-26]
-- **Internetknooppunt:** **AMS-IX**, **904** aangesloten netwerken, piekverkeer **15,8 Tb/s**.
-  [BRON: https://www.ams-ix.net/ams, 2026-10-26]
+  draait op diesel zolang de brandstof duurt.<sup id="ref-D-36"><a href="#note-D-36">[36]</a></sup>
+- **Internetknooppunt:** **AMS-IX**, **904** aangesloten netwerken, piekverkeer **15,8 Tb/s**.<sup id="ref-D-37"><a href="#note-D-37">[37]</a></sup>
 - **Zeekabels (actieve landingspunten):** **IJmuiden** (Ulysses 2, Scylla), **Domburg** (Farland North),
   **Castricum** (Atlantic Crossing 1), **Zandvoort** (Circe North, Concerto, Zeus), **Callantsoog**
   (BT North Sea), **Eemshaven** (COBRAcable plus glasvezel), **Scheveningen/Den Haag** (IOEMA).
   **Katwijk is niet meer actief** (TAT-14 buiten gebruik sinds 2020). Zeekabels vervoeren ca. **99%**
-  van het wereldwijde internetverkeer.
-  [BRON: https://www.tweedekamer.nl/downloads/document?id=2021D48182; https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/beschermen-infrastructuur-noordzee, 2026-10-26]
+  van het wereldwijde internetverkeer.<sup id="ref-D-38"><a href="#note-D-38">[38]</a></sup>
 - **112 via andere netwerken:** is je eigen netwerk weg, dan gebruikt je toestel automatisch elk
   beschikbaar netwerk, ook buitenlands — **geen simkaart of beltegoed nodig**. 112 werkt ook via
-  wifi/VoLTE. [BRON: https://www.rdi.nl/onderwerpen/consumenten/informatiepunt-112/veelgestelde-vragen, gewijzigd 2026-09-14, 2026-10-26]
+  wifi/VoLTE.<sup id="ref-D-39"><a href="#note-D-39">[39]</a></sup>
 - **Amateurradio:** crisisplannen noemen "inzet radiozendamateurs (DARES)" als alternatief
-  communicatiekanaal, op basis van een convenant met de veiligheidsregio's.
-  [BRON: Nationaal Crisisplan Elektriciteit, 2026-10-26]
+  communicatiekanaal, op basis van een convenant met de veiligheidsregio's.<sup id="ref-D-40"><a href="#note-D-40">[40]</a></sup>
 
 ### D.10 Transport
 
@@ -2472,8 +2676,7 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Luchtvaart:** Schiphol en regionale luchthavens; Nationaal crisisplan luchtvaartongevallen.
 - **Havens:** Rotterdam, Amsterdam, Zeeland, Eemshaven; eigen crisisplannen en
   scheepvaartbegeleiding.
-- **Binnenwateren:** Rijkswaterstaat vaarwegbeheer; stremmingen via scheepvaartberichtgeving.
-- [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26]
+- **Binnenwateren:** Rijkswaterstaat vaarwegbeheer; stremmingen via scheepvaartberichtgeving.<sup id="ref-D-41"><a href="#note-D-41">[41]</a></sup>
 
 ### D.11 Risicovolle locaties
 
@@ -2484,8 +2687,7 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Spoorvervoer gevaarlijke stoffen:** Betuweroute en het gemengde net; 8,4 miljoen goederentreinkm in
   2025.
 - **Pijpleidingen:** ca. 300.000 km ondergronds, waarvan ca. 18.000 km voor gevaarlijke stoffen.
-- **Militaire objecten:** niet openbaar; houd afstand bij oefeningen en colonnes.
-- [BRON: zie C.10.1; https://www.risicokaart.nl/, 2026-10-26]
+- **Militaire objecten:** niet openbaar; houd afstand bij oefeningen en colonnes.<sup id="ref-D-42"><a href="#note-D-42">[42]</a></sup>
 
 ### D.12 Kaarten
 
@@ -2494,14 +2696,102 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Evacuatieroutes:** per veiligheidsregio; vraag ernaar bij je gemeente en noteer ze op papier. Er is
   **geen openbare landelijke lijst met aangewezen evacuatiecorridors**; plannen verplichten wel dat
   uitvalsroutes vrij worden gehouden, dat wegwerkzaamheden op verzoek van de regiovoorzitter worden
-  uitgesteld en dat de politie het geëvacueerde gebied afsluit.
-  [BRON: Regionaal rampenbestrijdingsplan hoogwater (concept) 2026, 2026-10-26]
+  uitgesteld en dat de politie het geëvacueerde gebied afsluit.<sup id="ref-D-43"><a href="#note-D-43">[43]</a></sup>
 - **Nucleaire zones:** zie C.11.2 en de ANVS.
 - **Waterstanden:** Rijkswaterstaat waterdata; Teletekst pagina 720.
 - **Weer:** KNMI-app en knmi.nl; Teletekst pagina 713.
 - **Vaste uitwijkroutes op snelwegen:** gemarkeerd met **"U" + nummer**, vanaf de snelweg bewegwijzerd
-  en weer terug naar de snelweg. Langzamer dan de snelweg, maar bruikbaar als die dicht is.
-  [BRON: https://www.rijkswaterstaat.nl/wegen/ongeval-en-pech/vaste-uitwijkroutes, 2026-10-26]
+  en weer terug naar de snelweg. Langzamer dan de snelweg, maar bruikbaar als die dicht is.<sup id="ref-D-44"><a href="#note-D-44">[44]</a></sup>
+
+### Noten
+
+1. <span id="note-D-1">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;](#ref-D-1)
+
+2. <span id="note-D-2">https://www.denkvooruit.nl/veelgestelde-vragen/noodsteunpunten, 2026-10-26</span> [&#8593;](#ref-D-2)
+
+3. <span id="note-D-3">https://www.vzinfo.nl/acute-zorg/aanbod/traumazorg, wijzigingsdatum 2026-09-28, 2026-10-26</span> [&#8593;a](#ref-D-3) [&#8593;b](#ref-D-3-2)
+
+4. <span id="note-D-4">https://www.lnaz.nl/cms/files/ltr_rapport_2017-2021_-_landelijk.pdf, 2026-10-26</span> [&#8593;](#ref-D-4)
+
+5. <span id="note-D-5">https://www.maasstadziekenhuis.nl/afdelingen/brandwondencentrum/meer-over-brandwondencentrum; https://brandwondenzorg.nl/, 2026-10-26</span> [&#8593;](#ref-D-5)
+
+6. <span id="note-D-6">https://www.vzinfo.nl/ziekenhuiszorg/aanbod/instellingen, 2026-10-26</span> [&#8593;](#ref-D-6)
+
+7. <span id="note-D-7">NIPV-rapport stroomuitval, mei 2026, 2026-10-26</span> [&#8593;](#ref-D-7)
+
+8. <span id="note-D-8">https://www.vzinfo.nl/onderwerpen/acute-zorg/aanbod/hap, 2026-10-26</span> [&#8593;](#ref-D-8)
+
+9. <span id="note-D-9">https://www.thuisarts.nl/spoed-wie-bel-je, 2026-10-26</span> [&#8593;](#ref-D-9)
+
+10. <span id="note-D-10">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdenens-crisis, 2026-10-26</span> [&#8593;](#ref-D-10)
+
+11. <span id="note-D-11">https://www.politie.nl/informatie/organisatiestructuur-politie-nationaal.html, 2026-10-26</span> [&#8593;](#ref-D-11)
+
+12. <span id="note-D-12">https://nipv.nl/nieuws/aantal-brandweerkazernes-in-2024-gelijk-gebleven/, 2026-10-26</span> [&#8593;](#ref-D-12)
+
+13. <span id="note-D-13">https://www.ambulancezorg.nl/sectorkompas/sectorkompas-2025, 2026-10-26</span> [&#8593;](#ref-D-13)
+
+14. <span id="note-D-14">https://www.meldkamersamenwerking.nl/meldkamers/, 2026-10-26</span> [&#8593;](#ref-D-14)
+
+15. <span id="note-D-15">https://www.nctv.nl/onderwerpen/n/nationale-crisisstructuur; https://www.dcc-ienw.nl/themas/noodhulp/noodpompen; https://www.logius.nl/domeinen/infrastructuur/diginetwerk/in-de-praktijk/diginetwerk-onmisbaar-voor-crisisbeheersing, 2026-10-26</span> [&#8593;](#ref-D-15)
+
+16. <span id="note-D-16">https://www.vewin.nl/wp-content/uploads/2025/09/25274-VEW-Kerngegevens-drinkwater-2025-A6-NL-web.pdf, 2026-10-26</span> [&#8593;](#ref-D-16)
+
+17. <span id="note-D-17">https://www.vewin.nl/wp-content/uploads/2024/08/Continu%20betrouwbaar%20drinkwater%20leveren,%20hoe%20doen%20we%20dat.pdf, 2026-10-26</span> [&#8593;](#ref-D-17)
+
+18. <span id="note-D-18">https://nipv.nl/wp-content/uploads/2022/03/202504-NIPV-BNK14-Nooddrinkwater-en-noodwater.pdf, 2026-10-26</span> [&#8593;](#ref-D-18)
+
+19. <span id="note-D-19">https://www.drinkwaterplatform.nl/themas/waterbesparing/cijfers-waterverbruik/, 2026-10-26</span> [&#8593;](#ref-D-19)
+
+20. <span id="note-D-20">https://www.vrln.nl/risicos-limburg-noord/uitval-gas-water-en-stroom, 2026-10-26</span> [&#8593;](#ref-D-20)
+
+21. <span id="note-D-21">https://www.waternet.nl/service-en-contact/problemen-met-water/geen-water-uit-de-kraan/, 2026-10-26</span> [&#8593;](#ref-D-21)
+
+22. <span id="note-D-22">https://ggdleefomgeving.nl/overlast/wateroverlast/, 2026-10-26</span> [&#8593;](#ref-D-22)
+
+23. <span id="note-D-23">https://organisaties.overheid.nl/Waterschappen/, 2026-10-26</span> [&#8593;](#ref-D-23)
+
+24. <span id="note-D-24">https://www.kiesraad.nl/verkiezingen/waterschappen, 2026-10-26</span> [&#8593;](#ref-D-24)
+
+25. <span id="note-D-25">Rijkswaterstaat-pagina's per kering, 2026-10-26</span> [&#8593;](#ref-D-25)
+
+26. <span id="note-D-26">https://www.rijkswaterstaat.nl/nieuws/archief/2023/12/storm-pia, 2026-10-26</span> [&#8593;](#ref-D-26)
+
+27. <span id="note-D-27">https://www.autoriteitnvs.nl/voorlichting/nucleaire-inrichtingen-nucleaire-veiligheid/kerncentrale-borssele-epz; https://energietransitie.nl/soorten-energie/gaswinning/opslag-aardgas, bijgewerkt 2026-05-27; Nationaal Crisisplan Elektriciteit 2021, 2026-10-26</span> [&#8593;](#ref-D-27)
+
+28. <span id="note-D-28">https://www.gasunie.nl/nieuws/7-vragen-over-gasopslag-in-nederland, 2025-12-18, 2026-10-26</span> [&#8593;](#ref-D-28)
+
+29. <span id="note-D-29">idem; https://www.rijksoverheid.nl/actueel/nieuws/2026/10/16/actualisatie-crisisplan-en-leveringszekerheid-winter-27-28, 2026-10-26</span> [&#8593;](#ref-D-29)
+
+30. <span id="note-D-30">https://www.cbs.nl/nl-nl/nieuws/2026/11/elektriciteitsproductie-en-uitvoer-op-recordniveau, 2026-10-26</span> [&#8593;a](#ref-D-30) [&#8593;b](#ref-D-30-2)
+
+31. <span id="note-D-31">https://www.netbeheernederland.nl/onze-leden, 2026-10-26</span> [&#8593;](#ref-D-31)
+
+32. <span id="note-D-32">https://www.rdi.nl/onderwerpen/telecommunicatie/telecomaanbieders/dekkingseis-en-snelheidsverplichting, 2026-10-26</span> [&#8593;](#ref-D-32)
+
+33. <span id="note-D-33">https://www.acm.nl/nl/publicaties/acm-telecommonitor-tweede-kwartaal-2026, 2026-10-26</span> [&#8593;](#ref-D-33)
+
+34. <span id="note-D-34">https://www.kpn.com/netwerk-update; Kamerstuk 24095-593, 2026-10-26</span> [&#8593;](#ref-D-34)
+
+35. <span id="note-D-35">https://www.meldkamersamenwerking.nl/c2000/, 2026-10-26</span> [&#8593;](#ref-D-35)
+
+36. <span id="note-D-36">https://veiligheidsregiogroningen.nl/app/uploads/2025/11/13.3.-Redundantie-NCV-bij-elektriciteitsuitval.pdf, 2026-10-26</span> [&#8593;](#ref-D-36)
+
+37. <span id="note-D-37">https://www.ams-ix.net/ams, 2026-10-26</span> [&#8593;](#ref-D-37)
+
+38. <span id="note-D-38">https://www.tweedekamer.nl/downloads/document?id=2021D48182; https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/beschermen-infrastructuur-noordzee, 2026-10-26</span> [&#8593;](#ref-D-38)
+
+39. <span id="note-D-39">https://www.rdi.nl/onderwerpen/consumenten/informatiepunt-112/veelgestelde-vragen, gewijzigd 2026-09-14, 2026-10-26</span> [&#8593;](#ref-D-39)
+
+40. <span id="note-D-40">Nationaal Crisisplan Elektriciteit, 2026-10-26</span> [&#8593;](#ref-D-40)
+
+41. <span id="note-D-41">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis, 2026-10-26</span> [&#8593;](#ref-D-41)
+
+42. <span id="note-D-42">zie C.10.1; https://www.risicokaart.nl/, 2026-10-26</span> [&#8593;](#ref-D-42)
+
+43. <span id="note-D-43">Regionaal rampenbestrijdingsplan hoogwater (concept) 2026, 2026-10-26</span> [&#8593;](#ref-D-43)
+
+44. <span id="note-D-44">https://www.rijkswaterstaat.nl/wegen/ongeval-en-pech/vaste-uitwijkroutes, 2026-10-26</span> [&#8593;](#ref-D-44)
 
 ---
 
@@ -2512,39 +2802,35 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Olie — rechtsgrond:** **Wet voorraadvorming aardolieproducten 2012** zet de IEA-verplichting
   (90 dagen netto-import) en **EU-richtlijn 2009/119/EG** om: **het hoogste van 90 dagen
   netto-import of 61 dagen binnenlands verbruik**; minstens een derde moet geraffineerd product zijn;
-  de voorraad moet op EU-grondgebied liggen. [BRON: https://cova.nl/onze-opdracht/, 2026-10-26]
+  de voorraad moet op EU-grondgebied liggen.<sup id="ref-E-1"><a href="#note-E-1">[1]</a></sup>
 - **Verplichting 2025–2026:** **4.100 kt** olie-equivalent (inclusief de extra 600 kt diesel uit 2022);
   de industrie draagt nog **653 kt**. **Werkelijke voorraad eind 2025: 3.933 kt**; het berekende
-  minimum was **2.306 kt** — Nederland hield dus ruim boven het minimum.
-  [BRON: https://cova.nl/wp-content/uploads/2026/06/Jaarstukken-2025-ENG.pdf, 2026-10-26]
+  minimum was **2.306 kt** — Nederland hield dus ruim boven het minimum.<sup id="ref-E-2"><a href="#note-E-2">[2]</a></sup>
 - **Waar opgeslagen:** diesel en benzine vooral in Nederland; een deel van de ruwe olie, diesel en
   kerosine in **België en Duitsland** (o.a. een Duitse zoutcaverne). Zoutcavernes dieper dan 1 km en
   terminals boven de grond, alles binnen **3 vaardagen** van Nederland. **20 kt nood-diesel** is
-  altijd direct leverbaar; tweederde van de voorraad is binnen een maand leverbaar.
-  [BRON: https://cova.nl/voorraadbeheer/, 2026-10-26]
+  altijd direct leverbaar; tweederde van de voorraad is binnen een maand leverbaar.<sup id="ref-E-3"><a href="#note-E-3">[3]</a></sup>
 - **IEA-collectieve actie 2026:** Nederland zegde **5,4 miljoen vaten** toe; per 1 oktober 2026 was
   ca. **4,7 miljoen vaten (87%)** vrijgegeven, inclusief 95 kt producten (50 kt diesel, 45 kt
   benzine); kerosine werd achtergehouden. In totaal is minder dan **20%** van de strategische voorraad
-  ingezet. [BRON: https://www.rijksoverheid.nl/actueel/nieuws/2026/10/01/nederland-gaat-door-met-inzetten-toegezegde-strategische-olievoorraad, 2026-10-26]
+  ingezet.<sup id="ref-E-4"><a href="#note-E-4">[4]</a></sup>
 - **Rantsoenering:** het instrument is het **distributieplan diesel**, een bijlage bij het **Landelijk
   Crisisplan Olie** (niet openbaar; het LCP-O zelf is TLP:Amber). Rantsoenering geldt pas in **fase 4**
   van het LCP-O, via staatsnoodrecht (Distributiewet, Vorderingswet, Prijzennoodwet) en een koninklijk
   besluit. Concept-prioriteit: (1) hulpdiensten en voedselketen, (2) herstel van vitale
-  infrastructuur, (3) al het overige via pomprantsoenering.
-  [BRON: https://www.dcc-ienw.nl/ — LCP-O, 2026-10-26]
+  infrastructuur, (3) al het overige via pomprantsoenering.<sup id="ref-E-5"><a href="#note-E-5">[5]</a></sup>
 - **Status 24 september 2026:** Nederland zit in **fase 1 ("alertering")** van het LCP-O — geen
-  rantsoenering, geen marktinterventie. [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/risico-op-olietekort-verkleinen, 2026-10-26]
+  rantsoenering, geen marktinterventie.<sup id="ref-E-6"><a href="#note-E-6">[6]</a></sup>
 - **Gas:** vier seizoensopslagen (Norg, Grijpskerk, Alkmaar, Bergermeer) plus Zuidwending, samen ca.
   **14 miljard m³** werkend gas; in een winter wordt 7–11 miljard m³ onttrokken; jaarverbruik ca.
-  30 miljard m³. Zie ook D.8. [BRON: https://www.gasunie.nl/nieuws/7-vragen-over-gasopslag-in-nederland, 2025-12-18, 2026-10-26]
+  30 miljard m³. Zie ook D.8.<sup id="ref-E-7"><a href="#note-E-7">[7]</a></sup>
 - **Groningen** is sinds **19 april 2024** wettelijk gesloten; de gasproductie staat op nul en de 11
   resterende productielocaties zijn gesloten. De restcapaciteit voor extreme kou was vóór sluiting
   maximaal **1,5 miljard Nm³**; GTS houdt die **niet** aan als strategische reserve, omdat de wet dat
-  niet toestaat. [BRON: https://www.rijksoverheid.nl/actueel/nieuws/2024/04/18/wet-sluiting-groningenveld-gaat-per-19-april-in, 2026-10-26]
+  niet toestaat.<sup id="ref-E-8"><a href="#note-E-8">[8]</a></sup>
 - **Importafhankelijkheid gas:** ca. **67%** (Noorwegen, LNG vooral uit de VS).
 - **Waarschuwing van GTS:** Nederland en Europa zijn **niet** voorbereid op een onderbreking van
-  maanden; strategische noodreserves en gebruik van cushiongas worden aanbevolen.
-  [BRON: https://www.gasunie.nl/en/news/netherlands-vulnerable-to-months-long-gas-supply-interruption-strategic-emergency-reserves-needed, 2026-10-26]
+  maanden; strategische noodreserves en gebruik van cushiongas worden aanbevolen.<sup id="ref-E-9"><a href="#note-E-9">[9]</a></sup>
 
 ### E.2 Voedsel en water
 
@@ -2552,17 +2838,14 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
   die **72 uur** zelfvoorzienend zijn. Onderzoekers van Clingendael en Erasmus adviseerden in 2026 een
   voorraad voor **8 dagen**; dat advies is **niet** overgenomen. De staatssecretaris legt de buffer na
   de eerste drie dagen bij **supermarkten en distributiecentra**. Een **Landelijk Crisisplan
-  Voedselzekerheid** is gepland voor **2027**.
-  [BRON: https://nos.nl/artikel/2632202-kabinet-wil-nog-geen-voedselvoorraad-voor-acht-dagen-adviseren, 2026-10-26]
+  Voedselzekerheid** is gepland voor **2027**.<sup id="ref-E-10"><a href="#note-E-10">[10]</a></sup>
 - **Voorraad in de keten:** ca. **1 week** bewerkt voedsel bij producenten, distributiecentra en
-  winkels; geïmporteerde bulk (soja, palmolie) 2–6 weken.
-  [BRON: https://www.clingendael.org/publication/voedselvoorraden-nederland-voorbereid-verspilling, 2026-10-26]
+  winkels; geïmporteerde bulk (soja, palmolie) 2–6 weken.<sup id="ref-E-11"><a href="#note-E-11">[11]</a></sup>
 - **Supermarkten:** het CBL schrijft mee aan het LCP Voedselzekerheid; supermarkten krijgen de
   distributie- en logistiekrol, foodservice de rol voor zorginstellingen. **Er bestaat nog geen
   voorraadplicht**, en volgens het CBL hebben winkels en distributiecentra geen ruimte voor
-  noodvoorraden. [BRON: https://www.cbl.nl/de-rol-van-de-supermarkt-en-foodservicebranche-in-een-weerbare-voedselvoorziening/, 2026-10-26]
-- **Vorderingsbevoegdheid bestaat:** de **Noodwet voedselvoorziening**, tot nu toe ongebruikt.
-  [BRON: https://wetten.overheid.nl/BWBR0002392/2015-01-01/0, 2026-10-26]
+  noodvoorraden.<sup id="ref-E-12"><a href="#note-E-12">[12]</a></sup>
+- **Vorderingsbevoegdheid bestaat:** de **Noodwet voedselvoorziening**, tot nu toe ongebruikt.<sup id="ref-E-13"><a href="#note-E-13">[13]</a></sup>
 - **Drinkwater:** drinkwaterbedrijven hebben leveringsplannen en eigen noodstroom; nooddrinkwater na
   **24 uur**, **3 liter per persoon per dag**. Zie C.7 en D.7.
 
@@ -2570,18 +2853,17 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 
 - **Er is geen staatsvoorraad medicijnen.** Groothandels houden **2 weken** voorraad, leveranciers
   **6 weken** (Geneesmiddelenwet). De **Algemene Rekenkamer** concludeerde op 21 mei 2025 dat de
-  minister **niet kan verifiëren** of die buffers er zijn en dat het effect twijfelachtig is.
-  [BRON: https://www.rekenkamer.nl/actueel/nieuws/2025/05/21/verplichte-medicijnvoorraad-heeft-waarschijnlijk-niets-veranderd, 2026-10-26]
+  minister **niet kan verifiëren** of die buffers er zijn en dat het effect twijfelachtig is.<sup id="ref-E-14"><a href="#note-E-14">[14]</a></sup>
 - **Aanvulling kritieke geneesmiddelen:** **+4 weken** bij dreigend rood, **+3 weken** bij oranje,
   alleen voor geneesmiddelen met een apotheekprijs onder **€15**. Het doelniveau wordt **in 2026**
-  verwacht. [BRON: https://open.overheid.nl/documenten/86c9fdaa-7850-4e17-8811-d3530579b78f/file, 2026-10-26]
+  verwacht.<sup id="ref-E-15"><a href="#note-E-15">[15]</a></sup>
 - **Landelijke Consignatievoorraad hulpmiddelen (LCH) is opgeheven**; de site is sinds **1 juli 2024**
   offline en de COVID-voorraad beschermingsmiddelen is **afgebouwd** (verkocht, gedoneerd of
-  gerecycled). [BRON: https://www.cibg.nl/lchulpmiddelen, 2026-10-26]
+  gerecycled).<sup id="ref-E-16"><a href="#note-E-16">[16]</a></sup>
 - **Jodiumtabletten:** verspreid in de ringen rond kerncentrales; zie C.11.2. De huidige voorraad is
   houdbaar tot eind 2026 of eind 2027; nieuwe verspreiding **uiterlijk 2027**.
 - **Vaccins:** aankoop en eigendom via het **RIVM**; het Rijksvaccinatieprogramma wordt uitgevoerd door
-  de jeugdgezondheidszorg. [BRON: https://wetten.overheid.nl/BWBR0024705/2026-01-01, 2026-10-26]
+  de jeugdgezondheidszorg.<sup id="ref-E-17"><a href="#note-E-17">[17]</a></sup>
 
 ### E.4 Rantsoenering en prioriteit
 
@@ -2590,15 +2872,12 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Gas:** bij tekort gaat gas naar essentiële instellingen; huishoudens wordt gevraagd op
   piekmomenten minder te gebruiken.
 - **Olie:** fasen in het LCP-O; in fase 4 rantsoenering via pompen.
-- **Water:** eigen voorraad eerst; daarna nooddrinkwater.
-- [BRON: Nationaal Crisisplan Elektriciteit; LCP-G; LCP-O, 2026-10-26]
+- **Water:** eigen voorraad eerst; daarna nooddrinkwater.<sup id="ref-E-18"><a href="#note-E-18">[18]</a></sup>
 
 ### E.5 Betalen en geld
 
-- **Contant geld** is het fallback-middel: €70 per volwassene en €30 per kind voor 72 uur.
-  [BRON: https://www.denkvooruit.nl/risicos/risicos-in-nederland/elektronisch-betalen, 2026-10-26]
-- **DNB** houdt een voorraad contant geld aan voor als digitaal betalen niet meer gaat.
-  [BRON: https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdenens-crisis, 2026-10-26]
+- **Contant geld** is het fallback-middel: €70 per volwassene en €30 per kind voor 72 uur.<sup id="ref-E-19"><a href="#note-E-19">[19]</a></sup>
+- **DNB** houdt een voorraad contant geld aan voor als digitaal betalen niet meer gaat.<sup id="ref-E-20"><a href="#note-E-20">[20]</a></sup>
 - **Alternatieven** worden onderzocht: pinnen met uitstel, betalen met QR-code.
 
 ### E.6 Continuïteit van bestuur en vitale diensten
@@ -2606,11 +2885,54 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 - **Nationaal Handboek Crisisbeheersing** legt rollen, taken en bevoegdheden vast; **MCCb/ICCb/NCC**
   blijven functioneren; **KCR2** coördineert bijstand.
 - **Vitale sectoren:** energie, logistiek en transport, telecommunicatie, voedsel- en
-  drinkwatervoorziening, kennisinstellingen, gezondheidszorg.
-  [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26]
+  drinkwatervoorziening, kennisinstellingen, gezondheidszorg.<sup id="ref-E-21"><a href="#note-E-21">[21]</a></sup>
 - **Wwke/CER** (15 sectoren) en **Cbw/NIS2** (18 sectoren) verplichten bedrijven tot continuïteit en
   meldplicht.
 - **NCV** voor overheid en hulpdiensten; **C2000** voor hulpdiensten; **DARES** als achtervang.
+
+### Noten
+
+1. <span id="note-E-1">https://cova.nl/onze-opdracht/, 2026-10-26</span> [&#8593;](#ref-E-1)
+
+2. <span id="note-E-2">https://cova.nl/wp-content/uploads/2026/06/Jaarstukken-2025-ENG.pdf, 2026-10-26</span> [&#8593;](#ref-E-2)
+
+3. <span id="note-E-3">https://cova.nl/voorraadbeheer/, 2026-10-26</span> [&#8593;](#ref-E-3)
+
+4. <span id="note-E-4">https://www.rijksoverheid.nl/actueel/nieuws/2026/10/01/nederland-gaat-door-met-inzetten-toegezegde-strategische-olievoorraad, 2026-10-26</span> [&#8593;](#ref-E-4)
+
+5. <span id="note-E-5">https://www.dcc-ienw.nl/ — LCP-O, 2026-10-26</span> [&#8593;](#ref-E-5)
+
+6. <span id="note-E-6">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/risico-op-olietekort-verkleinen, 2026-10-26</span> [&#8593;](#ref-E-6)
+
+7. <span id="note-E-7">https://www.gasunie.nl/nieuws/7-vragen-over-gasopslag-in-nederland, 2025-12-18, 2026-10-26</span> [&#8593;](#ref-E-7)
+
+8. <span id="note-E-8">https://www.rijksoverheid.nl/actueel/nieuws/2024/04/18/wet-sluiting-groningenveld-gaat-per-19-april-in, 2026-10-26</span> [&#8593;](#ref-E-8)
+
+9. <span id="note-E-9">https://www.gasunie.nl/en/news/netherlands-vulnerable-to-months-long-gas-supply-interruption-strategic-emergency-reserves-needed, 2026-10-26</span> [&#8593;](#ref-E-9)
+
+10. <span id="note-E-10">https://nos.nl/artikel/2632202-kabinet-wil-nog-geen-voedselvoorraad-voor-acht-dagen-adviseren, 2026-10-26</span> [&#8593;](#ref-E-10)
+
+11. <span id="note-E-11">https://www.clingendael.org/publication/voedselvoorraden-nederland-voorbereid-verspilling, 2026-10-26</span> [&#8593;](#ref-E-11)
+
+12. <span id="note-E-12">https://www.cbl.nl/de-rol-van-de-supermarkt-en-foodservicebranche-in-een-weerbare-voedselvoorziening/, 2026-10-26</span> [&#8593;](#ref-E-12)
+
+13. <span id="note-E-13">https://wetten.overheid.nl/BWBR0002392/2015-01-01/0, 2026-10-26</span> [&#8593;](#ref-E-13)
+
+14. <span id="note-E-14">https://www.rekenkamer.nl/actueel/nieuws/2025/05/21/verplichte-medicijnvoorraad-heeft-waarschijnlijk-niets-veranderd, 2026-10-26</span> [&#8593;](#ref-E-14)
+
+15. <span id="note-E-15">https://open.overheid.nl/documenten/86c9fdaa-7850-4e17-8811-d3530579b78f/file, 2026-10-26</span> [&#8593;](#ref-E-15)
+
+16. <span id="note-E-16">https://www.cibg.nl/lchulpmiddelen, 2026-10-26</span> [&#8593;](#ref-E-16)
+
+17. <span id="note-E-17">https://wetten.overheid.nl/BWBR0024705/2026-01-01, 2026-10-26</span> [&#8593;](#ref-E-17)
+
+18. <span id="note-E-18">Nationaal Crisisplan Elektriciteit; LCP-G; LCP-O, 2026-10-26</span> [&#8593;](#ref-E-18)
+
+19. <span id="note-E-19">https://www.denkvooruit.nl/risicos/risicos-in-nederland/elektronisch-betalen, 2026-10-26</span> [&#8593;](#ref-E-19)
+
+20. <span id="note-E-20">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdenens-crisis, 2026-10-26</span> [&#8593;](#ref-E-20)
+
+21. <span id="note-E-21">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;](#ref-E-21)
 
 ---
 
@@ -2619,12 +2941,11 @@ voor het eerst automatisch op het echte criterium van 3,00 m.
 ### F.1 Officieel advies: 72 uur
 
 De overheid vraagt iedereen **72 uur (3 dagen)** zelfvoorzienend te zijn: in die periode is er veel
-onduidelijkheid, zijn hulpdiensten overbelast en kan de overheid hulp en informatie beter organiseren.
-[BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26]
+onduidelijkheid, zijn hulpdiensten overbelast en kan de overheid hulp en informatie beter organiseren.<sup id="ref-F-1"><a href="#note-F-1">[1]</a></sup>
 
 **Waarom 72 uur:** de eerste uren vallen stroom, water, internet en telefonie uit; pinautomaten
 werken niet; winkels sluiten; 112 raakt overbelast; het duurt dagen voordat hulp overal is en
-informatie up-to-date is. [BRON: Informatieboekje "Bereid je voor op een noodsituatie", NCTV 2025]
+informatie up-to-date is.<sup id="ref-F-2"><a href="#note-F-2">[2]</a></sup>
 
 **Verder kijken dan 72 uur:** de overheid adviseert ook een voorraad voor langere uitval; voor
 medicijnen 2 weken, voor water en eten minimaal 3 dagen. Bij een dreigende crisis: liever 7 dagen.
@@ -2643,9 +2964,8 @@ medicijnen 2 weken, voor water en eten minimaal 3 dagen. Bij een dreigende crisi
 | **Geld en documenten** | Contant geld, kopieën van identiteitsbewijzen, lijst met telefoonnummers, plattegrond/kaart |
 | **Hygiëne** | Desinfecterende gel, wc-papier, natte doekjes, maandverband/tampons, tandpasta en tandenborstel |
 | **Gereedschap** | Hamer, zaag, kniptang, ducttape, zakmes |
-| **Overig** | Reservesleutels van huis en auto, waterdichte tas/rugzak |
+| **Overig** | Reservesleutels van huis en auto, waterdichte tas/rugzak <sup id="ref-F-3"><a href="#note-F-3">[3]</a></sup> |
 
-[BRON: https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, gewijzigd 2026-10-08, 2026-10-26; Informatieboekje NCTV 2025]
 
 **Bewaren en controleren:** op een handige, goed bereikbare plek; in een waterdichte rugzak die je
 kunt meenemen; **elk half jaar controleren** op houdbaarheid en volledigheid; afspraken maken over
@@ -2653,11 +2973,9 @@ wie de voorraad beheert.
 
 **Wat de officiële lijst níet bevat:** een **gasbrander of campingkooktoestel**. De overheid noemt die
 bewust niet in het noodpakket. Heb je er toch een, gebruik hem dan **buiten of in een zeer goed
-geventileerde ruimte** en nooit binnenshuis met houtskool, benzine of een aggregaat (koolmonoxide).
-[BRON: https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, 2026-10-08, 2026-10-26]
+geventileerde ruimte** en nooit binnenshuis met houtskool, benzine of een aggregaat (koolmonoxide).<sup id="ref-F-4"><a href="#note-F-4">[4]</a></sup>
 
-**Er is geen keurmerk voor commerciële noodpakketten** en de overheid verstrekt geen gratis pakketten.
-[BRON: https://www.denkvooruit.nl/veelgestelde-vragen/noodpakket, 2026-10-26]
+**Er is geen keurmerk voor commerciële noodpakketten** en de overheid verstrekt geen gratis pakketten.<sup id="ref-F-5"><a href="#note-F-5">[5]</a></sup>
 
 ### F.3 Water en eten: hoeveelheden
 
@@ -2667,8 +2985,7 @@ geventileerde ruimte** en nooit binnenshuis met houtskool, benzine of een aggreg
 | Eten (energie) | 2.000–2.500 kcal | ca. 7.000 kcal | ca. 16.000 kcal |
 
 - **Huisdieren:** reken op **50 ml water per kg lichaamsgewicht per dag** — een hond van 20 kg dus
-  ca. 1 liter per dag, een kat van 4 kg ca. 0,2 liter. Neem voer mee voor de hele periode.
-  [BRON: https://www.diereninrampen.nl/red-je-dier-bij-een-ramp, 2026-10-26]
+  ca. 1 liter per dag, een kat van 4 kg ca. 0,2 liter. Neem voer mee voor de hele periode.<sup id="ref-F-6"><a href="#note-F-6">[6]</a></sup>
 - **Water bewaren:** schone flessen, goed afgesloten, koele donkere plek, **elk half jaar verversen**.
 - **Kookadvies:** 3 minuten rollend koken als water niet gegarandeerd veilig is.
 
@@ -2740,8 +3057,7 @@ geventileerde ruimte** en nooit binnenshuis met houtskool, benzine of een aggreg
 overheid en **geen regeling voor reservevermogen** voor mensen die afhankelijk zijn van medische
 apparatuur. De overheid **onderzoekt** steun voor mensen met medicijnen of apparatuur en voor mensen
 die een noodpakket niet kunnen betalen. Apparaatgebruikers wordt geadviseerd contact op te nemen met
-hun **leverancier**; regel hulp via familie, buren of maatschappelijke organisaties.
-[BRON: https://www.denkvooruit.nl/veelgestelde-vragen/ik-heb-hulp-nodig; https://www.denkvooruit.nl/veelgestelde-vragen/noodpakket, 2026-10-26]
+hun **leverancier**; regel hulp via familie, buren of maatschappelijke organisaties.<sup id="ref-F-7"><a href="#note-F-7">[7]</a></sup>
 
 - **Ouderen:** check bij hitte, kou en uitval; zorg voor water, medicijnen en warmte.
 - **Mensen met een beperking:** plan evacuatie (lift kan uitvallen), vraag hulp bij vervoer.
@@ -2753,8 +3069,7 @@ hun **leverancier**; regel hulp via familie, buren of maatschappelijke organisat
   **opvangadres in je eigen netwerk**, want **menselijke opvanglocaties nemen meestal geen dieren op**.
   Neem het **vaccinatieboekje** mee (niet-gevaccineerde dieren kunnen worden geweigerd of in quarantaine
   geplaatst), zorg voor een **chip met juiste registratie**, en plak een **sticker op raam of deur** met
-  diersoort en aantal.
-  [BRON: https://www.diereninrampen.nl/red-je-dier-bij-een-ramp, 2026-10-26]
+  diersoort en aantal.<sup id="ref-F-6-2"><a href="#note-F-6">[6]</a></sup>
 - **Mensen zonder sociaal netwerk:** betrek ze; eenzaamheid is een eigen risico in een crisis.
 - **Mentale kwetsbaarheid:** zie F.11.
 
@@ -2765,8 +3080,7 @@ hun **leverancier**; regel hulp via familie, buren of maatschappelijke organisat
 - **EHBO-cursus** of vrijwilliger bij het Rode Kruis.
 - **Vraag op werk, school en sportclub** wat zij doen aan voorbereiding.
 - **Deel je noodplan** met wie je vertrouwt.
-- **Samen staan we sterker:** de overheid benadrukt dat voorbereiding van iedereen vraagt.
-  [BRON: Informatieboekje NCTV 2025]
+- **Samen staan we sterker:** de overheid benadrukt dat voorbereiding van iedereen vraagt.<sup id="ref-F-8"><a href="#note-F-8">[8]</a></sup>
 
 ### F.11 Mentale weerbaarheid
 
@@ -2779,21 +3093,43 @@ hun **leverancier**; regel hulp via familie, buren of maatschappelijke organisat
   ook **0800-0113**). **De Luisterlijn** is 24/7 bereikbaar op **088 0767 000**. **MIND Hulplijn**:
   **0900-1450**, ma–vr 09.00–21.00.
 - **Psychosociale hulp bij rampen** is een wettelijke **GGD-taak** onder de Wet publieke gezondheid: de
-  GGD coördineert het hulpaanbod en verwijst door; de GHOR coördineert de geneeskundige keten.
-  [BRON: https://ggdghor.nl/onderwerp/ghor/psychosociale-hulpverlening/, 2026-10-26]
+  GGD coördineert het hulpaanbod en verwijst door; de GHOR coördineert de geneeskundige keten.<sup id="ref-F-9"><a href="#note-F-9">[9]</a></sup>
 - **Wat de overheid zelf zegt:** welzijn en sociale cohesie zijn cruciaal voor weerbaarheid bij een
-  toekomstige crisis; de mentale gezondheid van jongeren herstelt langzaam na de pandemie.
-  [BRON: https://www.rivm.nl/nieuws/welzijn-en-sociale-cohesie-cruciaal-voor-weerbaarheid-bij-toekomstige-crisis, 2026-10-26]
+  toekomstige crisis; de mentale gezondheid van jongeren herstelt langzaam na de pandemie.<sup id="ref-F-10"><a href="#note-F-10">[10]</a></sup>
 
 **Hoeveel mensen zijn voorbereid?** In april 2026 had **44%** van de inwoners een noodpakket (was 30%);
 het aandeel met een noodplan **meer dan verdubbelde**; bijna de helft bespreekt het met huisgenoten
 (was minder dan 1 op 5 in 2025); **meer dan 9 op 10** had het informatieboekje gezien, dat bij
-**8,5 miljoen huishoudens** werd bezorgd.
-[BRON: https://www.rijksoverheid.nl/actueel/nieuws/2026/04/13/steeds-meer-nederlanders-bereiden-zich-voor-op-noodsituatie-door-denk-vooruit, 2026-10-26]
+**8,5 miljoen huishoudens** werd bezorgd.<sup id="ref-F-11"><a href="#note-F-11">[11]</a></sup>
 
 **Kritiek van de Inspectie:** de risicocommunicatie mist landelijke regie, meetbare doelen en een
-vast budget; het advies verschilt per regio en slechts ongeveer een derde van de inwoners is voorbereid.
-[BRON: https://www.inspectie-jenv.nl/actueel/nieuws/2026/08/27/landelijke-regie-en-duidelijke-doelen-nodig-voor-betere-risicocommunicatie, 2026-10-26]
+vast budget; het advies verschilt per regio en slechts ongeveer een derde van de inwoners is voorbereid.<sup id="ref-F-12"><a href="#note-F-12">[12]</a></sup>
+
+### Noten
+
+1. <span id="note-F-1">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;](#ref-F-1)
+
+2. <span id="note-F-2">Informatieboekje "Bereid je voor op een noodsituatie", NCTV 2025</span> [&#8593;](#ref-F-2)
+
+3. <span id="note-F-3">https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, gewijzigd 2026-10-08, 2026-10-26; Informatieboekje NCTV 2025</span> [&#8593;](#ref-F-3)
+
+4. <span id="note-F-4">https://www.denkvooruit.nl/bereid-je-voor/stel-je-noodpakket-samen, 2026-10-08, 2026-10-26</span> [&#8593;](#ref-F-4)
+
+5. <span id="note-F-5">https://www.denkvooruit.nl/veelgestelde-vragen/noodpakket, 2026-10-26</span> [&#8593;](#ref-F-5)
+
+6. <span id="note-F-6">https://www.diereninrampen.nl/red-je-dier-bij-een-ramp, 2026-10-26</span> [&#8593;a](#ref-F-6) [&#8593;b](#ref-F-6-2)
+
+7. <span id="note-F-7">https://www.denkvooruit.nl/veelgestelde-vragen/ik-heb-hulp-nodig; https://www.denkvooruit.nl/veelgestelde-vragen/noodpakket, 2026-10-26</span> [&#8593;](#ref-F-7)
+
+8. <span id="note-F-8">Informatieboekje NCTV 2025</span> [&#8593;](#ref-F-8)
+
+9. <span id="note-F-9">https://ggdghor.nl/onderwerp/ghor/psychosociale-hulpverlening/, 2026-10-26</span> [&#8593;](#ref-F-9)
+
+10. <span id="note-F-10">https://www.rivm.nl/nieuws/welzijn-en-sociale-cohesie-cruciaal-voor-weerbaarheid-bij-toekomstige-crisis, 2026-10-26</span> [&#8593;](#ref-F-10)
+
+11. <span id="note-F-11">https://www.rijksoverheid.nl/actueel/nieuws/2026/04/13/steeds-meer-nederlanders-bereiden-zich-voor-op-noodsituatie-door-denk-vooruit, 2026-10-26</span> [&#8593;](#ref-F-11)
+
+12. <span id="note-F-12">https://www.inspectie-jenv.nl/actueel/nieuws/2026/08/27/landelijke-regie-en-duidelijke-doelen-nodig-voor-betere-risicocommunicatie, 2026-10-26</span> [&#8593;](#ref-F-12)
 
 ---
 
@@ -2817,7 +3153,7 @@ vast budget; het advies verschilt per regio en slechts ongeveer een derde van de
 
 De wetten zijn te raadplegen op wetten.overheid.nl; de **Wet veiligheidsregio's** is geraadpleegd in de
 versie van **1 juli 2025** (BWBR0027466) en de **Coördinatiewet uitzonderingstoestanden** in de versie
-van **1 januari 2024** (BWBR0007981). [BRON: wetten.overheid.nl, 2026-10-26]
+van **1 januari 2024** (BWBR0007981).<sup id="ref-G-1"><a href="#note-G-1">[1]</a></sup>
 
 ### G.2 Jouw verplichtingen
 
@@ -2827,10 +3163,8 @@ van **1 januari 2024** (BWBR0007981). [BRON: wetten.overheid.nl, 2026-10-26]
 - **Noodverordening** naleven (avondklok, samenscholing, toegangsbeperking).
 - **Vorderingsrecht:** de overheid kan goederen, vervoermiddelen en gebouwen vorderen op grond van de
   **Vorderingswet** en de **Inkwartieringswet**, die via bijlage A van de Coördinatiewet in werking
-  treden. Je krijgt in beginsel een vergoeding; de hoogte wordt bij of na de vordering vastgesteld.
-  [BRON: https://wetten.overheid.nl/BWBR0007981/2024-01-01/0/afdrukken, 2026-10-26]
-- **Opkomstplicht** kan worden geheractiveerd bij (dreigende) oorlog; dienstplicht 17–45 jaar.
-  [BRON: https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26]
+  treden. Je krijgt in beginsel een vergoeding; de hoogte wordt bij of na de vordering vastgesteld.<sup id="ref-G-2"><a href="#note-G-2">[2]</a></sup>
+- **Opkomstplicht** kan worden geheractiveerd bij (dreigende) oorlog; dienstplicht 17–45 jaar.<sup id="ref-G-3"><a href="#note-G-3">[3]</a></sup>
 - **Civiele taken:** gemeenten kunnen een beroep doen op inwoners voor opvang, registratie en
   informatie; vrijwilligerswerk is geen wettelijke plicht.
 
@@ -2859,8 +3193,7 @@ ZLM *Voorwaarden Inboedelverzekering 2025*, §5):
 - **molest** — gewapend conflict, burgeroorlog, opstand, binnenlandse onlusten, oproer en muiterij
   (tekst uit 1981 van het Verbond, gedeponeerd bij de rechtbank Den Haag);
 - **geleidelijke grondwaterstanddaling**, wind onder kracht 7, ongedierte, schimmel, virussen;
-- **vordering** door de overheid.
-[BRON: https://static.zlm.nl/sites/default/files/voorwaarden/voorwaarden_inboedelverzekering_2025.pdf, 2026-10-26]
+- **vordering** door de overheid.<sup id="ref-G-4"><a href="#note-G-4">[4]</a></sup>
 
 **Overstroming is bewust gedeeltelijk gedekt:**
 
@@ -2871,16 +3204,14 @@ ZLM *Voorwaarden Inboedelverzekering 2025*, §5):
 | Water uit **binnenwater na falen van een primaire kering** (dijk, duin, dam) | **Nee** |
 | Buitendijks gebied (havens, uiterwaarden, aangewezen waterbergingsgebieden) | **Nee** |
 | Water door **direct overheidshandelen** | **Nee** |
-| Menging van primair en niet-primair water | **Nee** |
+| Menging van primair en niet-primair water | **Nee** <sup id="ref-G-5"><a href="#note-G-5">[5]</a></sup> |
 
-[BRON: ZLM-voorwaarden 2025, 2026-10-26]
 
 - **Overstroming door een primaire kering is in de praktijk onverzekerbaar.** **Geen enkele
   Nederlandse verzekeraar** biedt dekking voor een doorbraak van een zee- of rivierprimaire kering,
   behalve enkele multinationals en zeer vermogende particulieren. Redenen: beperkt risicobesef,
   antiselectie en cumulatie van risico. Sinds 2020 dekken steeds meer polissen **lokaal** water;
-  december 2021: **>50% van de woningeigenaren**, **<50% van de bedrijven**.
-  [BRON: https://www.stowa.nl/deltafacts/waterveiligheid/waterveiligheidsbeleid-en-regelgeving/verzekeren-van-overstromingsschade, 2026-10-26]
+  december 2021: **>50% van de woningeigenaren**, **<50% van de bedrijven**.<sup id="ref-G-6"><a href="#note-G-6">[6]</a></sup>
 
 **Terrorisme — het NHT-pool:**
 
@@ -2891,8 +3222,7 @@ ZLM *Voorwaarden Inboedelverzekering 2025*, §5):
 - **Eigen risico: €7,5 miljoen** per gebeurtenis.
 - **163 deelnemende maatschappijen** eind 2025 (25 leven, 114 schade, 24 zorg); basisbedrag **BPN
   €87,9 miljard**.
-- Polissen bevatten een terrorismerclausule; schade boven de franchise wordt via het NHT afgewikkeld.
-[BRON: https://vereende.nl/wp-content/uploads/2026/07/2b-NHT_jaarverslag_2025-final.pdf, 2026-10-26]
+- Polissen bevatten een terrorismerclausule; schade boven de franchise wordt via het NHT afgewikkeld.<sup id="ref-G-7"><a href="#note-G-7">[7]</a></sup>
 
 **Samengevat per gebeurtenis:**
 
@@ -2908,14 +3238,13 @@ ZLM *Voorwaarden Inboedelverzekering 2025*, §5):
 
 **Agrarisch:** de **brede weersverzekering** (hagel, regen, nachtvorst, storm, droogte, sneeuw,
 gladheid, blikseminslag) wordt gesubsidieerd door **RVO**. In 2025: budget **€17,5 miljoen**,
-maximaal subsidiepercentage **46,266%**, aanvraagvenster 1 maart–15 mei 2025.
-[BRON: https://www.rvo.nl/subsidies-financiering/brede-weersverzekering, 2026-10-26]
+maximaal subsidiepercentage **46,266%**, aanvraagvenster 1 maart–15 mei 2025.<sup id="ref-G-8"><a href="#note-G-8">[8]</a></sup>
 
 **Wat nu niet werkt, maar wel komt:** de Wts wordt **niet toekomstbestendig** geacht (WODC-evaluatie
 december 2024: complex, traag, soms buiten de wet om). Er lopen twee sporen: een **publiek-private
 herverzekering** of een **herziene Wts**. Het Verbond, JenV en RVO verkennen een **"Eén Loket"** waarbij
 je eigen verzekeraar het eerste aanspreekpunt is voor wateroverlastclaims. **Er is per 26 oktober 2026
-geen nieuwe wet van kracht.** [BRON: https://www.verzekeraars.nl/publicaties/actueel/nieuwe-stappen-richting-duidelijkere-schadeafhandeling-bij-overstromingen, 2026-10-26]
+geen nieuwe wet van kracht.**<sup id="ref-G-9"><a href="#note-G-9">[9]</a></sup>
 
 ### G.5 Overheidscompensatie
 
@@ -2932,16 +3261,14 @@ geen nieuwe wet van kracht.** [BRON: https://www.verzekeraars.nl/publicaties/act
   schade door activiteiten na **19 april 1996** in aangewezen rivierwinterbedden.
 - **Hoe:** een **schade-expert** beoordeelt, op kosten van de staat (art. 5); er kan een **eigen risico
   en drempel** worden vastgesteld (art. 6 lid 2) en een **maximum** (art. 6 lid 4). Het is uitdrukkelijk
-  een **tegemoetkoming**: je draagt zelf een deel.
-- [BRON: https://wetten.overheid.nl/BWBR0009637/2021-07-01, 2026-10-26]
+  een **tegemoetkoming**: je draagt zelf een deel.<sup id="ref-G-10"><a href="#note-G-10">[10]</a></sup>
 
 **Route na een ramp:**
 
 1. **RVO** doet een **"snelle scan"** van oorzaak en omvang — een schatting, nog geen toekenning.
 2. Het kabinet kan daarna een **ministeriële regeling** vaststellen met de omvang van de schade, de
    meldwijze en de termijnen.
-3. **RVO voert die regeling uit.**
-[BRON: https://www.rijksoverheid.nl/themas/economie/afhandeling-schade-bij-rampen/wet-tegemoetkoming-schade-bij-rampen, 2026-10-26]
+3. **RVO voert die regeling uit.** <sup id="ref-G-11"><a href="#note-G-11">[11]</a></sup>
 
 **Overig:**
 - **Instituut Mijnbouwschade Groningen (IMG)** voor mijnbouwschade; meld zo snel mogelijk en laat de
@@ -2957,6 +3284,30 @@ geen nieuwe wet van kracht.** [BRON: https://www.verzekeraars.nl/publicaties/act
 4. **Bonnetjes** van noodreparaties en vervangende spullen.
 5. **Meld** schade zo snel mogelijk; let op termijnen in je polis.
 6. **Vraag** om een schriftelijke bevestiging van de melding.
+
+### Noten
+
+1. <span id="note-G-1">wetten.overheid.nl, 2026-10-26</span> [&#8593;](#ref-G-1)
+
+2. <span id="note-G-2">https://wetten.overheid.nl/BWBR0007981/2024-01-01/0/afdrukken, 2026-10-26</span> [&#8593;](#ref-G-2)
+
+3. <span id="note-G-3">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;](#ref-G-3)
+
+4. <span id="note-G-4">https://static.zlm.nl/sites/default/files/voorwaarden/voorwaarden_inboedelverzekering_2025.pdf, 2026-10-26</span> [&#8593;](#ref-G-4)
+
+5. <span id="note-G-5">ZLM-voorwaarden 2025, 2026-10-26</span> [&#8593;](#ref-G-5)
+
+6. <span id="note-G-6">https://www.stowa.nl/deltafacts/waterveiligheid/waterveiligheidsbeleid-en-regelgeving/verzekeren-van-overstromingsschade, 2026-10-26</span> [&#8593;](#ref-G-6)
+
+7. <span id="note-G-7">https://vereende.nl/wp-content/uploads/2026/07/2b-NHT_jaarverslag_2025-final.pdf, 2026-10-26</span> [&#8593;](#ref-G-7)
+
+8. <span id="note-G-8">https://www.rvo.nl/subsidies-financiering/brede-weersverzekering, 2026-10-26</span> [&#8593;](#ref-G-8)
+
+9. <span id="note-G-9">https://www.verzekeraars.nl/publicaties/actueel/nieuwe-stappen-richting-duidelijkere-schadeafhandeling-bij-overstromingen, 2026-10-26</span> [&#8593;](#ref-G-9)
+
+10. <span id="note-G-10">https://wetten.overheid.nl/BWBR0009637/2021-07-01, 2026-10-26</span> [&#8593;](#ref-G-10)
+
+11. <span id="note-G-11">https://www.rijksoverheid.nl/themas/economie/afhandeling-schade-bij-rampen/wet-tegemoetkoming-schade-bij-rampen, 2026-10-26</span> [&#8593;](#ref-G-11)
 
 ---
 
@@ -3068,6 +3419,7 @@ geen nieuwe wet van kracht.** [BRON: https://www.verzekeraars.nl/publicaties/act
 | Transportongeval | Nooduitgang, laag bij rook | Telefoon |
 | Massale evacuatie | Route volgen, registreren | Go-bag, documenten |
 
+
 ---
 
 ## APPENDICES
@@ -3177,48 +3529,36 @@ Zie A.4 voor de FM- en DAB-tabel per regionale omroep. Aanvullend:
 
 ### Appendix 5 — Bronnen
 
-Alle bronnen zijn geraadpleegd op **2026-10-26**, tenzij anders vermeld.
+Alle bronnen staan in de notenlijsten aan het einde van elk hoofdstuk, met per bron de ophaaldatum
+(**26 oktober 2026**, tenzij anders vermeld). Deze appendix is een **ingang** op die lijsten, geen
+tweede kopie: zo blijven er geen twee versies van dezelfde bron ontstaan.
 
-**Rijksoverheid en NCTV**
-- https://www.denkvooruit.nl/ — campagne en risico's
-- https://www.nederlandveilig.nl/ — crisisinformatie
-- https://www.rijksoverheid.nl/onderwerpen/veiligheidsregios-en-crisisbeheersing
-- https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdens-crisis
-- https://www.nctv.nl/onderwerpen/n/nationale-crisisstructuur
-- https://www.rijksoverheid.nl/onderwerpen/straling/jodiumtabletten
-- https://www.rijksoverheid.nl/actueel/nieuws/2026/06/09/kabinet-komt-met-nieuw-sirenenetwerk
+| Hoofdstuk | Onderwerp | Aantal bronnen | Noten |
+|---|---|---|---|
+| A | Snelle referentie: alarmering, nummers, radio | 18 | [einde deel A](#note-A-1) |
+| B | Crisisstructuur, GRIP, regio's, hulpdiensten, Defensie, noodrecht | 40 | [einde deel B](#note-B-1) |
+| C | Scenario's (18 typen) | 108 | [einde deel C](#note-C-1) |
+| D | Locaties en infrastructuur | 44 | [einde deel D](#note-D-1) |
+| E | Nationale voorraden en continuïteit | 21 | [einde deel E](#note-E-1) |
+| F | Voorbereiding van huishoudens | 12 | [einde deel F](#note-F-1) |
+| G | Recht, rechten en verzekeringen | 11 | [einde deel G](#note-G-1) |
+| H | Checklists | 0 | Geen bronnen; samenvatting van A–G |
+| Appendices | Begrippen, zinnen, contacten, radio, bronnen, versie | 0 | — |
 
-**Water**
-- https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/hoogwater
-- https://www.rijkswaterstaat.nl/water/waterbeheer/watermanagementcentrum-nederland
-- https://www.rijkswaterstaat.nl/water/waterbeheer/bescherming-tegen-het-water/waterkeringen/deltawerken/maeslantkering
-- https://www.deltaprogramma.nl/
-- https://www.overstroomik.nl/
-- https://www.dcc-ienw.nl/
+**Belangrijkste primaire bronnen** (volledige vindplaatsen en data staan in de noten):
 
-**Energie, kernenergie, telecom**
-- https://cova.nl/onze-opdracht/
-- https://www.gasunie.nl/nieuws/7-vragen-over-gasopslag-in-nederland
-- https://www.autoriteitnvs.nl/voorlichting/nucleaire-inrichtingen-nucleaire-veiligheid/kerncentrale-borssele-epz
-- https://www.autoriteitnvs.nl/voorlichting/voorbereiden-op-crisissituaties/kernongeval/maatregelen-bij-een-kernongeval
-- https://www.rivm.nl/nationaal-meetnet-radioactiviteit/locaties
-- https://www.netbeheernederland.nl/onze-leden
-- https://www.tennet.eu/nl-en/news/electricity-supply-security-under-pressure-after-2030
-- https://www.ncsc.nl/cyberbeveiligingswet-nis2
-- https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/communicatie-hulpdiensten-c2000/c2000
-- https://www.ams-ix.net/ams
-
-**Weer en gezondheid**
-- https://www.knmi.nl/kennis-en-datacentrum/uitleg/knmi-waarschuwingen
-- https://www.knmi.nl/kennis-en-datacentrum/uitleg/ruimteweer
-- https://www.rivm.nl/hitte/nationaal-hitteplan
-- https://www.113.nl/
-
-**Wetgeving en overig**
-- https://wetten.overheid.nl/BWBR0027466/2025-07-01 (Wet veiligheidsregio's)
-- https://www.brandweer.nl/onderwerpen/grip/
-- https://www.vnog.nl/sites/default/files/2025-08/GRIPboekje-augustus2025.pdf
-- Informatieboekje "Bereid je voor op een noodsituatie", NCTV, 2025
+- **Rijksoverheid en NCTV** — denkvooruit.nl, nederlandveilig.nl, rijksoverheid.nl, nctv.nl,
+  Nationaal Handboek Crisisbeheersing (2022), Rijksbrede Risicoanalyse Nationale Veiligheid (2026).
+- **Water** — Rijkswaterstaat (hoogwater, waterkeringen, WMCN, Maeslantkering), deltaprogramma.nl,
+  overstroomik.nl, dcc-ienw.nl, Vewin-kerngegevens, NIPV nooddrinkwater.
+- **Energie, kernenergie, telecom** — cova.nl, gasunie.nl, autoriteitnvs.nl, rivm.nl (meetnet),
+  netbeheernederland.nl, tennet.eu, ncsc.nl, meldkamersamenwerking.nl, ams-ix.net, ACM.
+- **Weer, gezondheid en samenleving** — knmi.nl, rivm.nl (hitteplan), vzinfo.nl, ambulancezorg.nl,
+  ggdghor.nl, 113.nl, inspectie-jenv.nl.
+- **Recht en verzekeringen** — wetten.overheid.nl (o.a. BWBR0027466, BWBR0007981, BWBR0009637),
+  ZLM-polisvoorwaarden, NHT-jaarverslag, stowa.nl, rvo.nl.
+- **Veiligheid en industrie** — seveso-plus.nl, risicokaart.nl, prorail.nl, brandweer.nl, vnog.nl,
+  diereninrampen.nl, rodekruis.nl.
 
 ### Appendix 6 — Wijzigingen en versiegeschiedenis
 
@@ -3235,6 +3575,7 @@ Alle bronnen zijn geraadpleegd op **2026-10-26**, tenzij anders vermeld.
 4. **Genereer PDF en ZIM** uit de Markdown; de Markdown is leidend.
 5. **Print** de snelle referentie (deel A) apart en bewaar bij het noodpakket.
 6. **Meld fouten** via de repository; voeg een bron en ophaaldatum toe.
+
 
 ---
 
@@ -3281,3 +3622,4 @@ vermeld.
 
 *Versie 0.1 — 26 oktober 2026. Samengesteld uit openbare bronnen; geen officiële overheidspublicatie.
 Gebruik op eigen risico; geen aansprakelijkheid. Volg bij een crisis altijd de officiële instructies.*
+

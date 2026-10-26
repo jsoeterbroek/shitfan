@@ -18,3 +18,10 @@ th, td { border: 0.5pt solid #888; padding: 2.5pt 3.5pt; vertical-align: top; te
 th { background: #eee; }
 blockquote { border-left: 3pt solid #999; margin: 8pt 0; padding: 4pt 8pt; background: #f6f6f6; }
 code { font-size: 8pt; }
+sup { font-size: 6.5pt; line-height: 0; vertical-align: super; }
+sup a { color: #1b4965; text-decoration: none; }
+/* chapter-end note lists */
+h3#noten, h3.noten { font-size: 9pt; margin-top: 12pt; }
+h3#noten + ol { font-size: 7.6pt; line-height: 1.3; margin-top: 2pt; }
+h3#noten + ol > li { margin-bottom: 1.5pt; word-break: break-word; }
+h3#noten + ol a { color: #1b4965; text-decoration: none; }
