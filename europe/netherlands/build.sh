@@ -41,13 +41,36 @@ elif command -v convert >/dev/null 2>&1; then
 fi
 
 # 48x48 PNG illustration, required by zimwriterfs.
+# ImageMagick 6 on some runners has no usable default font and fails with
+# "unable to read font `(null)'", so resolve a font explicitly and fall back to
+# a plain colour tile when text rendering is unavailable.
 make_illustration() {
-  local out="$1"
+  local out="$1" font=""
+
   if [[ -n "$IM" ]]; then
-    "$IM" -size 48x48 "xc:#1b4965" \
-      -fill white -pointsize 16 -gravity center -annotate +0+0 'NL' "$out"
-    return
+    for candidate in \
+      "$(fc-match -f '%{file}' 'DejaVu Sans' 2>/dev/null || true)" \
+      /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf \
+      /usr/share/fonts/dejavu/DejaVuSans.ttf; do
+      if [[ -n "$candidate" && -f "$candidate" ]]; then
+        font="$candidate"
+        break
+      fi
+    done
+
+    if [[ -n "$font" ]] && "$IM" -size 48x48 "xc:#1b4965" -font "$font" \
+        -fill white -pointsize 16 -gravity center -annotate +0+0 'NL' "$out" 2>/dev/null \
+        && [[ -s "$out" ]]; then
+      return 0
+    fi
+
+    # No usable font: a solid tile is still a valid 48x48 PNG.
+    if "$IM" -size 48x48 "xc:#1b4965" "$out" 2>/dev/null && [[ -s "$out" ]]; then
+      echo "note: drew a plain illustration (no usable font found)" >&2
+      return 0
+    fi
   fi
+
   if command -v python3 >/dev/null 2>&1 && python3 -c 'import PIL' 2>/dev/null; then
     python3 - "$out" <<'PY'
 import sys
@@ -57,10 +80,10 @@ d = ImageDraw.Draw(img)
 d.text((16, 18), "NL", fill="white")
 img.save(sys.argv[1])
 PY
-    return
+    return 0
   fi
-  # Last resort: a 1x1 PNG, inflated to 48x48 by zimwriterfs is not possible,
-  # so fail loudly instead of producing a ZIM with a broken icon.
+
+  # Fail loudly rather than producing a ZIM with a broken icon.
   echo "error: need ImageMagick or Python Pillow for the ZIM illustration" >&2
   return 1
 }
