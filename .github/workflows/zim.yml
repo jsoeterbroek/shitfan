@@ -34,12 +34,20 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install build dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install --yes --no-install-recommends \
+          # Runners occasionally stall on a slow mirror; retry and prefer IPv4.
+          set -euo pipefail
+          printf '%s\n' \
+            'Acquire::Retries "5";' \
+            'Acquire::http::Timeout "30";' \
+            'Acquire::https::Timeout "30";' \
+            'Acquire::ForceIPv4 "true";' \
+            | sudo tee /etc/apt/apt.conf.d/99ci >/dev/null
+          timeout 300 sudo apt-get update
+          timeout 600 sudo apt-get install --yes --no-install-recommends \
             pandoc \
             weasyprint \
             zim-tools \
