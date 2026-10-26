@@ -6,7 +6,7 @@ Emergency reference documents per region/country. It should contain emergency ph
 
 - Template for your region/country
 - AI prompts to generate for your region/country
-- example document for europe/netherlands
+- example document for europe/netherlands,uk
 - checklists
 - in Markdown --> PDF, zim, paper
 
