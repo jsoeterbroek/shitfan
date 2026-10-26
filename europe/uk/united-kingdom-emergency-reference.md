@@ -221,6 +221,9 @@ superseding NRR 2025 (16 January 2025); the NSRA now runs as a "dynamic assessme
 risks reassessed more often.
 <sup id="ref-B-6"><a href="#note-B-6">[6]</a></sup>
 
+The register contains **87 standalone risks plus 8 linked scenarios — 95 risks in total**.<sup id="ref-B-13"><a href="#note-B-13">[13]</a></sup>
+<sup id="ref-B-15"><a href="#note-B-15">[15]</a></sup>
+
 For each risk the NRR sets out a **reasonable worst-case scenario** — not a prediction, but the worst
 plausible manifestation once highly unlikely variations are discounted.
 <sup id="ref-B-7"><a href="#note-B-7">[7]</a></sup>
@@ -232,6 +235,15 @@ natural hazards (wildfire, volcanic eruption, earthquake, severe space weather, 
 temperatures, coastal, fluvial and surface-water flooding, drought, poor air quality), and human,
 animal and plant health (pandemic, emerging infectious disease, foot and mouth disease).
 <sup id="ref-B-8"><a href="#note-B-8">[8]</a></sup>
+
+**The most significant risks in 2026:** a pandemic ("disease X", catastrophic impact, 5–25%
+likelihood); **water infrastructure failure or loss of drinking water** (impact raised to catastrophic);
+**national power outage**; **national gas and electricity shortfall**; conflict and global instability;
+terrorist and state threats including CBRN; digital failure; space-based services; flooding (coastal,
+fluvial and surface water); low temperatures and snow; heatwaves; and cyber attacks. About
+**6.3 million properties in England** lie in areas at flood risk from one or more sources.
+<sup id="ref-B-14"><a href="#note-B-14">[14]</a></sup>
+<sup id="ref-B-16"><a href="#note-B-16">[16]</a></sup>
 
 **What changed in 2026.** The NRR 2026 adds, among others:
 
@@ -288,7 +300,7 @@ picture.<sup id="ref-B-12"><a href="#note-B-12">[12]</a></sup>
 **Important:** calling 999 does **not** guarantee an ambulance. For non-life-threatening problems you
 may be advised to make your own way to an urgent treatment centre or emergency department, or to call
 111 first. Call 999 only for a genuine emergency.
-<sup id="ref-B-13"><a href="#note-B-13">[13]</a></sup>
+<sup id="ref-B-15"><a href="#note-B-15">[15]</a></sup>
 
 ### B.6 Military and civil defence
 
@@ -329,7 +341,7 @@ may be advised to make your own way to an urgent treatment centre or emergency d
 - The government will **never** ask for money, passwords or bank details by alert, text or email.
 - Check a second source: BBC local radio or the emergency services' social media.
 - Do not forward unverified messages. Misinformation spreads fastest in the first hours.
-<sup id="ref-B-14"><a href="#note-B-14">[14]</a></sup>
+<sup id="ref-B-16"><a href="#note-B-16">[16]</a></sup>
 
 
 ### Notes
@@ -346,6 +358,8 @@ may be advised to make your own way to an urgent treatment centre or emergency d
 10. <span id="note-B-10">National Risk Register 2026, PDF, introduction — the NSRA as a dynamic assessment process updated as frequently as needed, and the refreshed Expert Advisory Programme. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-10)
 11. <span id="note-B-11">[https://www.gov.uk/government/news/risk-of-democratic-interference-added-to-national-risk-register](https://www.gov.uk/government/news/risk-of-democratic-interference-added-to-national-risk-register) — seven new risks, the resilience campaign, the mayors consultation on the Civil Contingencies Act 2004, and Exercise ALBISTON SHADOW in 2027. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-11)
 12. <span id="note-B-12">[https://www.gov.uk/government/publications/national-risk-register-2026](https://www.gov.uk/government/publications/national-risk-register-2026) — the NRR is aimed at practitioners; household information is on GOV.UK/Prepare; local risks are in each Community Risk Register. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-12)
+13. <span id="note-B-13">[https://assets.publishing.service.gov.uk/media/6a50d66b1228eb26a4cab76c/National_Risk_Register_2026.pdf](https://assets.publishing.service.gov.uk/media/6a50d66b1228eb26a4cab76c/National_Risk_Register_2026.pdf) — 87 standalone risks plus 8 linked scenarios (95 risks) in the 2026 edition. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-13)
+14. <span id="note-B-14">[https://assets.publishing.service.gov.uk/media/6a7c4412aadaaddf89b6e484/A_Guide_to_the_2026_National_Risk_Register.pdf](https://assets.publishing.service.gov.uk/media/6a7c4412aadaaddf89b6e484/A_Guide_to_the_2026_National_Risk_Register.pdf) — most significant 2026 risks: pandemic (disease X, catastrophic, 5–25% likelihood), water infrastructure failure with impact raised to catastrophic, national power outage, national gas and electricity shortfall, conflict and global instability, terrorist and state threats including CBRN, digital failure, space-based services, flooding, low temperatures, heatwaves and cyber; about 6.3 million properties in England at flood risk. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-14)
 
 ---
 
@@ -374,9 +388,42 @@ Each scenario uses the same sub-structure:
   affecting a very large number of homes, with comprehensive warnings, mass evacuation and shelter,
   fatalities and casualties, and large areas of road and rail flooded.
   <sup id="ref-C-2"><a href="#note-C-2">[2]</a></sup>
+- **Scale (England, 31 March 2026):** **2,422,000** properties are at risk from rivers or the sea and
+  **4,547,600** from surface water. Surface water carries the bigger high-risk population —
+  **1,014,100** properties at high risk versus **319,700** from rivers and sea. That is about **1 in 5**
+  properties at risk today, rising towards **1 in 4** by the middle of the century.
+  <sup id="ref-C-37"><a href="#note-C-37">[37]</a></sup>
 - Sea level rise increases coastal risk over time. Surface-water ("flash") flooding can happen
   anywhere, not only near a river, and is **not** covered by Environment Agency flood warnings.
   <sup id="ref-C-3"><a href="#note-C-3">[3]</a></sup>
+- **Rapid response catchments** are rivers so responsive to heavy rain that they can flash flood
+  **before any warning can be issued**. If you live in one, the first sign may be the flood itself.
+  <sup id="ref-C-38"><a href="#note-C-38">[38]</a></sup>
+
+**What has happened before:**
+
+| Event | Impact |
+|---|---|
+| **1953 North Sea flood** (31 Jan–1 Feb) | **307 dead in England, 19 in Scotland**; over 2,500 dead around the North Sea; 24,500 homes damaged or destroyed in England; 30,000+ evacuated. Led to the Thames Barrier and the Storm Tide Warning Service |
+| **Summer 2007** | **55,000 properties** flooded, **13 dead**, about 7,000 rescued; the Mythe water works outage left **350,000 people without mains water for up to 17 days**; cost about **£3.2 billion**. Led to the Pitt Review and the Flood Forecasting Centre |
+| **Somerset 2013–14** | Wettest winter for 250 years; about **150 km²** under water for weeks; **165 homes** flooded; cost up to **£147.5 million** |
+| **Storm Desmond**, 5–6 Dec 2015 | UK 24-hour rainfall record **341.4 mm** at Honister Pass; 6,421 homes and businesses flooded; 2 deaths; Carlisle worst hit |
+| **Storm Henk**, Jan 2024 | About **2,500 properties** flooded and **102,000 protected** by defences |
+| **2025–26 season** | Storms Éowyn, Amy, Claudia, Goretti and Chandra; about **540 properties** flooded and **60,000 protected** |
+
+<sup id="ref-C-39"><a href="#note-C-39">[39]</a></sup>
+<sup id="ref-C-40"><a href="#note-C-40">[40]</a></sup>
+<sup id="ref-C-37"><a href="#note-C-37">[37]</a></sup>
+
+**Defences that matter:**
+- **Thames Barrier** spans **520 m** with **10 steel gates** of 3,300 tonnes each, protecting **125 km²**
+  of central London, **1.42 million people** and about **£321 billion** of residential property. It has
+  closed for flood defence **221 times** since 1982 (119 tidal, 102 combined) and its design life has
+  been extended to **2070**. There is **no fixed trigger level**: a decision matrix plus the Duty
+  Controller decides.<sup id="ref-C-41"><a href="#note-C-41">[41]</a></sup>
+- **Hull** recorded its highest tide ever, **5.8 m**, on 5 December 2013.
+- **Boston Barrier** has been operational since **December 2020**, can be raised in about **40
+  minutes**, and reduces risk to **13,000+** homes and businesses.<sup id="ref-C-39"><a href="#note-C-39">[39]</a></sup>
 
 #### C.1.2 Official plan
 
@@ -634,9 +681,20 @@ energy shortage could trigger **rota disconnection** — planned, rotating cuts.
 
 - **Distribution network operators** run the local grid and restore supply; the **National Energy
   System Operator (NESO)** balances the national system.
-- In a national shortfall, **rota disconnection** would cut areas in turn. Your area is identified by
-  a **"load block letter"**, and each rotation would last roughly **3 hours**.
-  <sup id="ref-C-11"><a href="#note-C-11">[11]</a></sup>
+- In a national shortfall, **rota disconnection** would cut areas in turn. Great Britain is divided
+  into **18 load blocks** of about 5% of demand each, disconnected in **3-hour periods** (eight per
+  24 hours). The **Secretary of State** decides the level and period; **NESO** issues activation
+  schedules to network operators **by 17:30 the day before**, and implementation should take no more
+  than **48 hours**. **Protected sites** — hospitals with A&E or ICU, water and sewerage, airports,
+  prisons and critical data centres — are never disconnected.
+  <sup id="ref-C-42"><a href="#note-C-42">[42]</a></sup>
+- In **Northern Ireland**, planned emergency power cuts switch off **at least 5% of households at
+  once**, for about **3 hours** once or twice a day; **SONI** instructs **NIE Networks**, and each
+  meter has a block letter.<sup id="ref-C-43"><a href="#note-C-43">[43]</a></sup>
+- The **Demand Flexibility Service** pays households to shift electricity use at peak times. It ran
+  from winter 2022/23 and became a year-round tool on **27 November 2024**. You join through a
+  registered supplier or aggregator and need a smart meter; there is no penalty for not responding.
+  <sup id="ref-C-44"><a href="#note-C-44">[44]</a></sup>
 - **Priority Services Register (PSR)** customers — people with a health condition or reduced
   mobility, pensionable age, medical dependence on supply, children under 5, communication needs, a
   mental health or cognitive condition, or a temporary need after hospital or bereavement — get
@@ -1189,6 +1247,9 @@ transport, CBRN attacks, conventional attacks on infrastructure and cyber attack
 
 - **MI5** and **Counter Terrorism Policing** lead intelligence and investigations; the **Joint
   Terrorism Analysis Centre (JTAC)** sets the national threat level.
+- **Current threat level: SEVERE** — "an attack is highly likely" — raised from SUBSTANTIAL on
+  **30 April 2026**. Northern Ireland-related terrorism in Northern Ireland is **SUBSTANTIAL**.
+  <sup id="ref-C-50"><a href="#note-C-50">[50]</a></sup>
 - Police lead the response; fire and ambulance support; local authorities open rest centres and
   family assistance centres.
 - The **Terrorism Act 2000** and the **Counter-Terrorism and Border Security Act 2019** provide
@@ -1619,8 +1680,8 @@ National Risk Register 2026.<sup id="ref-C-1"><a href="#note-C-1">[1]</a></sup>
 
 
 
-13. <span id="note-B-13">[https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/](https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/) — call 999 only for a life-threatening emergency; calling 999 does not guarantee an ambulance and you may be advised to make your own way. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-13)
-14. <span id="note-B-14">[https://beready.campaign.gov.uk/be-informed-about-hazards/](https://beready.campaign.gov.uk/be-informed-about-hazards/) — pay attention to official sources; check local radio, local TV and reliable online sources; beware misleading information online. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-14)
+13. <span id="note-B-15">[https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/](https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-call-999/) — call 999 only for a life-threatening emergency; calling 999 does not guarantee an ambulance and you may be advised to make your own way. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-13)
+14. <span id="note-B-16">[https://beready.campaign.gov.uk/be-informed-about-hazards/](https://beready.campaign.gov.uk/be-informed-about-hazards/) — pay attention to official sources; check local radio, local TV and reliable online sources; beware misleading information online. Retrieved 2026-10-26.</span> [&#8593;](#ref-B-14)
 
 ### Notes
 
@@ -1660,6 +1721,20 @@ National Risk Register 2026.<sup id="ref-C-1"><a href="#note-C-1">[1]</a></sup>
 34. <span id="note-C-34">[https://www.gov.uk/government/publications/radiation-emergencies-information-for-the-public/what-to-do-in-a-radiation-emergency](https://www.gov.uk/government/publications/radiation-emergencies-information-for-the-public/what-to-do-in-a-radiation-emergency) — go in, stay in, tune in; stay indoors 1–2 days; sheltering cuts inhaled exposure ~40% and direct exposure ~85%; stable iodine timing (24 hours before to 2 hours after, useful to 8 hours, not first taken more than 24 hours after); stable iodine distribution plans at reactor sites. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-34)
 35. <span id="note-C-35">Civil Contingencies Act 2004, Part 1 s.1(1)(c) and Part 2 — war or terrorism threatening serious damage to the security of the United Kingdom. [https://www.legislation.gov.uk/ukpga/2004/36/part/2](https://www.legislation.gov.uk/ukpga/2004/36/part/2). Retrieved 2026-10-26.</span> [&#8593;](#ref-C-35)
 36. <span id="note-C-36">[https://www.gov.uk/government/publications/evacuation-and-shelter-guidance](https://www.gov.uk/government/publications/evacuation-and-shelter-guidance) — Cabinet Office Evacuation and Shelter Guidance (2014) for local planners: risk-based planning, evacuation, shelter, short-term shelter and rest centre management. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-36)
+37. <span id="note-C-37">[https://www.gov.uk/government/publications/flood-and-coastal-risk-management-national-report/flood-and-coastal-erosion-risk-management-report-1-april-2025-to-31-march-2026](https://www.gov.uk/government/publications/flood-and-coastal-risk-management-national-report/flood-and-coastal-erosion-risk-management-report-1-april-2025-to-31-march-2026) — England, 31 March 2026: 2,422,000 properties at risk from rivers or sea; 4,547,600 from surface water; 1,014,100 surface-water high risk vs 319,700 river/sea high risk; 1 in 5 properties at risk, 1 in 4 by mid-century; Storm Henk ~2,500 properties flooded and 102,000 protected; 2025–26 ~540 flooded and ~60,000 protected. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-37)
+38. <span id="note-C-38">[https://www.gov.uk/government/news/helping-communities-in-folkestone-be-prepared-for-flash-flooding](https://www.gov.uk/government/news/helping-communities-in-folkestone-be-prepared-for-flash-flooding) — rapid response catchments: rivers highly responsive to heavy rainfall and liable to flash flood "even before flood warnings can be issued". Retrieved 2026-10-26.</span> [&#8593;](#ref-C-38)
+39. <span id="note-C-39">[https://www.gov.uk/government/news/environment-agency-marks-10th-anniversary-of-2013-floods](https://www.gov.uk/government/news/environment-agency-marks-10th-anniversary-of-2013-floods) — 5 December 2013 surge: highest tide ever recorded at Hull Barrier, 5.8 m; 2013 flooding of over 800 homes across 55 streets in Boston; Boston Barrier operational December 2020, raisable in about 40 minutes, reducing risk to 13,000+ homes and businesses. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-39)
+40. <span id="note-C-40">[https://www.gov.uk/government/news/communities-mark-70th-anniversary-of-east-coast-tidal-surge](https://www.gov.uk/government/news/communities-mark-70th-anniversary-of-east-coast-tidal-surge) and [https://www.jesip.org.uk/wp-content/uploads/2022/03/Pitt-Review-UK-Floods.pdf](https://www.jesip.org.uk/wp-content/uploads/2022/03/Pitt-Review-UK-Floods.pdf) — 1953: 307 dead in England and 19 in Scotland, 24,500 homes damaged or destroyed, 30,000+ evacuated; 2007: 55,000 properties flooded, 13 dead, 350,000 without mains water for up to 17 days, about £3.2 billion; Somerset 2013–14: 150 km² submerged, 165 homes, up to £147.5 million; Storm Desmond: 341.4 mm in 24 hours at Honister Pass, 6,421 properties flooded, 2 deaths. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-40)
+41. <span id="note-C-41">[https://www.gov.uk/guidance/the-thames-barrier](https://www.gov.uk/guidance/the-thames-barrier) and [https://www.gov.uk/government/news/the-thames-barrier-protecting-london-and-the-thames-estuary-for-40-years](https://www.gov.uk/government/news/the-thames-barrier-protecting-london-and-the-thames-estuary-for-40-years) — 520 m span, 10 gates of 3,300 tonnes, 125 km² of central London, 1.42 million people, £321 billion of residential property; 221 defence closures since 1982 (119 tidal, 102 combined); design life extended to 2070; no fixed trigger level. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-41)
+42. <span id="note-C-42">[https://www.gov.uk/government/publications/electricity-supply-emergency-code/electricity-supply-emergency-code](https://www.gov.uk/government/publications/electricity-supply-emergency-code/electricity-supply-emergency-code) — Electricity Supply Emergency Code: 18 load blocks of about 5% of demand, 3-hour periods (eight per 24 hours), Secretary of State decides level and period, NESO issues activation schedules by 17:30 the day before, implementation within 48 hours, Protected Sites List never disconnected. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-42)
+43. <span id="note-C-43">[https://www.nienetworks.co.uk/power-cuts/emergency-power-cuts](https://www.nienetworks.co.uk/power-cuts/emergency-power-cuts) — Northern Ireland planned emergency power cuts: at least 5% of households at once, about 3 hours once or twice a day, SONI instructs NIE Networks, block letter per meter. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-43)
+44. <span id="note-C-44">[https://www.neso.energy/industry-information/balancing-services/demand-flexibility-service-dfs](https://www.neso.energy/industry-information/balancing-services/demand-flexibility-service-dfs) — Demand Flexibility Service launched winter 2022/23 and became year-round on 27 November 2024; join via a registered supplier or aggregator; smart meter required; no penalty for not responding. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-44)
+45. <span id="note-C-45">[https://www.ofgem.gov.uk/sites/default/files/2026-01/ED-annual-report-2024-2025.pdf](https://www.ofgem.gov.uk/sites/default/files/2026-01/ED-annual-report-2024-2025.pdf) and [https://www.nienetworks.co.uk/about-us/company/company-overview](https://www.nienetworks.co.uk/about-us/company/company-overview) — 14 licensed distribution regions in six groups; NIE Networks distributes in Northern Ireland and SONI operates the transmission system. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-45)
+46. <span id="note-C-46">[https://cadentgas.com/about-us/the-gas-industry](https://cadentgas.com/about-us/the-gas-industry) and [https://www.nationalgas.com/about-us](https://www.nationalgas.com/about-us) — eight gas distribution networks run by Cadent, Northern Gas Networks, Wales &amp; West Utilities and SGN; National Gas owns and operates the 5,000-mile National Transmission System. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-46)
+47. <span id="note-C-47">[https://www.gov.uk/government/publications/statutory-security-of-supply-report-2025/statutory-security-of-supply-report-2025](https://www.gov.uk/government/publications/statutory-security-of-supply-report-2025/statutory-security-of-supply-report-2025) and [https://www.centrica.com/our-businesses/infrastructure/centrica-energy-storage-cesplus/](https://www.centrica.com/our-businesses/infrastructure/centrica-energy-storage-cesplus/) — eight storage facilities, 3.2 bcm maximum capacity, 117 mcm/day deliverability, 8% of NTS winter 2024/25 demand; Rough holds about 54 bcf. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-47)
+48. <span id="note-C-48">EDF Energy power station pages (Torness, Heysham 1, Heysham 2, Hartlepool, Sizewell B) and [https://www.edfenergy.com/media-centre/uk-energy-security-supported-further-nuclear-power-station-life-extensions](https://www.edfenergy.com/media-centre/uk-energy-security-supported-further-nuclear-power-station-life-extensions) — capacities 1,190 MW, 1,155 MW, 1,230 MW, 1,185 MW and 1,198 MW; about 12% of UK demand; AGR stations expected to run until March 2030. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-48)
+49. <span id="note-C-49">[https://www.gov.uk/government/news/end-to-coal-power-brought-forward-to-october-2024](https://www.gov.uk/government/news/end-to-coal-power-brought-forward-to-october-2024) — from October 2024 Great Britain no longer uses coal to generate electricity; coal fell from about 40% in 2012 to zero. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-49)
+50. <span id="note-C-50">[https://www.mi5.gov.uk/threats-and-advice/threat-levels](https://www.mi5.gov.uk/threats-and-advice/threat-levels) — UK terrorism threat level SEVERE ("an attack is highly likely"), raised from SUBSTANTIAL on 30 April 2026; Northern Ireland-related terrorism in NI is SUBSTANTIAL. Retrieved 2026-10-26.</span> [&#8593;](#ref-C-50)
 
 ---
 
@@ -1774,9 +1849,28 @@ not by arrival order. Do not go to an emergency department unless you need emerg
   <sup id="ref-C-11"><a href="#note-C-11">[11]</a></sup>
 - **Priority Services Register** for advance warning and extra support.
   <sup id="ref-C-12"><a href="#note-C-12">[12]</a></sup>
-- **Nuclear power stations** (ONR-regulated sites) include Hinkley Point B and C, Sizewell B,
-  Hartlepool, Heysham 1 and 2, Torness and Dungeness B [VERIFY operating status].
-  <sup id="ref-C-32"><a href="#note-C-32">[32]</a></sup>
+- **Electricity distribution:** **14 licensed distribution regions** in Great Britain, run by six
+  groups — UK Power Networks, National Grid Electricity Distribution, Northern Powergrid, SP Energy
+  Networks, SSE Networks and Electricity North West. In Northern Ireland, **NIE Networks** distributes
+  and **SONI** operates the transmission system.
+  <sup id="ref-C-45"><a href="#note-C-45">[45]</a></sup>
+- **Gas distribution:** **eight networks** run by **four companies** — Cadent, Northern Gas Networks,
+  Wales &amp; West Utilities and SGN. **National Gas** owns and operates the **5,000-mile** National
+  Transmission System and acts as gas system operator.
+  <sup id="ref-C-46"><a href="#note-C-46">[46]</a></sup>
+- **Gas storage is small:** Great Britain has **eight storage facilities** with a maximum capacity of
+  **3.2 billion cubic metres** and **117 million m³/day** deliverability. Storage supplied only **8%**
+  of National Transmission System winter demand in 2024/25. **Rough** holds about **54 billion cubic
+  feet** — roughly half of UK gas storage.
+  <sup id="ref-C-47"><a href="#note-C-47">[47]</a></sup>
+- **Nuclear stations** (all EDF in Great Britain): **Torness 1,190 MW, Heysham 1 1,155 MW, Heysham 2
+  1,230 MW, Hartlepool 1,185 MW, Sizewell B 1,198 MW** — about **12%** of UK electricity demand. The
+  four AGR stations are now expected to run **until March 2030**. Dungeness B, Hunterston B and
+  Hinkley Point B have ceased generating.
+  <sup id="ref-C-48"><a href="#note-C-48">[48]</a></sup>
+- **Coal has been phased out of electricity generation**: from **October 2024** Great Britain no
+  longer uses coal to generate electricity, down from about **40%** in 2012 to zero with the closure of
+  Ratcliffe-on-Soar.<sup id="ref-C-49"><a href="#note-C-49">[49]</a></sup>
 
 ### D.9 Telecommunications
 
@@ -1788,10 +1882,40 @@ not by arrival order. Do not go to an emergency department unless you need emerg
 
 ### D.10 Transport
 
-- **Strategic Road Network** in England: National Highways; **Transport Scotland**, **Traffic Wales**
-  and **DfI Roads** in Northern Ireland.
-- **Rail:** Network Rail owns the infrastructure; Great British Railways is the planned guiding mind
-  [VERIFY current status]. Accidents are investigated by the **RAIB**.
+- **England:** **National Highways** runs motorways and major A-roads — more than **4,500 miles**,
+  carrying a third of all traffic and two thirds of freight. Contact centre **0300 123 5000**, 24/7;
+  live updates at nationalhighways.co.uk.
+  <sup id="ref-D-12"><a href="#note-D-12">[12]</a></sup>
+- **Scotland:** **Transport Scotland** manages the trunk road network — **3,507 km**, 6% of the road
+  network but **35% of traffic and 60% of HGVs**. **Traffic Scotland: 0800 028 1414**, 24/7, or
+  traffic.gov.scot.<sup id="ref-D-13"><a href="#note-D-13">[13]</a></sup>
+- **Wales:** **Traffic Wales** manages motorways and trunk roads — **1,080 km** in north and mid Wales
+  and **436 km trunk plus 178 km motorway** in south Wales. Traffic Wales: **0300 123 1213**.
+  <sup id="ref-D-14"><a href="#note-D-14">[14]</a></sup>
+- **Northern Ireland:** **DfI Roads** is the sole road authority, responsible for **25,970 km** of
+  road (at 1 April 2025). Out-of-hours emergency: **0300 200 7899**; live updates at
+  trafficwatchni.com.<sup id="ref-D-15"><a href="#note-D-15">[15]</a></sup>
+- **Rail:** **Network Rail** owns and operates the infrastructure in England, Scotland and Wales —
+  **20,000 miles of track**, 30,000 bridges, tunnels and viaducts, and the 20 largest stations (the
+  other 2,500+ are run by train operators). 24-hour emergency helpline **03457 11 41 41**; British
+  Transport Police **0800 40 50 40** or text **61016**. National Rail Enquiries **03457 48 49 50**.
+  <sup id="ref-D-16"><a href="#note-D-16">[16]</a></sup>
+- **Great British Railways is not yet operational.** The Railways Bill was introduced in the Commons
+  on 5 November 2025 and is now in the Lords; GBR is expected to start around **12 months after** Royal
+  Assent (about 2027), bringing track and train together and replacing Network Rail's role.
+  <sup id="ref-D-17"><a href="#note-D-17">[17]</a></sup>
+- **Accidents** are investigated by the **RAIB** (rail), **AAIB** (air) and **MAIB** (sea).
+- **Ports** are commercially owned and handled **428.3 million tonnes** of freight in 2025; London is
+  the largest (13%), then Grimsby and Immingham (11%) and Milford Haven (9%). Dover is the largest
+  roll-on/roll-off port.<sup id="ref-D-18"><a href="#note-D-18">[18]</a></sup>
+- **Airports** handled **298.7 million** terminal passengers in the year to November 2025: Heathrow
+  **84.3 million**, Gatwick 42.8 million, Manchester 31.9 million, Stansted 29.7 million, Luton
+  17.7 million, Edinburgh 16.9 million.<sup id="ref-D-19"><a href="#note-D-19">[19]</a></sup>
+- **Driving in severe weather (Highway Code 226–237):** use headlights when visibility is seriously
+  reduced (generally below **100 m**); stopping distances at least **double** in the wet and up to
+  **ten times** greater on ice. Do not drive unless the journey is essential. Never place a warning
+  triangle on a motorway; if you cannot get out safely, stay belted with hazard lights on and call
+  **999**.<sup id="ref-D-20"><a href="#note-D-20">[20]</a></sup>
 - **Air and sea:** AAIB and MAIB investigate; air ambulance and HM Coastguard respond.
 - **Flooding closes roads and railways** — never assume a route is open; check before travelling.
 
@@ -1831,6 +1955,15 @@ not by arrival order. Do not go to an emergency department unless you need emerg
 9. <span id="note-D-9">[https://www.england.nhs.uk/2026/10/ominous-signs-of-winter-pressure-growing-as-aes-and-ambulances-see-record-september/](https://www.england.nhs.uk/2026/10/ominous-signs-of-winter-pressure-growing-as-aes-and-ambulances-see-record-september/) — September 2026: 2.44 million A&E attendances, 806,707 ambulance incidents, 94.9% adult acute bed occupancy, 13,647 patients a day medically fit for discharge, 7.4 million waiting list (August 2026). Retrieved 2026-10-26.</span> [&#8593;](#ref-D-9)
 10. <span id="note-D-10">[https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/](https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/) — 111 online from age 5, call for under-fives; dental, mental health and emergency prescriptions; text relay 18001 111. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-10)
 11. <span id="note-D-11">[https://www.gov.uk/government/publications/stockpiles-of-medical-products-held-by-dhsc/stockpiles-of-medical-products-held-by-the-department-of-health-and-social-care](https://www.gov.uk/government/publications/stockpiles-of-medical-products-held-by-dhsc/stockpiles-of-medical-products-held-by-the-department-of-health-and-social-care) — UK-wide CBRN and pandemic stockpiles; England-only pandemic PPE; 8 weeks' supplier stock; NHS Supply Chain around 4 weeks; devolved nations hold their own PPE stocks. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-11)
+12. <span id="note-D-12">[https://nationalhighways.co.uk/about-us/what-we-do/](https://nationalhighways.co.uk/about-us/what-we-do/) — National Highways runs England's motorways and major A-roads, more than 4,500 miles, a third of all traffic and two thirds of freight; contact centre 0300 123 5000, 24/7. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-12)
+13. <span id="note-D-13">[https://www.transport.gov.scot/transport-network/roads/the-trunk-road-network](https://www.transport.gov.scot/transport-network/roads/the-trunk-road-network) and [https://www.traffic.gov.scot/contact-us](https://www.traffic.gov.scot/contact-us) — Transport Scotland manages 3,507 km of trunk road, 6% of the network but 35% of traffic and 60% of HGVs; Traffic Scotland 0800 028 1414, 24/7. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-13)
+14. <span id="note-D-14">[https://traffic.wales/about-us](https://traffic.wales/about-us) — Traffic Wales: NMWTRA manages 1,080 km; SWTRA manages 436 km trunk plus 178 km motorway; contact 0300 123 1213. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-14)
+15. <span id="note-D-15">[https://www.infrastructure-ni.gov.uk/contact](https://www.infrastructure-ni.gov.uk/contact) — DfI Roads is the sole road authority in Northern Ireland, 25,970 km of road at 1 April 2025; out-of-hours emergency 0300 200 7899; live updates at trafficwatchni.com. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-15)
+16. <span id="note-D-16">[https://www.networkrail.co.uk/who-we-are/](https://www.networkrail.co.uk/who-we-are/) and [https://www.networkrail.co.uk/contact-us/](https://www.networkrail.co.uk/contact-us/) — 20,000 miles of track, 30,000 bridges, tunnels and viaducts, 20 managed stations and 2,500+ run by operators; 24-hour helpline 03457 11 41 41; BTP 0800 40 50 40 or text 61016; National Rail Enquiries 03457 48 49 50. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-16)
+17. <span id="note-D-17">[https://www.gov.uk/guidance/great-british-railways](https://www.gov.uk/guidance/great-british-railways) — Railways Bill introduced 5 November 2025, now in the Lords; GBR expected around 12 months after Royal Assent; will bring track and train together. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-17)
+18. <span id="note-D-18">[https://www.gov.uk/government/statistics/port-freight-annual-statistics-2025/port-freight-annual-statistics-2025-overview-of-port-freight-statistics-and-useful-information](https://www.gov.uk/government/statistics/port-freight-annual-statistics-2025/port-freight-annual-statistics-2025-overview-of-port-freight-statistics-and-useful-information) — UK ports handled 428.3 million tonnes in 2025; London 13%, Grimsby and Immingham 11%, Milford Haven 9%; Dover the largest ro-ro port. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-18)
+19. <span id="note-D-19">CAA airport statistics — 298.7 million terminal passengers in the year to November 2025; Heathrow 84.3 m, Gatwick 42.8 m, Manchester 31.9 m, Stansted 29.7 m, Luton 17.7 m, Edinburgh 16.9 m. [https://www.caa.co.uk/](https://www.caa.co.uk/). Retrieved 2026-10-26.</span> [&#8593;](#ref-D-19)
+20. <span id="note-D-20">[https://www.gov.uk/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237](https://www.gov.uk/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237) — headlights when visibility is seriously reduced (generally below 100 m); stopping distances at least double in the wet and up to ten times greater on ice; never use a warning triangle on a motorway; call 999 if you cannot exit safely. Retrieved 2026-10-26.</span> [&#8593;](#ref-D-20)
 
 ---
 
