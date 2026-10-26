@@ -30,7 +30,7 @@ jobs:
   build:
     name: Build artefacts
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 40
 
     steps:
       - name: Check out repository
@@ -46,8 +46,10 @@ jobs:
             'Acquire::https::Timeout "30";' \
             'Acquire::ForceIPv4 "true";' \
             | sudo tee /etc/apt/apt.conf.d/99ci >/dev/null
-          timeout 300 sudo apt-get update
-          timeout 600 sudo apt-get install --yes --no-install-recommends \
+          timeout 900 sudo apt-get update
+          # The azure mirror can be very slow: pandoc alone is 27 MB and has
+          # taken six minutes. Allow generous headroom rather than hanging.
+          timeout 1800 sudo apt-get install --yes --no-install-recommends \
             pandoc \
             weasyprint \
             zim-tools \
