@@ -1,36 +1,186 @@
-# This is a basic workflow to help you get started with Actions
+name: Build ZIM and PDF
 
-name: CI
-
-# Controls when the workflow will run
+# Builds the offline artefacts (Kiwix ZIM + PDF) from the Markdown sources and
+# publishes them as workflow artefacts. Pushing a tag v* also attaches them to a
+# GitHub Release.
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
+    tags: ["v*"]
   pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: ["main"]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# Read-only by default; the release step below is the only place that writes.
+permissions:
+  contents: read
+
+# A newer commit on the same ref supersedes an in-flight build.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # The documents are UTF-8; runners otherwise default to a non-UTF-8 locale and
+  # WeasyPrint writes mojibake into the PDF metadata.
+  LANG: C.UTF-8
+  LC_ALL: C.UTF-8
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    name: Build artefacts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install build dependencies
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            pandoc \
+            weasyprint \
+            zim-tools \
+            imagemagick \
+            poppler-utils \
+            fonts-dejavu-core
+
+      - name: Show tool versions
+        run: |
+          pandoc --version | head -n 2
+          weasyprint --version
+          zimwriterfs --version
+          (magick --version || convert --version) | head -n 1
+
+      - name: Discover documents
+        id: docs
+        run: |
+          set -euo pipefail
+          mapfile -t dirs < <(find . -name build.sh -not -path './.git/*' -printf '%h\n' | sort)
+          if [ "${#dirs[@]}" -eq 0 ]; then
+            echo "::error::No build.sh found; nothing to build."
+            exit 1
+          fi
+          # Every document directory must carry a VERSION file.
+          for dir in "${dirs[@]}"; do
+            if [ ! -f "$dir/VERSION" ]; then
+              echo "::error file=$dir/VERSION::Missing VERSION file next to build.sh."
+              exit 1
+            fi
+          done
+          printf '%s\n' "${dirs[@]}" | sed 's|^\./||' > "$RUNNER_TEMP/dirs.txt"
+          cat "$RUNNER_TEMP/dirs.txt"
+
+      - name: Build all documents
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          while IFS= read -r dir; do
+            version="$(cut -d' ' -f1 "$dir/VERSION" | tr -d '[:space:]')"
+            echo "::group::Building $dir (version $version)"
+            # build.sh writes <slug>-<version>.{pdf,zim} into the given outdir.
+            ( cd "$dir" && ./build.sh all "$GITHUB_WORKSPACE/dist" )
+            echo "::endgroup::"
+          done < "$RUNNER_TEMP/dirs.txt"
+          ls -lh dist
+
+      - name: Verify artefacts
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          pdfs=(dist/*.pdf)
+          zims=(dist/*.zim)
+          if [ "${#zims[@]}" -eq 0 ]; then
+            echo "::error::No ZIM file was produced."
+            exit 1
+          fi
+          if [ "${#pdfs[@]}" -eq 0 ]; then
+            echo "::error::No PDF was produced."
+            exit 1
+          fi
+          for zim in "${zims[@]}"; do
+            echo "::group::Checking $zim"
+            zimdump info "$zim"
+            # The welcome page must exist inside the archive and be the main page.
+            zimdump list "$zim" | grep -qx 'index.html'
+            zimdump info "$zim" | grep -q 'main page: index.html'
+            # A ZIM without content is worse than no ZIM: require a real body.
+            if [ "$(stat -c%s "$zim")" -lt 50000 ]; then
+              echo "::error file=$zim::ZIM is suspiciously small."
+              exit 1
+            fi
+            echo "::endgroup::"
+          done
+          for pdf in "${pdfs[@]}"; do
+            echo "::group::Checking $pdf"
+            pdfinfo "$pdf" | grep -E '^(Title|Pages)'
+            # Guard against the locale bug that garbles non-ASCII metadata.
+            if pdfinfo "$pdf" | grep -q $'\xef\xbf\xbd'; then
+              echo "::error file=$pdf::PDF metadata contains replacement characters (locale problem)."
+              exit 1
+            fi
+            pages="$(pdfinfo "$pdf" | awk '/^Pages:/{print $2}')"
+            if [ "${pages:-0}" -lt 10 ]; then
+              echo "::error file=$pdf::PDF has only $pages pages."
+              exit 1
+            fi
+            echo "::endgroup::"
+          done
+
+      - name: Write summary
+        if: always()
+        run: |
+          set -euo pipefail
+          {
+            echo "## Build artefacts"
+            echo
+            if [ -d dist ] && [ -n "$(ls -A dist 2>/dev/null)" ]; then
+              echo "| File | Size |"
+              echo "|---|---|"
+              for f in dist/*; do
+                [ -e "$f" ] || continue
+                # Backticks are literal Markdown here, not command substitution.
+                # shellcheck disable=SC2016
+                printf '| `%s` | %s |\n' "$(basename "$f")" "$(du -h "$f" | cut -f1)"
+              done
+            else
+              echo "No artefacts were produced."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: offline-docs-${{ github.sha }}
+          path: |
+            dist/*.zim
+            dist/*.pdf
+          if-no-files-found: error
+          retention-days: 30
+
+  # Separate job so that write access exists only here, and only for tags.
+  release:
+    name: Attach artefacts to release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download build artefacts
+        uses: actions/download-artifact@v4
+        with:
+          name: offline-docs-${{ github.sha }}
+          path: dist
+
+      - name: Publish release assets
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.zim
+            dist/*.pdf
+          fail_on_unmatched_files: true
+          generate_release_notes: true
