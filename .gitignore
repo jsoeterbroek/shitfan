@@ -1,7 +1,7 @@
 # Generated artefacts. The "Build ZIM and PDF" workflow produces these on every
 # push; download them from the Actions run or from a v* Release instead of
 # committing them. The Markdown file stays the single source of truth.
-europe/*/*.pdf
+#europe/*/*.pdf
 europe/*/*.zim
 africa/*/*.pdf
 africa/*/*.zim
