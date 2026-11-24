@@ -2,8 +2,10 @@
 title: "Nederland — Noodreferentie"
 subtitle: "Wat de overheid plant, en wat jij moet doen, als het internet wegvalt"
 region: "Europa/Nederland"
-version: "0.1"
-date: "2026-10-26"
+version: "0.2"
+date: "2026-11-24"
+author: "Joost Soeterbroek <joost.soeterbroek@gmail.com>"
+repository: "https://github.com/jsoeterbroek/shitfan/"
 language: "nl"
 status: draft
 ---
@@ -31,12 +33,15 @@ CONVENTIES
 # Nederland — Noodreferentie
 
 > **Dit document gaat ervan uit dat het internet niet beschikbaar is.** Het vat samen wat de
-> Nederlandse overheid heeft geregeld en geadviseerd, stand 26 oktober 2026. Als officiële instructies
+> Nederlandse overheid heeft geregeld en geadviseerd, stand 24 november 2026. Als officiële instructies
 > (radio, televisie, sirene, NL-Alert, hulpdiensten) afwijken van dit document: **volg altijd de
 > officiële instructie**.
 
-**Versie 0.1 — 26 oktober 2026.** Niet-officiële uitgave, samengesteld uit openbare bronnen. Gebruik
+**Versie 0.2 — 24 november 2026.** Niet-officiële uitgave, samengesteld uit openbare bronnen. Gebruik
 **op eigen risico**; de samenstellers aanvaarden **geen aansprakelijkheid**. Zie het colofon achterin.
+
+**Auteur:** Joost Soeterbroek (<joost.soeterbroek@gmail.com>)  
+**Documentlocatie:** <https://github.com/jsoeterbroek/shitfan/>
 
 ---
 
@@ -3564,6 +3569,7 @@ tweede kopie: zo blijven er geen twee versies van dezelfde bron ontstaan.
 
 | Versie | Datum | Wijziging |
 |---|---|---|
+| 0.2 | 2026-11-24 | Publicatiegegevens bijgewerkt: datum, auteur en documentlocatie. |
 | 0.1 | 2026-10-26 | Eerste opzet: structuur, kerngegevens, bronnen. |
 
 ### Appendix 7 — Hoe dit document bij te werken
@@ -3620,6 +3626,6 @@ vermeld.
 > document. **Volg bij een crisis altijd de officiële instructies** van radio, sirene, NL-Alert,
 > hulpdiensten, gemeente en veiligheidsregio.
 
-*Versie 0.1 — 26 oktober 2026. Samengesteld uit openbare bronnen; geen officiële overheidspublicatie.
+*Versie 0.2 — 24 november 2026. Samengesteld uit openbare bronnen; geen officiële overheidspublicatie.
 Gebruik op eigen risico; geen aansprakelijkheid. Volg bij een crisis altijd de officiële instructies.*
 
