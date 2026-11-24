@@ -28,8 +28,8 @@ mkdir -p "$OUTDIR"
 
 # "0.1 (26/10/2026)" -> "0.1"; strip any surrounding whitespace.
 VERSION="$(cut -d' ' -f1 VERSION | tr -d '[:space:]')"
-SLUG="nederland-noodreferentie"   # version-independent identifier
-BASE="${SLUG}-${VERSION}"          # file name carries the version
+SLUG="nederland-noodreferentie" # version-independent identifier
+BASE="${SLUG}-${VERSION}"       # file name carries the version
 TITLE="Nederland — Noodreferentie"
 
 # ImageMagick 7 uses `magick`, ImageMagick 6 only ships `convert`.
@@ -59,8 +59,8 @@ make_illustration() {
     done
 
     if [[ -n "$font" ]] && "$IM" -size 48x48 "xc:#1b4965" -font "$font" \
-        -fill white -pointsize 16 -gravity center -annotate +0+0 'NL' "$out" 2>/dev/null \
-        && [[ -s "$out" ]]; then
+      -fill white -pointsize 16 -gravity center -annotate +0+0 'NL' "$out" 2>/dev/null &&
+      [[ -s "$out" ]]; then
       return 0
     fi
 
@@ -117,6 +117,7 @@ if [[ "$TARGET" == "all" || "$TARGET" == "zim" ]]; then
     --tags="nederland;noodhulp;crisis;rampen;offline" \
     --creator="Project shitfan" \
     --publisher="Project shitfan" \
+    --skip-libmagic-check \
     "$STAGE/content" "${OUTDIR}/${BASE}.zim"
   echo "wrote ${OUTDIR}/${BASE}.zim"
 fi
