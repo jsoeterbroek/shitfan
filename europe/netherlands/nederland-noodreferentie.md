@@ -2,7 +2,7 @@
 title: "Nederland — Noodreferentie"
 subtitle: "Wat de overheid plant, en wat jij moet doen, als het internet wegvalt"
 region: "Europa/Nederland"
-version: "0.2"
+version: "0.3"
 date: "2026-11-24"
 author: "Joost Soeterbroek <joost.soeterbroek@gmail.com>"
 repository: "https://github.com/jsoeterbroek/shitfan/"
@@ -37,7 +37,7 @@ CONVENTIES
 > (radio, televisie, sirene, NL-Alert, hulpdiensten) afwijken van dit document: **volg altijd de
 > officiële instructie**.
 
-**Versie 0.2 — 24 november 2026.** Niet-officiële uitgave, samengesteld uit openbare bronnen. Gebruik
+**Versie 0.3 — 24 november 2026.** Niet-officiële uitgave, samengesteld uit openbare bronnen. Gebruik
 **op eigen risico**; de samenstellers aanvaarden **geen aansprakelijkheid**. Zie het colofon achterin.
 
 **Auteur:** Joost Soeterbroek (<joost.soeterbroek@gmail.com>)  
@@ -2881,12 +2881,21 @@ voor het eerst automatisch op het echte criterium van 3,00 m.<sup id="ref-D-26">
 
 ### E.5 Betalen en geld
 
-- **Contant geld** is het fallback-middel: €70 per volwassene en €30 per kind voor 72 uur.<sup id="ref-E-19"><a href="#note-E-19">[19]</a></sup>
+- **DNB — Overzicht Financiële Stabiliteit najaar 2026:** Nederlandse banken beschikken over solide
+  kapitaalbuffers. Toch houdt DNB ernstig rekening met **systeembrede digitale verstoringen**. AI maakt
+  cyberaanvallen sneller en krachtiger, veel financiële instellingen zijn afhankelijk van een kleine
+  groep technologiebedrijven, en de sector is afhankelijk van energie en telecom.<sup id="ref-E-22"><a href="#note-E-22">[22]</a></sup>
+- **Voorbereiding:** houd **meerdere betaalmiddelen** en voldoende **contant geld voor drie dagen**
+  achter de hand. Denkvooruit.nl hanteert €70 per volwassene en €30 per kind voor 72 uur.<sup id="ref-E-22-2"><a href="#note-E-22">[22]</a></sup> <sup id="ref-E-19"><a href="#note-E-19">[19]</a></sup>
 - **DNB** houdt een voorraad contant geld aan voor als digitaal betalen niet meer gaat.<sup id="ref-E-20"><a href="#note-E-20">[20]</a></sup>
 - **Alternatieven** worden onderzocht: pinnen met uitstel, betalen met QR-code.
 
 ### E.6 Continuïteit van bestuur en vitale diensten
 
+- **Betalings- en kapitaalmarktverkeer:** de publiek-private crisisstructuur, waaronder het Tripartiet
+  Crisismanagement Operationeel, is aangesloten op de nationale crisisstructuur. DNB adviseert idealiter
+  **eens per twee jaar** te oefenen met vitale infrastructuren zoals energie en telecom, inclusief de
+  aansluiting op de landelijke crisisstructuur.<sup id="ref-E-22-3"><a href="#note-E-22">[22]</a></sup>
 - **Nationaal Handboek Crisisbeheersing** legt rollen, taken en bevoegdheden vast; **MCCb/ICCb/NCC**
   blijven functioneren; **KCR2** coördineert bijstand.
 - **Vitale sectoren:** energie, logistiek en transport, telecommunicatie, voedsel- en
@@ -2938,6 +2947,8 @@ voor het eerst automatisch op het echte criterium van 3,00 m.<sup id="ref-D-26">
 20. <span id="note-E-20">https://www.rijksoverheid.nl/themas/recht-veiligheid-en-defensie/dreiging-in-nederland/energie-drinkwater-internet-zorg-bereikbaarheid-tijdenens-crisis, 2026-10-26</span> [&#8593;](#ref-E-20)
 
 21. <span id="note-E-21">https://www.denkvooruit.nl/veelgestelde-vragen/wat-doet-de-overheid, 2026-10-26</span> [&#8593;](#ref-E-21)
+
+22. <span id="note-E-22">DNB — Overzicht Financiële Stabiliteit najaar 2026: https://www.dnb.nl/media/knxjmtmn/ofs-najaar-2026.pdf, 2026-11-24</span> [&#8593;a](#ref-E-22) [&#8593;b](#ref-E-22-2) [&#8593;c](#ref-E-22-3)
 
 ---
 
@@ -3544,7 +3555,7 @@ tweede kopie: zo blijven er geen twee versies van dezelfde bron ontstaan.
 | B | Crisisstructuur, GRIP, regio's, hulpdiensten, Defensie, noodrecht | 40 | [einde deel B](#note-B-1) |
 | C | Scenario's (18 typen) | 108 | [einde deel C](#note-C-1) |
 | D | Locaties en infrastructuur | 44 | [einde deel D](#note-D-1) |
-| E | Nationale voorraden en continuïteit | 21 | [einde deel E](#note-E-1) |
+| E | Nationale voorraden en continuïteit | 22 | [einde deel E](#note-E-1) |
 | F | Voorbereiding van huishoudens | 12 | [einde deel F](#note-F-1) |
 | G | Recht, rechten en verzekeringen | 11 | [einde deel G](#note-G-1) |
 | H | Checklists | 0 | Geen bronnen; samenvatting van A–G |
@@ -3569,6 +3580,7 @@ tweede kopie: zo blijven er geen twee versies van dezelfde bron ontstaan.
 
 | Versie | Datum | Wijziging |
 |---|---|---|
+| 0.3 | 2026-11-24 | DNB OFS najaar 2026 verwerkt: digitale verstoringen, betaalvoorbereiding en crisisoefeningen. |
 | 0.2 | 2026-11-24 | Publicatiegegevens bijgewerkt: datum, auteur en documentlocatie. |
 | 0.1 | 2026-10-26 | Eerste opzet: structuur, kerngegevens, bronnen. |
 
@@ -3602,9 +3614,10 @@ juistheid, volledigheid, actualiteit of geschiktheid voor een bepaald doel.
 **Geen officiële publicatie.** Dit is **geen** uitgave van de Rijksoverheid, een veiligheidsregio, een
 gemeente of een hulpdienst. Aan dit document kunnen **geen rechten** worden ontleend.
 
-**Actualiteit.** Alle gegevens zijn gecontroleerd op **26 oktober 2026**. Telefoonnummers,
-radiofrequenties, wetgeving, crisisplannen en locaties veranderen. Controleer bij twijfel altijd de
-oorspronkelijke bron en de officiële kanalen.
+**Actualiteit.** De gegevens zijn gecontroleerd op de bij elke bron vermelde ophaaldatum; deze uitgave
+bevat bronnen tot en met **24 november 2026**. Telefoonnummers, radiofrequenties, wetgeving,
+crisisplannen en locaties veranderen. Controleer bij twijfel altijd de oorspronkelijke bron en de
+officiële kanalen.
 
 **Bij een crisis: volg altijd de officiële instructies.** Als de radio, televisie, sirene, NL-Alert, de
 politie, de brandweer, de gemeente of je veiligheidsregio iets anders zegt dan dit document, dan geldt
@@ -3626,6 +3639,6 @@ vermeld.
 > document. **Volg bij een crisis altijd de officiële instructies** van radio, sirene, NL-Alert,
 > hulpdiensten, gemeente en veiligheidsregio.
 
-*Versie 0.2 — 24 november 2026. Samengesteld uit openbare bronnen; geen officiële overheidspublicatie.
+*Versie 0.3 — 24 november 2026. Samengesteld uit openbare bronnen; geen officiële overheidspublicatie.
 Gebruik op eigen risico; geen aansprakelijkheid. Volg bij een crisis altijd de officiële instructies.*
 
