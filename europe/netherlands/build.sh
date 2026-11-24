@@ -90,7 +90,7 @@ PY
 
 if [[ "$TARGET" == "all" || "$TARGET" == "pdf" ]]; then
   pandoc "$SRC" -f markdown -t html5 -s \
-    --toc --toc-depth=2 \
+    --toc --toc-depth=3 \
     --metadata title="$TITLE" \
     -c "$PWD/print.css" -o "${OUTDIR}/${BASE}.html"
   weasyprint "${OUTDIR}/${BASE}.html" "${OUTDIR}/${BASE}.pdf"
@@ -102,7 +102,7 @@ if [[ "$TARGET" == "all" || "$TARGET" == "zim" ]]; then
   STAGE="$(mktemp -d)"
   trap 'rm -rf "$STAGE"' EXIT
   mkdir -p "$STAGE/content"
-  pandoc "$SRC" -f markdown -t html5 -s --toc --toc-depth=2 \
+  pandoc "$SRC" -f markdown -t html5 -s --toc --toc-depth=3 \
     --metadata title="$TITLE" -o "$STAGE/content/index.html" </dev/null
   make_illustration "$STAGE/content/illustration.png"
   rm -f "${OUTDIR}/${BASE}.zim"

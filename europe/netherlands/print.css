@@ -20,6 +20,12 @@ blockquote { border-left: 3pt solid #999; margin: 8pt 0; padding: 4pt 8pt; backg
 code { font-size: 8pt; }
 sup { font-size: 6.5pt; line-height: 0; vertical-align: super; }
 sup a { color: #1b4965; text-decoration: none; }
+/* linked, indented table of contents with PDF page numbers */
+#TOC ul { list-style: none; margin: 0; padding-left: 1.5em; }
+#TOC > ul { padding-left: 0; }
+#TOC li { margin: 1pt 0; }
+#TOC a { color: inherit; text-decoration: none; }
+#TOC a::after { content: leader(".") target-counter(attr(href), page); }
 /* chapter-end note lists */
 h3#noten, h3.noten { font-size: 9pt; margin-top: 12pt; }
 h3#noten + ol { font-size: 7.6pt; line-height: 1.3; margin-top: 2pt; }
